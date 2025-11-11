@@ -111,14 +111,21 @@ I build modern digital products that are smart, scalable, and beautifully effici
 
 ---
 
-### ⚡ Tagline
-> 💬 *"Building Smart Systems, Scalable Platforms & Intelligent Automation — One Line of Code at a Time."*
+### ⚡ Tagline By Satzzxzxx 
+> 💬 *Building Smart Systems, Scalable Platforms & Intelligent Automation — One Line of Code at a Time.*
 
 ---
 
-### 🧠 Contribution Highlights (3D Showcase)
+### 📈 Contribution Snapshot
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=39FF14&center=true&vCenter=true&width=650&lines=Top+Contributions+%E2%9A%A1;Consistency+%E2%9C%85;Open+Source+Hustle+%F0%9F%92%BB" alt="typing" />
+  <img src="https://img.shields.io/badge/Commits-`(replace)`-2bceef?style=for-the-badge&logo=git" />&nbsp;
+  <img src="https://img.shields.io/badge/Repos-`(replace)`-39ff14?style=for-the-badge&logo=github" />&nbsp;
+  <img src="https://img.shields.io/badge/Followers-`(replace)`-ff5c8a?style=for-the-badge&logo=github" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=tokyonight&hide_border=true" />
+</p>
 </p>
 
 <p align="center">
