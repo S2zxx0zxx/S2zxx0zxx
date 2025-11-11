@@ -11,7 +11,6 @@
       </feMerge>
     </filter>
 
-    <!-- stroke dash animation path style -->
     <style type="text/css"><![CDATA[
       .bg { fill:#0b1014; }
       .card { fill: url(#grad); rx:14; ry:14; stroke: rgba(255,255,255,0.04); }
@@ -24,42 +23,32 @@
       .sat { fill:#071018; stroke:#ffb86b; stroke-width:2; }
     ]]></style>
 
-    <!-- gradient for card -->
     <linearGradient id="grad" x1="0" x2="1">
       <stop offset="0" stop-color="#071021"/>
       <stop offset="1" stop-color="#071018"/>
     </linearGradient>
   </defs>
 
-  <!-- background card -->
   <rect x="10" y="10" width="880" height="300" class="card"/>
   <rect x="10" y="10" width="880" height="40" fill="rgba(255,255,255,0.02)"/>
   <text x="30" y="36" class="label">Network Flow • Computer → Server → Satellite</text>
 
-  <!-- COMPUTER (left) -->
-  <!-- monitor body -->
   <g transform="translate(90,90)">
     <rect x="-40" y="-20" width="120" height="70" rx="8" ry="8" class="cpu"/>
-    <!-- stand -->
     <rect x="10" y="50" width="40" height="8" rx="2" ry="2" fill="#0f1720"/>
     <rect x="20" y="58" width="20" height="6" rx="2" ry="2" fill="#0f1720"/>
-    <!-- screen inner -->
     <rect x="-31" y="-11" width="102" height="52" rx="6" ry="6" fill="#021018"/>
-    <!-- small UI blocks -->
     <rect x="-18" y="-2" width="28" height="10" rx="2" ry="2" fill="#002a35"/>
     <rect x="15" y="-2" width="28" height="10" rx="2" ry="2" fill="#002a35"/>
     <rect x="-18" y="14" width="60" height="8" rx="2" ry="2" fill="#002a35"/>
     <text x="10" y="95" fill="#9ae6ff" font-family="Segoe UI, Roboto" font-size="12">Computer</text>
   </g>
 
-  <!-- SERVER (center) -->
   <g transform="translate(420,90)">
-    <!-- three stacked server plates -->
     <g class="server-stack" transform="translate(-50, -30)">
       <rect x="0" y="0" width="140" height="32" rx="6" ry="6" class="server"/>
       <rect x="0" y="40" width="140" height="32" rx="6" ry="6" class="server"/>
       <rect x="0" y="80" width="140" height="32" rx="6" ry="6" class="server"/>
-      <!-- LEDs -->
       <circle cx="18" cy="16" r="4" fill="#39ff14"/>
       <circle cx="18" cy="56" r="4" fill="#39ff14"/>
       <circle cx="18" cy="96" r="4" fill="#39ff14"/>
@@ -67,25 +56,18 @@
     <text x="30" y="140" fill="#9ae6ff" font-family="Segoe UI, Roboto" font-size="12">Server</text>
   </g>
 
-  <!-- SATELLITE (right) -->
   <g transform="translate(720,90)">
-    <!-- dish -->
     <g transform="translate(-30,-10)">
       <path d="M20 6 C35 6, 48 18, 48 34 C48 52, 36 64, 20 64 C10 64, 2 60, 2 52 C-2 46, 4 36, 12 30 Z" class="sat"/>
-      <!-- arm -->
       <rect x="46" y="52" width="6" height="30" rx="3" ry="3" fill="#0b1116" />
       <circle cx="49" cy="86" r="8" fill="#ffb86b" filter="url(#glow)"/>
-      <!-- small antenna -->
     </g>
     <text x="-10" y="140" fill="#9ae6ff" font-family="Segoe UI, Roboto" font-size="12">Satellite</text>
   </g>
 
-  <!-- WIRES: Computer -> Server -->
   <path id="path1" d="M160 125 C230 115, 320 110, 370 110" class="icon-line"/>
-  <!-- Server -> Satellite -->
   <path id="path2" d="M560 110 C620 110, 680 120, 700 140" class="icon-line"/>
 
-  <!-- moving dot along path1 -->
   <circle r="6" class="wire-dot">
     <animateMotion dur="2s" repeatCount="indefinite" begin="0s">
       <mpath xlink:href="#path1" />
@@ -94,7 +76,6 @@
     <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- second dot on path2 -->
   <circle r="5" class="wire-dot">
     <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.6s">
       <mpath xlink:href="#path2" />
@@ -103,19 +84,16 @@
     <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- subtle dashed travel effect on path1 -->
   <path d="M160 125 C230 115, 320 110, 370 110" stroke="#00f5ff" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="6 8">
     <animate attributeName="stroke-dashoffset" from="0" to="-56" dur="1.6s" repeatCount="indefinite" />
     <animate attributeName="opacity" values="0.06;0.18;0.06" dur="2s" repeatCount="indefinite" />
   </path>
 
-  <!-- subtle dashed travel effect on path2 -->
   <path d="M560 110 C620 110, 680 120, 700 140" stroke="#39ff14" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-dasharray="6 8">
     <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="1.8s" repeatCount="indefinite" />
     <animate attributeName="opacity" values="0.06;0.18;0.06" dur="2.2s" repeatCount="indefinite" />
   </path>
 
-  <!-- endpoint pulses on server -->
   <g transform="translate(420,90)">
     <circle cx="70" cy="16" r="8" class="endpoint">
       <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
@@ -123,7 +101,6 @@
     </circle>
   </g>
 
-  <!-- endpoint pulses on satellite -->
   <g transform="translate(720,90)">
     <circle cx="49" cy="86" r="10" fill="#ffb86b" filter="url(#glow)">
       <animate attributeName="r" values="8;12;8" dur="2.4s" repeatCount="indefinite" />
@@ -131,7 +108,6 @@
     </circle>
   </g>
 
-  <!-- small legend -->
   <g transform="translate(30,250)">
     <rect x="0" y="-18" width="160" height="40" rx="8" ry="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.03)"/>
     <text x="12" y="3" fill="#9ae6ff" font-family="Segoe UI" font-size="12">Live data flow visual — Computer → Server → Satellite</text>
