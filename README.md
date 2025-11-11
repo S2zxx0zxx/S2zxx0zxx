@@ -1,7 +1,8 @@
-<!-- 💻 S2zxx0zxx — Ultra Pro GitHub Profile -->
+<!-- 💻 S2zxx0zxx — Ultra Pro GitHub Profile (Auto-updating & Advanced) -->
 
 <p align="center">
-  <img src="https://i.imgur.com/Hj4QbOB.png" alt="Banner" width="100%" />
+  <!-- If you add a custom banner, put it under assets/banner.png and change src -->
+  <img src="./assets/banner.png" alt="Banner" width="100%" onerror="this.src='https://i.imgur.com/Hj4QbOB.png'"/>
 </p>
 
 <h1 align="center">
@@ -17,48 +18,18 @@ I build modern digital products that are smart, scalable, and beautifully effici
 ---
 
 ### 🧠 Languages & Framework Expertise
+(Short, skills-only list — full stack focus)
 
-#### 🐍 **Python**
-- Used for **AI automation**, **backend scripting**, and **data analytics**
-- Experienced with **Flask**, **OpenAI API**, and **stock/finance APIs**
-- Powers backend logics, automation tasks, and smart integrations
-
-#### ⚡ **JavaScript (JS)**
-- For interactive **frontend logic**, **dynamic UIs**, and **API communication**
-- Mastered **ES6+**, async workflows, and modular JS architecture
-
-#### ⚛️ **React JS + Vite**
-- High-speed **SPAs** using **Tailwind CSS**, **Framer Motion**, and **Vite**
-- Sleek UI, responsive design, and real-time component updates
-
-#### 🧱 **Node.js + Express**
-- Backend for **REST APIs**, **auth systems**, and **real-time connections**
-- Integrated with **Firebase** and **Python AI pipelines**
-
-#### 🧠 **TypeScript**
-- Type-safe structure for **SEO**, **automation**, and **AI dashboards**
-
-#### 🎯 **Dart + Flutter**
-- Built **cross-platform mobile apps** (Android + iOS)
-- Integrated **Firebase Auth**, **Firestore**, **Cloud Functions**
-
-#### 🌐 **HTML + CSS**
-- Core of responsive web structure using **Flexbox**, **Grid**, and **Tailwind**
-
-#### 🔥 **Firebase**
-- Real-time **database**, **auth**, and **cloud integration**
-- Backend-as-a-Service for web and mobile sync
-
-#### ⚙️ **N8N + Workflow Automation**
-- Automated **AI tasks**, **Google Sheets**, **custom APIs**
-- Built self-running digital automation systems
+**Python • JavaScript • TypeScript • Dart • React • Vite • Node.js • Express • Flutter • Firebase • HTML • CSS**
 
 ---
 
 ##### 💎 Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nodejs,express,vite,flutter,dart,firebase,html,css,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nodejs,express,vite,flutter,dart,firebase,html,css,git,github,vscode" alt="tech icons"/>
 </p>
+
+---
 
 ### 🧩 Tools & DevOps
 | Category | Tools |
@@ -73,60 +44,62 @@ I build modern digital products that are smart, scalable, and beautifully effici
 ---
 
 ### 💪 Core Strengths
-✅ Clean architecture & scalable logic  
-✅ API integration & automation  
-✅ Web + Mobile (cross-platform) development  
-✅ Secure, optimized backend  
-✅ AI-driven system design  
-✅ Animated UI/UX precision  
+✅ Clean architecture & scalable logic • ✅ API integration & automation • ✅ Web + Mobile (cross-platform) development • ✅ Secure, optimized backend • ✅ AI-driven system design
 
 ---
 
-### 📊 GitHub Insights
+## 📊 Live GitHub Insights
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com?user=S2zxx0zxx&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=S2zxx0zxx&theme=react-dark&bg_color=0D1117&hide_border=true" />
-</p>
-
----
-
-### 🏆 GitHub Trophies
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=S2zxx0zxx&theme=onedark&margin-w=10&no-frame=true" />
-</p>
-
----
-
-### 🧰 Skills Snapshot
-**Python** ▰▰▰▰▰▰▰▱▱▱ 80%  
-**JavaScript** ▰▰▰▰▰▰▰▰▰▱ 90%  
-**React / Vite** ▰▰▰▰▰▰▰▰▱▱ 85%  
-**Node.js / Express** ▰▰▰▰▰▰▰▰▱▱ 85%  
-**Flutter / Dart** ▰▰▰▰▰▰▰▱▱▱ 75%  
-**Firebase / Automation** ▰▰▰▰▰▰▰▰▰▱ 90%
-
----
-
-### ⚡ Tagline By Satzzxzxx 
-> 💬 *Building Smart Systems, Scalable Platforms & Intelligent Automation — One Line of Code at a Time.*
-
----
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/S2zxx0zxx/S2zxx0zxx/main/assets/network-flow.svg" alt="Network Flow Animation" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=S2zxx0zxx&theme=onedark&margin-w=10&no-frame=true" alt="trophies" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=tokyonight&hide_border=true" alt="github-stats" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=S2zxx0zxx&theme=tokyonight&hide_border=true" alt="streak" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=S2zxx0zxx&theme=react-dark&bg_color=0D1117&hide_border=true" alt="activity graph" />
 </p>
+
+---
+
+## 🧠 Advanced Visual — Network Flow
+<p align="center">
+  <img src="./assets/network-flow.svg" alt="Network Flow Animation" width="100%" />
+</p>
+
+---
+
+## 🧭 Skills Radar (auto-generated)
+<p align="center">
+  <!-- This SVG will be auto-regenerated by the workflow. If missing, fallback to this static placeholder -->
+  <img src="./assets/skill-radar.svg" alt="Skill Radar" width="70%" />
+</p>
+
+---
+
+## 🗂 Featured Repos
+<p align="center">
+  <a href="https://github.com/S2zxx0zxx/TaskoraAi"><img src="./assets/taskora-thumb.png" alt="Taskora" width="30%"/></a>&nbsp;
+  <a href="https://github.com/S2zxx0zxx/StockScreenerAi"><img src="./assets/stock-thumb.png" alt="StockScreener" width="30%"/></a>&nbsp;
+  <a href="https://github.com/S2zxx0zxx/SEO"><img src="./assets/seo-thumb.png" alt="SEO" width="30%"/></a>
+</p>
+
+> Tip: Add thumbnails in `assets/` (taskora-thumb.png, stock-thumb.png, seo-thumb.png). If not present they won't break the README.
+
+---
+
+### ⚡ Tagline
+> 💬 *Building Smart Systems, Scalable Platforms & Intelligent Automation — One Line of Code at a Time.*
+
+---
+
+### 📡 Contribution Snapshot
+<p align="center">
+  <img src="https://img.shields.io/badge/Commits-REPLACE-2bceef?style=for-the-badge&logo=git" />&nbsp;
+  <img src="https://img.shields.io/badge/Repos-REPLACE-39ff14?style=for-the-badge&logo=github" />&nbsp;
+  <img src="https://img.shields.io/badge/Followers-REPLACE-ff5c8a?style=for-the-badge&logo=github" />
+</p>
+
+*(The GitHub Action will auto-replace these values weekly or on push.)*
+
 ---
 
 ### 🌍 Connect With Me
