@@ -117,8 +117,7 @@ I build modern digital products that are smart, scalable, and beautifully effici
 ---
 
 <p align="center">
-  <img src="./assets/network-flow.svg" alt="Network Flow Animation" width="100%" />
-</p>
+  <img src="https://raw.githubusercontent.com/S2zxx0zxx/S2zxx0zxx/main/assets/network-flow.svg" alt="Network Flow Animation" width="100%" />
 </p>
 
 <p align="center">
