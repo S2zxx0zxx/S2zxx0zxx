@@ -116,9 +116,18 @@ I build modern digital products that are smart, scalable, and beautifully effici
 
 ---
 
-### 🧠 Contribution Snake 🐍
-![snake gif](https://github.com/S2zxx0zxx/S2zxx0zxx/blob/output/github-contribution-grid-snake.svg)
+### 🧠 Contribution Highlights (3D Showcase)
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1200&color=39FF14&center=true&vCenter=true&width=650&lines=Top+Contributions+%E2%9A%A1;Consistency+%E2%9C%85;Open+Source+Hustle+%F0%9F%92%BB" alt="typing" />
+</p>
 
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=S2zxx0zxx&theme=onedark&margin-w=10&no-frame=true" alt="trophies" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=S2zxx0zxx&theme=react-dark&bg_color=0D1117&hide_border=true" alt="activity graph" />
+</p>
 ---
 
 ### 🌍 Connect With Me
