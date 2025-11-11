@@ -116,15 +116,8 @@ I build modern digital products that are smart, scalable, and beautifully effici
 
 ---
 
-### 📈 Contribution Snapshot
 <p align="center">
-  <img src="https://img.shields.io/badge/Commits-`(replace)`-2bceef?style=for-the-badge&logo=git" />&nbsp;
-  <img src="https://img.shields.io/badge/Repos-`(replace)`-39ff14?style=for-the-badge&logo=github" />&nbsp;
-  <img src="https://img.shields.io/badge/Followers-`(replace)`-ff5c8a?style=for-the-badge&logo=github" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="./assets/network-flow.svg" alt="Network Flow Animation" width="100%" />
 </p>
 </p>
 
