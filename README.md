@@ -55,20 +55,10 @@ I build modern digital products that are smart, scalable, and beautifully effici
 
 ---
 
-### 💎 Tech Stack
+##### 💎 Tech Stack
 <p align="center">
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/nodejs-icon.svg" alt="Node.js" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/firebase-icon.svg" alt="Firebase" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/flutter-icon.svg" alt="Flutter" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/html-icon.svg" alt="HTML" width="65" height="65"/>
-  <img src="https://techstack-generator.vercel.app/css-icon.svg" alt="CSS" width="65" height="65"/>
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nodejs,express,vite,flutter,dart,firebase,html,css,git,github,vscode" />
 </p>
-
----
 
 ### 🧩 Tools & DevOps
 | Category | Tools |
