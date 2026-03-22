@@ -1,115 +1,285 @@
-<!-- 💻 S2zxx0zxx — Ultra Pro GitHub Profile (Auto-updating & Advanced) -->
+<!-- 💻 S2zxx0zxx — Ultra Pro GitHub Profile -->
 
-<p align="center">
-  <!-- If you add a custom banner, put it under assets/banner.png and change src -->
-  <img src="./assets/banner.png" alt="Banner" width="100%" onerror="this.src='https://i.imgur.com/Hj4QbOB.png'"/>
-</p>
+<div align="center">
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=1000&color=39FF14&center=true&vCenter=true&width=650&lines=👋+Hey%2C+I'm+S2zxx0zxx;💻+Full+Stack+Developer+%7C+AI+Automation+Engineer;⚡+Flutter+%7C+React+%7C+Node+%7C+Firebase+%7C+Python" alt="Typing SVG" />
-</h1>
+<!-- ═══════════════════════════════════════════════════ -->
+<!--               ANIMATED HEADER BANNER               -->
+<!-- ═══════════════════════════════════════════════════ -->
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:0a3d62,100:00d4ff&height=200&section=header&text=S2zxx0zxx&fontSize=70&fontColor=00d4ff&fontAlignY=35&desc=Full%20Stack%20Developer%20%7C%20AI%20Automation%20Engineer&descAlignY=58&descColor=ffffff&animation=fadeIn&fontAlign=50" />
 
-### 🚀 About Me
-💡 Passionate **Full-Stack Developer** and **AI Automation Engineer** with deep expertise in crafting intelligent systems, cross-platform apps, and automation pipelines.  
-I build modern digital products that are smart, scalable, and beautifully efficient.
+</div>
 
 ---
 
-### 🧠 Languages & Framework Expertise
-(Short, skills-only list — full stack focus)
+<div align="center">
 
-**Python • JavaScript • TypeScript • Dart • React • Vite • Node.js • Express • Flutter • Firebase • HTML • CSS**
+<!-- ═══════════════════════════════════════════════════ -->
+<!--               TYPING ANIMATION                     -->
+<!-- ═══════════════════════════════════════════════════ -->
 
----
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=60&lines=%F0%9F%91%8B+Hey%2C+I'm+S2zxx0zxx;%F0%9F%A4%96+AI+Automation+Architect;%F0%9F%9A%80+Full+Stack+Developer;%E2%9A%A1+Building+the+Future%2C+One+Commit+at+a+Time;%F0%9F%94%A5+Flutter+%E2%80%A2+React+%E2%80%A2+Node+%E2%80%A2+Firebase)](https://git.io/typing-svg)
 
-##### 💎 Tech Stack
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nodejs,express,vite,flutter,dart,firebase,html,css,git,github,vscode" alt="tech icons"/>
-</p>
+</div>
 
 ---
 
-### 🧩 Tools & DevOps
-| Category | Tools |
-|-----------|-------|
-| **Version Control** | Git, GitHub |
-| **Deployment** | Vercel, Render, Netlify |
-| **E-Commerce** | Shopify, API automation |
-| **Automation** | N8N, Zapier, Python |
-| **Database** | Firebase, SQLite, JSON |
-| **IDE & Tools** | VS Code, Postman |
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  ABOUT ME                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<img align="right" width="340" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" alt="coding gif" />
+
+### `> whoami`
+
+```yaml
+name        : S2zxx0zxx
+role        : Full Stack Developer + AI Automation Engineer
+focus       : Intelligent Systems · Cross-Platform Apps · Automation Pipelines
+philosophy  : "Ship fast. Scale smart. Automate everything."
+currently   : Building AI-powered products that change workflows
+learning    : LLM Agents · Edge Computing · System Design
+```
+
+<br clear="right"/>
 
 ---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                SKILL BADGES                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 🧠 Tech Arsenal
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00d4ff)
+![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Dart](https://img.shields.io/badge/Dart-0D1117?style=for-the-badge&logo=dart&logoColor=0175C2)
+
+![React](https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Flutter](https://img.shields.io/badge/Flutter-0D1117?style=for-the-badge&logo=flutter&logoColor=02569B)
+![Node.js](https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=nodedotjs&logoColor=339933)
+![Express](https://img.shields.io/badge/Express-0D1117?style=for-the-badge&logo=express&logoColor=ffffff)
+![Vite](https://img.shields.io/badge/Vite-0D1117?style=for-the-badge&logo=vite&logoColor=646CFF)
+
+![Firebase](https://img.shields.io/badge/Firebase-0D1117?style=for-the-badge&logo=firebase&logoColor=FFCA28)
+![SQLite](https://img.shields.io/badge/SQLite-0D1117?style=for-the-badge&logo=sqlite&logoColor=07405E)
+![MongoDB](https://img.shields.io/badge/MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=4EA94B)
+
+![Git](https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=F05032)
+![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=ffffff)
+![Vercel](https://img.shields.io/badge/Vercel-0D1117?style=for-the-badge&logo=vercel&logoColor=ffffff)
+![Render](https://img.shields.io/badge/Render-0D1117?style=for-the-badge&logo=render&logoColor=46E3B7)
+![Netlify](https://img.shields.io/badge/Netlify-0D1117?style=for-the-badge&logo=netlify&logoColor=00C7B7)
+
+![N8N](https://img.shields.io/badge/n8n-0D1117?style=for-the-badge&logo=n8n&logoColor=EA4B71)
+![Zapier](https://img.shields.io/badge/Zapier-0D1117?style=for-the-badge&logo=zapier&logoColor=FF4A00)
+![Shopify](https://img.shields.io/badge/Shopify-0D1117?style=for-the-badge&logo=shopify&logoColor=96BF48)
+![VS Code](https://img.shields.io/badge/VS_Code-0D1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
+![Postman](https://img.shields.io/badge/Postman-0D1117?style=for-the-badge&logo=postman&logoColor=FF6C37)
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              SKILL ICONS                           -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,js,ts,dart,react,flutter,nodejs,express,vite,firebase,html,css,git,github,vscode&perline=8&theme=dark" />
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--             GITHUB STATS — 3 CARD LAYOUT           -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 📊 GitHub Intelligence
+
+<br/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&border_radius=12" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=S2zxx0zxx&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00d4ff&fire=ff6b35&currStreakLabel=00d4ff&border_radius=12" />
+
+<br/><br/>
+
+<img width="38%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=S2zxx0zxx&layout=donut&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00d4ff&text_color=c9d1d9&border_radius=12" />
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              ACTIVITY GRAPH                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 🌊 Contribution Wave
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=S2zxx0zxx&bg_color=0D1117&color=00d4ff&line=00d4ff&point=ffffff&area=true&area_color=0a3d62&hide_border=true&radius=12" />
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--             TOOLS & DEVOPS TABLE                   -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 🧩 Tools & DevOps Matrix
+
+| 🔷 Category | 🔹 Stack |
+|:---:|:---|
+| **Version Control** | `Git` `GitHub` `GitHub Actions` |
+| **Deployment** | `Vercel` `Render` `Netlify` `DigitalOcean` |
+| **E-Commerce** | `Shopify` `REST API Automation` |
+| **Automation** | `N8N` `Zapier` `Python Scripts` |
+| **Database** | `Firebase Firestore` `SQLite` `JSON Store` |
+| **AI / ML** | `OpenAI API` `Gemini API` `LLM Orchestration` |
+| **IDE & Utils** | `VS Code` `Postman` `GitHub Copilot` |
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--            FEATURED PROJECTS                       -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 🗂 Flagship Projects
+
+<br/>
+
+[![TaskoraAI](https://github-readme-stats.vercel.app/api/pin/?username=S2zxx0zxx&repo=TaskoraAi&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&border_radius=12)](https://github.com/S2zxx0zxx/TaskoraAi)
+[![StockScreenerAI](https://github-readme-stats.vercel.app/api/pin/?username=S2zxx0zxx&repo=StockScreenerAi&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&border_radius=12)](https://github.com/S2zxx0zxx/StockScreenerAi)
+[![SEO](https://github-readme-stats.vercel.app/api/pin/?username=S2zxx0zxx&repo=SEO&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&border_radius=12)](https://github.com/S2zxx0zxx/SEO)
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--           PROFILE TROPHIES                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 🏆 Achievement Vault
+
+<img width="100%" src="https://github-profile-trophy.vercel.app/?username=S2zxx0zxx&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" />
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--           CORE STRENGTHS                           -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
 
 ### 💪 Core Strengths
-✅ Clean architecture & scalable logic • ✅ API integration & automation • ✅ Web + Mobile (cross-platform) development • ✅ Secure, optimized backend • ✅ AI-driven system design
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║  ✅  Clean Architecture & Scalable Logic                         ║
+║  ✅  API Integration & Full Automation Pipelines                 ║
+║  ✅  Web + Mobile Cross-Platform Development                     ║
+║  ✅  Secure, Optimized Backend Engineering                       ║
+║  ✅  AI-Driven System Design & LLM Integration                   ║
+║  ✅  Performance-First UI/UX Across All Platforms                ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+</div>
 
 ---
 
-## 📊 Live GitHub Insights
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=tokyonight&hide_border=true" alt="github-stats" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=S2zxx0zxx&theme=tokyonight&hide_border=true" alt="streak" />
-</p>
+<!-- ═══════════════════════════════════════════════════ -->
+<!--         PROFILE VIEWS & LIVE STATS                 -->
+<!-- ═══════════════════════════════════════════════════ -->
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=S2zxx0zxx&theme=react-dark&bg_color=0D1117&hide_border=true" alt="activity graph" />
-</p>
+<div align="center">
 
----
+### 📡 Live Stats
 
-## 🧠 Advanced Visual — Network Flow
-<p align="center">
-  <img src="./assets/network-flow.svg" alt="Network Flow Animation" width="100%" />
-</p>
+![Profile Views](https://komarev.com/ghpvc/?username=S2zxx0zxx&color=00d4ff&style=for-the-badge&label=PROFILE+VIEWS)
+![GitHub followers](https://img.shields.io/github/followers/S2zxx0zxx?style=for-the-badge&color=00d4ff&labelColor=0D1117&label=FOLLOWERS)
+![GitHub stars](https://img.shields.io/github/stars/S2zxx0zxx?style=for-the-badge&color=00d4ff&labelColor=0D1117&label=TOTAL+STARS)
+
+</div>
 
 ---
 
-## 🧭 Skills Radar (auto-generated)
-<p align="center">
-  <!-- This SVG will be auto-regenerated by the workflow. If missing, fallback to this static placeholder -->
-  <img src="./assets/skill-radar.svg" alt="Skill Radar" width="70%" />
-</p>
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              QUOTE BLOCK                           -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 💬 Developer's Creed
+
+> *"Building Smart Systems, Scalable Platforms & Intelligent Automation — One Line of Code at a Time."*  
+> — **S2zxx0zxx**
+
+<br/>
+
+```python
+while alive:
+    eat()
+    sleep()
+    code()
+    automate_everything()
+    repeat()
+```
+
+</div>
 
 ---
 
-## 🗂 Featured Repos
-<p align="center">
-  <a href="https://github.com/S2zxx0zxx/TaskoraAi"><img src="./assets/taskora-thumb.png" alt="Taskora" width="30%"/></a>&nbsp;
-  <a href="https://github.com/S2zxx0zxx/StockScreenerAi"><img src="./assets/stock-thumb.png" alt="StockScreener" width="30%"/></a>&nbsp;
-  <a href="https://github.com/S2zxx0zxx/SEO"><img src="./assets/seo-thumb.png" alt="SEO" width="30%"/></a>
-</p>
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              CONNECT SECTION                       -->
+<!-- ═══════════════════════════════════════════════════ -->
 
-> Tip: Add thumbnails in `assets/` (taskora-thumb.png, stock-thumb.png, seo-thumb.png). If not present they won't break the README.
+<div align="center">
 
----
+### 🌍 Let's Connect
 
-### ⚡ Tagline
-> 💬 *Building Smart Systems, Scalable Platforms & Intelligent Automation — One Line of Code at a Time.*
+<a href="https://github.com/S2zxx0zxx">
+  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00d4ff&labelColor=0D1117" />
+</a>
+&nbsp;
+<a href="mailto:contact@s2zxx0zxx.dev">
+  <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" />
+</a>
 
----
-
-### 📡 Contribution Snapshot
-<p align="center">
-  <img src="https://img.shields.io/badge/Commits-REPLACE-2bceef?style=for-the-badge&logo=git" />&nbsp;
-  <img src="https://img.shields.io/badge/Repos-REPLACE-39ff14?style=for-the-badge&logo=github" />&nbsp;
-  <img src="https://img.shields.io/badge/Followers-REPLACE-ff5c8a?style=for-the-badge&logo=github" />
-</p>
-
-*(The GitHub Action will auto-replace these values weekly or on push.)*
+</div>
 
 ---
 
-### 🌍 Connect With Me
-<p align="center">
-<a href="https://github.com/S2zxx0zxx" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="mailto:contact@s2zxx0zxx.dev"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              FOOTER WAVE                           -->
+<!-- ═══════════════════════════════════════════════════ -->
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,50:0a3d62,100:0d0d0d&height=120&section=footer&animation=fadeIn" />
 
-<h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=39FF14&center=true&vCenter=true&width=500&lines=Thanks+for+visiting!;Let's+build+something+amazing!;Keep+Coding,+Keep+Growing!+🚀" />
-</h3>
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=500&lines=Thanks+for+visiting+%F0%9F%91%8B;Let%E2%80%99s+build+something+legendary+%F0%9F%9A%80;Keep+Coding.+Keep+Growing.+%E2%9A%A1)](https://git.io/typing-svg)
+
+</div>
