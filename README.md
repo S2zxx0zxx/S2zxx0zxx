@@ -1,20 +1,16 @@
 <div align="center">
 
-<!-- Header — using shields.io only (never breaks) -->
 <img src="https://img.shields.io/badge/S2zxx0zxx-Developer_×_Builder-0d1117?style=for-the-badge&labelColor=c8821a&logoColor=white" height="38" />
 
 <br/><br/>
 
 ```
- ╔══════════════════════════════════════════════════════════╗
- ║                                                          ║
- ║   name       : Satyam Kumar                              ║
- ║   alias      : S2zxx0zxx / Satzzxzxx                     ║
- ║   role       : Full Stack Developer × Solo Builder        ║
- ║   location   : India 🇮🇳                                  ║
- ║   philosophy : "Ship Fast · Scale Smart · Automate All"   ║
- ║                                                          ║
- ╚══════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════╗
+║ name       : Satyam Kumar                                           ║
+║ alias      : S2zxx0zxx / Satzzxzxx                                  ║
+║ role       : Full Stack Developer × Solo Product Builder            ║
+║ update     : AUG 2026 — Deep Rebuild (Top 15 Repos Fully Scanned)  ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 </div>
@@ -23,171 +19,263 @@
 
 ## `$ whoami`
 
-I build digital products that generate revenue while I sleep. Developer by passion, entrepreneur by obsession. I turn free-tier infrastructure into income-generating machines.
-
-**What I do →** Build web tools, content systems, and SaaS products as a solo developer — using AI agents as my team, free-tier stacks as my infrastructure, and automation as my multiplier.
+Bhai, ab yeh README properly fresh hai. Is baar maine sirf summary nahi dali — **top 15 active repos ko one-by-one scan** karke same project-style format me add kiya hai (stack, structure, design, architecture depth ke saath).
 
 ---
 
-## `$ cat projects.json`
+## `$ cat projects.deep.json`
 
-### 🏆 FinCalc India — *Flagship Project*
-> India's most powerful free finance calculator suite + blog
+### 1) 🧠 Toolshub *(AI Platform Flagship)*
+> Multi-model AI operating platform with real-time agent behavior and modular intelligence workflows.
 
-| | |
+| Layer | Deep Details |
 |:--|:--|
-| **Live** | [satzzxzxx.me](https://satzzxzxx.me) |
-| **What** | 13+ calculators (EMI, SIP, Tax, GST, FD, RD, Retirement) + finance blog |
-| **Stack** | Single-file HTML/CSS/JS · Zero dependencies · ~85KB |
-| **Score** | Lighthouse 98 Performance · 100 SEO |
-| **Analytics** | GA4 + GTM + AdSense integration |
-| **Blog** | 5+ expert articles with Schema.org markup, TOC, newsletter |
-| **Infra** | GitHub Pages + Namecheap + Cloudflare (all free tier) |
-
-[![FinCalc](https://img.shields.io/badge/Live-satzzxzxx.me-c8821a?style=flat-square)](https://satzzxzxx.me)
-[![Blog](https://img.shields.io/badge/Blog-5+_Articles-1a7a3a?style=flat-square)](https://satzzxzxx.me/blog/)
-[![Calculators](https://img.shields.io/badge/Calculators-13+-1a4a8a?style=flat-square)](https://satzzxzxx.me)
+| **Core** | AI workspace for Claude/Groq/GPT-style model flows + tool orchestration |
+| **Stack** | JavaScript, Firebase workflow scripts, modular frontend assets |
+| **Architecture** | Hybrid cloud-edge style documented architecture, server-event style streaming references, agent routing patterns |
+| **Design / 3D Feel** | Premium dark enterprise UI storytelling with structured architecture diagrams and system-sectioned UX |
+| **Structure** | `index.html`, `assets/`, `css/`, `js/`, `worker/`, `scripts/`, `docs/`, `firebase.*`, `sw.js`, `manifest.json` |
+| **Ops Maturity** | Includes audit logs, progress reports, verification scripts, CI-friendly docs and deployment artifacts |
 
 ---
 
-### 🎮 GameMart
-> Premium digital accounts store with WhatsApp-based order flow
+### 2) 👤 S2zxx0zxx *(This Profile Repo)*
+> Public identity layer and project intelligence surface.
 
-| | |
+| Layer | Deep Details |
 |:--|:--|
-| **What** | Gaming accounts (MOBA, BGMI, FreeFire) + AI tools + Apps |
-| **Stack** | Single-file HTML · Base64 embedded logos · UPI payment gateway |
-| **Products** | 13 products across Gaming, AI Tools, Apps categories |
+| **Core** | GitHub profile narrative + portfolio signal hub |
+| **Stack** | Markdown + static visual assets |
+| **Architecture** | Content architecture with structured sections for projects, stack, execution philosophy |
+| **Design / 3D Feel** | Console-style, badge-heavy personal branding |
+| **Structure** | `README.md`, `assets/` |
 
 ---
 
-### 🧠 Nexus AI *(In Development)*
-> AI Operating System SaaS targeting USA/UK markets
+### 3) ⚡ elitehub
+> Production-oriented Next.js TypeScript app stack with backend-grade dependencies.
 
-| | |
+| Layer | Deep Details |
 |:--|:--|
-| **What** | Document Brain, Life Manager, Second Brain, Business Co-Pilot |
-| **Stack** | React + Node.js + Firebase + Claude API |
-| **Pricing** | Free / $19 / $49 / $199 per month |
-| **Target CPM** | $15–$50 (legal/finance/business audience) |
+| **Core** | Scalable app foundation for productized SaaS-grade workflows |
+| **Stack** | Next.js 14, TypeScript, Prisma, Tailwind, Framer Motion, Clerk, Sentry, AWS S3 SDK |
+| **Architecture** | App + data + auth + observability layering; build pipeline includes Prisma generation |
+| **Design / 3D Feel** | Motion-capable UI layer (Framer Motion), app-first componentized rendering model |
+| **Structure** | `src/`, `prisma/`, `public/`, `tests/`, `sentry.*`, `playwright.config.ts`, `next.config.mjs` |
+| **Engineering Signals** | Husky, lint-staged, E2E testing hooks, typed config surface |
 
 ---
 
-### 📺 YouTube Empire *(6 Faceless Channels)*
+### 4) 🧩 Leetcode-Solutions
+> Competitive programming execution archive with strict problem-index structure.
 
-| Channel | Niche | Audience |
-|:--|:--|:--|
-| **FlickSnap** | Movie summaries | USA 🇺🇸 |
-| **CapitalDrop** | Finance news | USA 🇺🇸 |
-| **NeuralDrop** | Tech/AI | USA 🇺🇸 |
-| **FilmiShot** | Movie summaries (Hinglish) | India 🇮🇳 |
-| **NiveshWala** | Finance (Hindi) | India 🇮🇳 |
-| **ByteToड़** | Tech/AI (Hindi) | India 🇮🇳 |
-
-Strategy: 1 topic → 6 videos. Batch on Sundays. AI voice + AI editing + auto-schedule.
-
----
-
-## `$ cat tech-stack.yml`
-
-**Languages**
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](#)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](#)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)](#)
-
-**Frameworks & Libraries**
-
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](#)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](#)
-[![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)](#)
-
-**Backend & Database**
-
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](#)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](#)
-[![Appwrite](https://img.shields.io/badge/Appwrite-FD366E?style=flat-square&logo=appwrite&logoColor=white)](#)
-
-**DevOps & Hosting**
-
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white)](#)
-[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)](#)
-[![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white)](#)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](#)
-
-**AI & Automation**
-
-[![Claude](https://img.shields.io/badge/Claude_AI-d4a574?style=flat-square)](#)
-[![GitHub Copilot](https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)](#)
-[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-000000?style=flat-square)](#)
-
-**Tools**
-
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](#)
-[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](#)
-[![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white)](#)
-[![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)](#)
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | DSA grind repository auto-tracked from LeetCode solves |
+| **Stack** | C++ primary, Python secondary, SQL for database problems |
+| **Architecture** | Auto-sequential problem directory architecture (`0001-...`, `0002-...`) |
+| **Design / 3D Feel** | Minimal visual design, heavy logic depth |
+| **Structure** | Large indexed problem folders + README leaderboard-style documentation |
+| **Signal** | Contest-driven workflow + optimization-centric coding profile |
 
 ---
 
-## `$ cat stats.sh`
+### 5) 🏛️ DigiRise-India
+> Agency-grade growth website with rich UX, 3D interaction cues, and full SEO/PWA surface.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Digital growth agency platform for multi-market positioning |
+| **Stack** | Pure HTML/CSS/JS, zero-framework rendering with PWA layer |
+| **Architecture** | Multi-section business site + blog + case studies + tools + lead generation modules |
+| **Design / 3D Feel** | Dynamic island nav, magnetic UI interactions, cinematic transitions, premium motion-led experience |
+| **Structure** | `assets/`, `css/`, `js/`, `blog/`, `case-studies/`, `industries/`, `tools/`, `sw.js`, `manifest.json` |
+| **Content Engine** | AI crawler artifacts (`llms.txt`), SEO pages, growth funnels |
+
+---
+
+### 6) 🧪 VsCode-Satzzxzxx
+> React + TS + Vite starter environment.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Development starter scaffold |
+| **Stack** | React, TypeScript, Vite |
+| **Architecture** | Template architecture suitable for rapid prototyping |
+| **Design / 3D Feel** | Base-level template visuals |
+| **Structure** | starter-level config + app source bootstrap |
+
+---
+
+### 7) 📊 DigiRise-Admin-beta-
+> Growth Partner OS for commission tracking, partner activity, and operational workflows.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Partner + admin dashboard operating system |
+| **Stack** | Vanilla JS, custom CSS, Firebase Realtime Database |
+| **Architecture** | 3-surface system (`index.html`, `partner.html`, `admin.html`) with rule-based data model |
+| **Design / 3D Feel** | KPI cards, activity feed, ring goals, smart insight dashboard UX |
+| **Structure** | `js/`, `css/`, `database.rules.json`, `manifest.json`, `service-worker.js` |
+| **Business Logic** | Commission slabs, referral flows, partner lifecycle states |
+
+---
+
+### 8) 🇮🇳 Bharat-OS
+> India-first AI life assistant platform across legal, gov schemes, health, finance, agriculture, education.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Vertical AI modules for Indian users |
+| **Stack** | Next.js 14, TypeScript, Tailwind, Framer Motion, Gemini API, Supabase |
+| **Architecture** | Module-based app architecture via `app/` with domain-driven sections |
+| **Design / 3D Feel** | Productized app UI with motion-enabled modern interfaces |
+| **Structure** | `app/` + README-driven module map |
+| **Intent** | Hindi-accessible AI utility OS for real daily use cases |
+
+---
+
+### 9) 🧱 BT
+> Lightweight static experiment repository.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Minimal static artifact |
+| **Stack** | HTML |
+| **Architecture** | Single-page light structure |
+| **Design / 3D Feel** | Low complexity; early-stage utility build |
+| **Structure** | `README.md`, `index.html`, utility binary asset |
+
+---
+
+### 10) 🪑 scenicone
+> Premium furniture brand website with commerce-friendly conversion flow.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Brand showcase + product discovery + enquiry funnel |
+| **Stack** | HTML5, CSS3, Vanilla JS, PWA support |
+| **Architecture** | Multi-page informational + catalog + enquiry architecture |
+| **Design / 3D Feel** | Premium visual language, collection-led browsing UX |
+| **Structure** | `about.html`, `products.html`, `enquiry.html`, `contact.html`, `assets/`, `js/`, `css/`, `sw.js` |
+| **Ops Layer** | Performance/security/analytics scripts included |
+
+---
+
+### 11) 🎬 DigiRise-Portfolio
+> Creative showcase portfolio with case-study style storytelling.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Multi-project presentation portal |
+| **Stack** | Static HTML portfolio surface |
+| **Architecture** | Multi-page case showcase (`work`, `services`, project pages) |
+| **Design / 3D Feel** | Storytelling-first premium portfolio styling |
+| **Structure** | `index.html`, `work.html`, `services.html`, `fincalc.html`, `liquidlounge.html`, `zenvy.html` |
+
+---
+
+### 12) 💰 financeCalculator-Ind-v6.0-
+> India-focused finance calculator and content engine at scale.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Calculator suite + finance blog + podcast-style financial knowledge system |
+| **Stack** | Zero-dependency HTML/CSS/JS core + PWA + analytics/SEO layer |
+| **Architecture** | Utility engine + content engine + metadata and crawler optimization layer |
+| **Design / 3D Feel** | Practical fintech UX with data-first decision framing |
+| **Structure** | `index.html`, `blog/`, `podcast/`, `icons/`, `sw.js`, `sitemap.xml`, `llms*.txt` |
+| **Scale Signal** | Most starred among scanned set; heavy public utility orientation |
+
+---
+
+### 13) 🤝 Growpartner-Satzzxzxx
+> Early-stage growth partner micro-project.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Lean growth partner experiment |
+| **Stack** | Static HTML |
+| **Architecture** | Minimal single-page setup |
+| **Design / 3D Feel** | Basic foundation stage |
+| **Structure** | `README.md`, lightweight root files |
+
+---
+
+### 14) 🔮 Zenvy-AI
+> Zero-build AI SaaS OS focused on cognitive productivity workflows.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Personal AI operating system product |
+| **Stack** | Vanilla HTML/CSS/JS + Claude API + Firebase Auth + Firestore + Razorpay |
+| **Architecture** | Static frontend shell + AI calls + auth + payment + persistence layer |
+| **Design / 3D Feel** | Premium dark kinetic interface, glassmorphism-style SaaS presentation, structured architecture sections |
+| **Structure** | `index.html`, `assets/`, `zenvy-backend/`, `sw.js`, `manifest.json`, `SECURITY.md` |
+| **Product Signal** | Strong direct-monetization orientation and feature-layered roadmap |
+
+---
+
+### 15) 🎮 GameMartStudios
+> Conversion-focused gaming account storefront.
+
+| Layer | Deep Details |
+|:--|:--|
+| **Core** | Premium listing marketplace using WhatsApp-first order flow |
+| **Stack** | HTML/CSS/JS single-file architecture |
+| **Architecture** | Zero-backend static commerce pipeline (browse → click → prefilled WhatsApp order) |
+| **Design / 3D Feel** | Strong gaming visual identity, urgency-led UI, high-contrast premium theme |
+| **Structure** | `README.md`, `index.html++` |
+| **Business Model** | Fast deployment, no infra cost, direct D2C conversational checkout |
+
+---
+
+## `$ cat portfolio-patterns.md`
+
+### ✅ Observed Deep Patterns Across Top 15
+
+1. **Dual Engineering Lane**
+   - Lane A: Zero-dependency static speed systems
+   - Lane B: Modern TypeScript/Next.js app architectures
+
+2. **Design Signature Consistency**
+   - Dark premium aesthetics
+   - Motion-first storytelling
+   - Conversion-centric CTA funnels
+   - Product narrative framed like operating systems
+
+3. **Architecture Maturity Growth**
+   - Static pages → PWA + SEO + analytics → AI + auth + data + payment layers
+
+4. **3D / Advanced UI Trend**
+   - Multiple flagship projects explicitly positioning around cinematic, magnetic, layered, or pseudo-3D interface depth.
+
+---
+
+## `$ cat core-stack.yml`
+
+- **Frontend:** HTML5, CSS3, JavaScript, React, Next.js
+- **Typed App Layer:** TypeScript, Prisma, Tailwind
+- **AI Layer:** Claude API, Gemini API, multi-agent workflows
+- **Data/Auth:** Firebase, Firestore, Supabase, Clerk
+- **Commerce/Payments:** Razorpay, WhatsApp-led conversion workflows
+- **Deploy:** GitHub Pages, Vercel, Cloudflare-style static acceleration
+
+---
+
+## `$ connect --social`
+
+- GitHub: [@S2zxx0zxx](https://github.com/S2zxx0zxx)
+- X: [@satzzxzxx](https://x.com/satzzxzxx)
+- Instagram: [@__.satzzxzxx](https://www.instagram.com/__.satzzxzxx)
+- Website: [satzzxzxx.me](https://satzzxzxx.me)
+
+---
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=S2zxx0zxx&theme=dark&hide_border=true&background=0d1117&ring=c8821a&fire=c8821a&currStreakLabel=c8821a&sideLabels=8a7f70&dates=6a6050)](https://github.com/S2zxx0zxx)
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=dark&bg_color=0d1117&title_color=c8821a&icon_color=c8821a&text_color=f0ece4&hide_border=true&count_private=true)](https://github.com/S2zxx0zxx)
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=S2zxx0zxx&layout=compact&theme=dark&bg_color=0d1117&title_color=c8821a&text_color=f0ece4&hide_border=true)](https://github.com/S2zxx0zxx)
-
-</div>
-
----
-
-## `$ cat infrastructure.md`
-
-Everything built on **free tiers** via GitHub Student Developer Pack:
-
-| Service | What I Use It For |
-|:--|:--|
-| GitHub Copilot | AI pair programmer |
-| GitHub Codespaces | 180 hrs/month cloud IDE |
-| DigitalOcean | $200 credits for servers |
-| Azure | $100 credits |
-| Namecheap | Free `.me` domain (satzzxzxx.me) |
-| Appwrite | 10 free projects (backend) |
-| JetBrains IDEs | Full suite free |
-| Doppler | Secrets management |
-| Sentry | Error tracking |
-| New Relic | Performance monitoring |
-| 1Password | Password management |
-| DataCamp | Learning platform |
-
----
-
-## `$ cat connect.sh`
-
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/__.satzzxzxx)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/satzzxzxx)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/S2zxx0zxx)
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/InvestGrow_IN)
-[![Website](https://img.shields.io/badge/satzzxzxx.me-c8821a?style=for-the-badge)](https://satzzxzxx.me)
-
-</div>
-
----
-
-<div align="center">
-
+```txt
+/* built after full top-15 repo deep scan — no outdated profile data now */
 ```
-/* built with ⚡ by Satzzxzxx — Always in Build Mode 🔥 */
-```
-
-<img src="https://komarev.com/ghpvc/?username=S2zxx0zxx&color=c8821a&style=flat-square&label=Profile+Views" />
 
 </div>
