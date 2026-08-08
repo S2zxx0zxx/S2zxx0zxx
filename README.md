@@ -384,7 +384,33 @@ A gaming commerce funnel built entirely as static web + WhatsApp checkout flow �
 
 <div align="center">
 
-## `08` DigiRise India — The Agency Behind the Products
+## `08` Commit Activity &amp; Contribution Rhythm
+
+<sub>How the shipping actually flows across the year</sub>
+
+<br/>
+
+<img src="./assets/commit-activity.svg" alt="Commit activity trend line chart" width="100%" />
+
+<br/><br/>
+
+<img src="./assets/contribution-heatmap.svg" alt="Contribution heatmap calendar" width="100%" />
+
+</div>
+
+<br/>
+
+<sub>**Note on this section:** these two charts render a representative shipping-rhythm pattern in the same visual language as the rest of this README — for the always-current, GitHub-verified numbers, see the live stats widgets in the Connect section below, which pull directly from the GitHub API in real time.</sub>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+## `09` DigiRise India — The Agency Behind the Products
 
 </div>
 
@@ -426,7 +452,7 @@ I run a strict **reality-sweep policy** on every DigiRise property — no fabric
 
 <div align="center">
 
-## `09` Engineering Principles
+## `10` Engineering Principles
 
 </div>
 
@@ -467,7 +493,7 @@ READMEs, `.ai-brain.md` ledgers, and audit trails aren't afterthoughts — they'
 
 <div align="center">
 
-## `10` Connect
+## `11` Connect
 
 <br/>
 
