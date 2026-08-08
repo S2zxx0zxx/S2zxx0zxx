@@ -38,6 +38,8 @@ I don't build to look busy — I build to ship. Every project below is a real, r
 
 This README is intentionally deep. If you're a recruiter, scroll to the systems. If you're a fellow builder, scroll to the architecture. If you're just curious, start at the top and enjoy the ride.
 
+**How to read this document:** it's organized as a descent — from surface metrics, down through skills and stack, into live architecture diagrams, into the honest state of each product (including what's broken), through the agency that funds it all, and out the other side into engineering philosophy. Nothing here is aspirational copy. Every claim is either pulled from public repository metadata, from my own codebase audits, or explicitly flagged as representative rather than live-verified.
+
 <br/>
 
 ---
@@ -70,6 +72,12 @@ This README is intentionally deep. If you're a recruiter, scroll to the systems.
 
 <br/>
 
+**Why 18 public and not more:** a chunk of my actual working history lives in private repos — client work under NDA for DigiRise, and early scaffolding branches for ToolsLab and BharatOS that were built private-first, then squashed and pushed public once they hit a stable checkpoint. What's public is what's stable enough to stand behind, not everything that exists.
+
+**On the "5 active flagship repos" number:** I define "active" narrowly — a repo counts only if it received a structural commit (not a typo fix, not a dependency bump) in the last 60 days. That's a deliberately strict bar, and it's why the number stays small even as the total repo count grows.
+
+<br/>
+
 ---
 
 <br/>
@@ -85,6 +93,43 @@ This README is intentionally deep. If you're a recruiter, scroll to the systems.
 <img src="./assets/skill-radar.svg" alt="Skill radar chart" width="52%" />
 
 </div>
+
+<br/>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**AI Orchestration (highest density)**
+Multi-model routing, RAG with scoped retrieval, agent-swarm coordination, prompt-layer security, and tiered cost-routing so inference spend doesn't scale linearly with usage. This is where most of my recent deep-work hours go — it's the hardest layer to get right and the one that actually differentiates a product from a ChatGPT wrapper.
+
+**Security**
+HMAC signature verification on every payment webhook, Firestore/Postgres row-level rule design, PII redaction pipelines, mTLS + ed25519 for inter-agent trust. I treat security bugs as launch-blockers, not backlog items — a payment or auth bug found by a user is a trust event, not just a ticket.
+
+</td>
+<td width="33%" valign="top">
+
+**Backend / API**
+Cloudflare Workers for edge logic, Firebase Cloud Functions where server-side triggers matter, REST + streaming SSE endpoints for chat, Prisma-modeled relational schemas when a product's data shape actually needs joins instead of documents.
+
+**DSA / Competitive Programming**
+C++ as the primary language, pattern-first practice (not just volume-grinding), with a personal priority list of the 20 patterns most likely to actually show up in a real interview loop — covered in detail in section `07`.
+
+</td>
+<td width="33%" valign="top">
+
+**Frontend**
+Vanilla JS SPAs for products where build-step fragility is a real cost (unreliable networks, older Android devices), Next.js 14 App Router when a product's interaction complexity crosses the threshold where component reuse and typed props start paying for themselves.
+
+**DevOps / Infra**
+Cloudflare tunnel-based self-hosting for LLM proxy infrastructure, Vercel for Next.js deployments, Firebase Hosting for the vanilla SPAs — deliberately no Kubernetes, no container orchestration, because at this scale it would be complexity theater, not a real need.
+
+**Product / Business**
+This is the one most engineers underweight and I don't — running DigiRise means I've watched real SMB owners decide, in real time, whether a landing page or a WhatsApp funnel actually converts. That feedback loop is why BharatOS is WhatsApp-first instead of app-first, and why ToolsLab's pricing tiers map to what an Indian freelancer or small team will actually pay, not what a US SaaS benchmark suggests.
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -118,6 +163,24 @@ The move to typed stacks (Next.js + TypeScript + Prisma in EliteHub, App Router 
 
 <br/>
 
+<details>
+<summary><b>▸ The five layers, explained one level deeper</b></summary>
+<br/>
+
+**Presentation layer.** Vanilla JS with ES modules keeps ToolsLab's bundle small and its load path predictable — no hydration mismatch, no framework runtime tax on low-end devices. EliteHub and BharatOS, by contrast, use Next.js 14's App Router because their UIs genuinely benefit from server components, intercepting routes (EliteHub's Explore page modal pattern), and file-based layouts that vanilla JS would force me to hand-roll badly.
+
+**Backend / orchestration layer.** Cloudflare Workers act as the front door for both ToolsLab's API and BharatOS's WhatsApp webhook intake — same edge-compute pattern, two very different downstream flows. ToolsLab's Worker proxies to OmniRoute; BharatOS's Worker hands off to the Master Router Agent, which is really just a fast classification step before the real work happens in the Ruflo swarm.
+
+**Data / auth layer.** Firebase is the default for products where document-shaped data and built-in auth save real time (ToolsLab). Prisma + Postgres shows up in EliteHub because membership tiers, creator payouts, and admin permissions are genuinely relational — trying to force that into Firestore documents would mean re-implementing joins by hand, badly.
+
+**AI / intelligence layer.** This is the newest and most actively-evolving layer across the whole portfolio. The 3-tier model router in BharatOS exists because a WhatsApp bot serving India-scale query volume at Sonnet/Opus pricing for every message would be economically dead on arrival — most queries don't need that much reasoning, and the router's job is figuring out which ones do.
+
+**Payments / ops layer.** Razorpay is the shared payment rail across ToolsLab and EliteHub (India-first, UPI support, familiar to the target user base). HMAC verification on every webhook is non-negotiable — an unverified payment webhook is one of the easiest ways to accidentally give someone a Max-tier subscription for free.
+
+</details>
+
+<br/>
+
 ---
 
 <br/>
@@ -133,6 +196,12 @@ The move to typed stacks (Next.js + TypeScript + Prisma in EliteHub, App Router 
 <img src="./assets/architecture-flow.svg" alt="Multi-product architecture flow diagram" width="100%" />
 
 </div>
+
+<br/>
+
+**Three entry points, one philosophy.** Web users hit ToolsLab or EliteHub through a browser. WhatsApp users hit BharatOS through a message. Agency clients hit DigiRise through a project brief. All three eventually route through infrastructure I control end-to-end — no black-box SaaS glue holding the core request path together. That's a deliberate choice: when something breaks at 2am, I need to be able to trace it myself, not file a support ticket with a third party and wait.
+
+**Why the Master Router Agent matters more than it looks.** In BharatOS, the router's only job is fast domain classification — deciding in Tier-1 rule-time whether a query is Legal, Health, Finance, or one of the other 8 domains, before any expensive model call happens. Get that classification wrong and you either burn Sonnet-tier cost on a query that needed a static answer, or you give a legal question to a health-tuned agent context. The router is small, but it's the highest-leverage 200 lines of logic in the whole system.
 
 <br/>
 
@@ -214,6 +283,21 @@ The move to typed stacks (Next.js + TypeScript + Prisma in EliteHub, App Router 
 </tr>
 </table>
 
+<details>
+<summary><b>▸ Deeper notes on the 383-file audit</b></summary>
+<br/>
+
+I ran this audit myself, deliberately, before letting an AI coding agent (Antigravity IDE) touch the codebase for feature work — the logic being that you can't safely hand off changes to an agent on top of a codebase whose actual state you haven't personally verified. A few things that came out of it worth naming specifically:
+
+- **Plan resolution moved server-side.** Earlier, a user's subscription tier was partially trusted from client-sent data. Post-audit, plan resolution is fully server-side, resolved from Firestore on every gated request — the client can no longer influence what tier it's treated as.
+- **Firestore-backed usage tracking replaced in-memory counters.** Rate limits and quota counts now persist server-side per user, so a page refresh or a new device session can't silently reset someone's usage counter.
+- **ID token transmission was tightened.** The client-side auth flow now correctly attaches and refreshes Firebase ID tokens on every authenticated request instead of relying on a cached token that could go stale mid-session.
+- **A prior AI-generated bug report was wrong on four separate points** — incorrect file paths, a fabricated data-action attribute name that didn't exist in the codebase, a false-positive "migration data-loss" bug, and a false-positive "duplicate logout" bug. I caught all four by actually reading the files instead of trusting the report, which is the whole reason I audit before I prompt.
+
+</details>
+
+<br/>
+
 [**→ github.com/S2zxx0zxx/Toolshub**](https://github.com/S2zxx0zxx/Toolshub)
 
 <br/>
@@ -269,6 +353,20 @@ The move to typed stacks (Next.js + TypeScript + Prisma in EliteHub, App Router 
 </tr>
 </table>
 
+<details>
+<summary><b>▸ Why WhatsApp-first is a real constraint, not a growth hack</b></summary>
+<br/>
+
+The temptation with a project like this is to build a slick native app first because that's what a portfolio "looks like it should be." I didn't, on purpose. The actual target user for NyayBot or JanSeva — someone in rural Bihar or UP trying to understand a government scheme or a legal question — already has WhatsApp installed, already trusts it, and is not going to download a new app for a one-off legal question. Meeting the user in the interface they already use isn't a lesser version of the product; for this specific audience, it *is* the product.
+
+**On the Ruflo dependency choice:** rather than build agent orchestration, vector memory, and PII redaction from scratch, BharatOS builds on top of Ruflo (`ruflo-agentdb`, `ruflo-goals`, `ruflo-aidefence`, `ruflo-federation`). That's a deliberate build-vs-buy call — orchestration infrastructure is not the differentiated part of this product; the domain-specific agent logic and the India-specific problem framing are. Spending months reinventing vector search and agent trust protocols would be effort spent on the wrong layer.
+
+**On the 3-tier cost model, concretely:** if every one of the 10 free-tier daily queries routed straight to a Sonnet/Opus-class model, the unit economics of the Free tier would be underwater before a single user converted to Pro. Tier-1 deterministic rules handle the queries that don't need a model at all — known FAQ-shaped government scheme questions, for instance. Tier-2 Haiku-class handles the median query. Tier-3 is reserved for genuinely ambiguous multi-step reasoning, which is a minority of real traffic. This is the difference between a bot that's viable at ₹199/month Indian pricing and one that quietly loses money on every free user.
+
+</details>
+
+<br/>
+
 [**→ github.com/S2zxx0zxx/Bharat-OS**](https://github.com/S2zxx0zxx/Bharat-OS)
 
 <br/>
@@ -319,6 +417,20 @@ Dark mode was fully removed after testing — the light glossy theme tested bett
 </td>
 </tr>
 </table>
+
+<details>
+<summary><b>▸ On the three real bugs, and why I list bugs at all</b></summary>
+<br/>
+
+The Clerk v5 async `auth()` bug is the one I think about most, because it's the kind of bug that doesn't throw an error — it just silently returns a falsy session, and every downstream check built on top of it quietly does the wrong thing. It only surfaced because a specific edge case (a user with an expired-but-present session cookie) produced behavior that didn't match what the UI was showing. That's the class of bug that a quick manual test pass usually misses, and exactly the class that matters most to catch before a membership-gated product ships.
+
+The N+1 query explosion in `ranking.ts` is a more familiar failure mode — a creator-ranking query that looked fine with 10 seeded demo creators and would have degraded badly at real scale, because it was issuing one query per creator inside a loop instead of a single batched join. Caught before it became a production incident, which is the entire point of listing it here instead of pretending the first version was clean.
+
+I list real bugs in this README on purpose. A portfolio that only shows finished, bug-free work either means the builder got lucky every time, or it means the bugs existed and got hidden. I'd rather show the second draft honestly than fake a spotless first one.
+
+</details>
+
+<br/>
 
 [**→ github.com/S2zxx0zxx/elitehub**](https://github.com/S2zxx0zxx/elitehub)
 
@@ -386,6 +498,33 @@ A gaming commerce funnel built entirely as static web + WhatsApp checkout flow �
 <img src="./assets/dsa-matrix.svg" alt="DSA pattern coverage matrix" width="100%" />
 
 </div>
+
+<br/>
+
+**63 unique problems, organized the way I'd actually want to review them later** — not as a raw solved-count, but split into four documents I generated and formatted myself: **Arrays**, **Strings**, **Pattern-Based questions**, and a standalone **Top 20 Priority** list distilled from the other three. Every problem in every document carries the same structure: the working C++ solution, a plain-English explanation of the approach, and the Time/Space complexity — because a solution without the complexity analysis attached is only half the learning, and a solution without the plain-English "why" is something I won't remember in three weeks.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Why pattern-first instead of volume-first**
+Grinding 300 problems without pattern recognition means solving problem 301 from scratch. I'd rather deeply internalize the ~15 patterns that cover the large majority of real interview questions — two-pointer, sliding window, prefix sum, binary search on answer, greedy, DP on subsequences — and recognize which pattern a new problem maps to, than memorize 300 individual solutions that don't generalize.
+
+**Why C++ specifically**
+Lower-level memory model forces me to actually think about complexity instead of letting a garbage-collected language's convenience hide inefficiency. It's also still the default expectation in most competitive programming judges and a meaningful share of Indian tech interview loops, so practicing in the language I'd actually be tested in removes a translation step under pressure.
+
+</td>
+<td width="50%" valign="top">
+
+**Document generation pipeline**
+The four PDFs weren't hand-formatted one at a time — I built a small `pandoc` + `wkhtmltopdf` pipeline so that adding a new solved problem means appending structured markdown, not manually reformatting a document. That's a small piece of tooling, but it's the same instinct that shows up in the product work: don't do repetitive manual work a script could do once and reuse forever.
+
+**What the "Top 20 Priority" list actually is**
+Not the 20 hardest problems — the 20 highest-leverage ones. Problems chosen because the underlying pattern shows up disproportionately often across real interview question banks, so mastering these 20 covers a wider surface area than 20 problems picked at random from a larger set.
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -457,6 +596,20 @@ I run a strict **reality-sweep policy** on every DigiRise property — no fabric
 
 <br/>
 
+<details>
+<summary><b>▸ Why the agency and the products live in the same README</b></summary>
+<br/>
+
+Most builder profiles separate "the day job" from "the side project," but that split doesn't actually describe how this works. DigiRise isn't a day job I tolerate while building the real thing at night — it's the source of the operational instincts that make ToolsLab and BharatOS's product decisions less naive than they'd otherwise be.
+
+A concrete example: before writing a single line of BharatOS's WhatsApp-first architecture, I'd already spent months building WhatsApp-first conversion funnels for DigiRise clients like The Liquid Lounge and FarmFres — watching, in real client data, that a WhatsApp handoff converted better for a specific class of local business than a polished landing page with a contact form ever did. That's not a hypothesis I read somewhere; it's a pattern I watched happen repeatedly with real client budgets on the line. BharatOS's whole interface bet is downstream of that observation.
+
+The same is true in reverse — building ToolsLab's tiered pricing and billing logic taught me things about subscription psychology and churn that now show up in how I structure retainer conversations with DigiRise clients. The agency and the products aren't two separate tracks; they're one feedback loop, and separating them in this document would make both halves less honest.
+
+</details>
+
+<br/>
+
 ---
 
 <br/>
@@ -504,7 +657,129 @@ READMEs, `.ai-brain.md` ledgers, and audit trails aren't afterthoughts — they'
 
 <div align="center">
 
-## `11` Connect
+## `11` How I Actually Work — Audit Before Prompt
+
+</div>
+
+A pattern that shows up across every project in this README, worth naming explicitly instead of leaving implicit: **I don't hand a codebase to an AI coding agent and ask it to fix things blind.** The workflow that's actually produced the fixes described above looks like this:
+
+<table>
+<tr>
+<td width="25%" valign="top">
+
+**1. Full manual audit**
+Read the actual codebase — not a summary of it — before forming an opinion about what's broken. This is where the false-positive "migration data-loss" and "duplicate logout" bugs in an earlier AI-generated report got caught and corrected.
+
+</td>
+<td width="25%" valign="top">
+
+**2. Write a precise engineering prompt**
+Once I know exactly what's wrong and why, I write a structured, file-path-accurate prompt — not "fix the bugs," but the specific files, the specific functions, the specific expected before/after behavior.
+
+</td>
+<td width="25%" valign="top">
+
+**3. Let the agent execute**
+Antigravity IDE applies the changes. This step is fast precisely because the previous two steps removed the ambiguity that makes AI-agent coding unreliable in the first place.
+
+</td>
+<td width="25%" valign="top">
+
+**4. Re-audit the diff**
+The agent's output gets checked against the actual file changes, not trusted on the strength of a confident-sounding summary. This is the step most people skip, and it's the step that's caught the most issues.
+
+</td>
+</tr>
+</table>
+
+This is also why the "what's honestly still broken" callouts exist throughout this README instead of being quietly fixed and left unmentioned, or worse, quietly left broken and unmentioned. An audit that only gets shared when it's flattering isn't really an audit.
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+## `12` What's Next
+
+<sub>Concrete, not aspirational — pulled straight from the maturity dashboard in section `05`</sub>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Near-term (next shipping cycle)**
+- Close the Agent Mode execution-loop gap in ToolsLab — the code exists, it just needs to actually be wired into the live send path
+- Move OmniRoute off a personal-machine tunnel and onto infrastructure that doesn't depend on one laptop staying online
+- Either build Deep Research's backend for real or remove it from the Max-tier marketing copy — a paid feature that doesn't exist is the exact kind of gap the reality-sweep policy exists to catch
+- Fix the Settings → API Keys screen so it actually persists and reads back what a user enters
+
+</td>
+<td width="50%" valign="top">
+
+**Further out**
+- Expand BharatOS beyond the Phase-1 trio (NyayBot, JanSeva, Swasthya) into the remaining 8 domain modules, prioritized by which non-urban use case has the clearest immediate demand
+- Build creator payout and analytics infrastructure for EliteHub — the membership and admin layers are functional, but a creator platform isn't complete without the money actually flowing back out
+- Keep feeding DigiRise's client-delivery learnings back into product pricing and UX decisions — that loop has been the single most reliable source of "what will an actual small business owner pay for" signal across this whole portfolio
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+## `13` Questions People Actually Ask Me
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**"Are you a solo founder on all of this?"**
+Yes, across ToolsLab, BharatOS, and EliteHub. DigiRise has grown past solo — client delivery involves collaborators — but the AI products are built and architected by me end-to-end, which is exactly why the "what's confirmed solid vs. what's honestly still broken" framing exists throughout this README. There's no team dilution to explain gaps; the gaps are just the honest state of a solo build.
+
+**"Why three AI products instead of going deep on one?"**
+They're not really three unrelated bets — ToolsLab is the general-purpose AI chat layer, BharatOS is the same underlying orchestration instincts applied to a specific India-scale distribution problem (WhatsApp, non-urban users, rock-bottom cost-per-query economics), and EliteHub is what happens when a creator-economy monetization problem needs a typed, relational data model instead of a chat interface. Same builder, same underlying muscle, three different problem shapes.
+
+**"What's the actual bottleneck right now?"**
+Infrastructure fragility, named honestly in section `12` — OmniRoute's personal-machine tunnel dependency is the single biggest pre-launch risk across the whole portfolio, and closing that gap is a higher near-term priority than any new feature.
+
+</td>
+<td width="50%" valign="top">
+
+**"Why does this README list bugs instead of hiding them?"**
+Because the alternative — a portfolio that implies every project is finished and clean — doesn't survive five minutes of a technical reviewer actually opening the repo. I'd rather a recruiter or a fellow builder trust the 90% of this document that's genuinely solid because the other 10% openly admits what isn't, than have them distrust the whole thing because one inflated claim got caught.
+
+**"Do you use AI coding agents, and doesn't that undercut the 'I built this' claim?"**
+I use Antigravity IDE as an execution tool, the same way I'd use a compiler — it doesn't decide what's broken or what the fix should be; I do, via the audit-then-prompt workflow in section `11`. The architecture decisions, the bug diagnosis, the security model, the pricing logic — that's mine. The agent applies changes I've already fully specified. That distinction matters, and it's why the audits described throughout this document exist in the first place.
+
+**"What's the CIMP Patna MBA actually for?"**
+Unit economics, mostly. The 3-tier model routing in BharatOS, the four-tier pricing ladder in ToolsLab, and DigiRise's "100% Deliverables Guarantee" instead of a fabricated ROI number are all decisions that came out of thinking about this work in financial terms, not just engineering ones. A product that's technically excellent but economically unviable at India-market pricing isn't actually finished.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+## `14` Connect
 
 <br/>
 
