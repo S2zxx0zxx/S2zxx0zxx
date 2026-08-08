@@ -1,269 +1,110 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/S2zxx0zxx-Developer_×_Builder-0d1117?style=for-the-badge&labelColor=c8821a&logoColor=white" height="38" />
+# Satyam Kumar · `S2zxx0zxx`
+### Full-Stack Builder · Product Architecture Focus
 
-<br/><br/>
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║ name       : Satyam Kumar                                           ║
-║ alias      : S2zxx0zxx / Satzzxzxx                                  ║
-║ role       : Full Stack Developer × Solo Product Builder            ║
-║ update     : AUG 2026 — Deep Rebuild (Top 15 Repos Fully Scanned)  ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
+<img src="https://img.shields.io/badge/Profile%20OS-Engineered-0d1117?style=for-the-badge&labelColor=0f172a&logo=github" />
+<img src="https://img.shields.io/badge/Design%20Language-Dark%20×%20Cinematic-111827?style=for-the-badge&labelColor=1f2937" />
+<img src="https://img.shields.io/badge/Focus-AI%20Products%20%2B%20Growth%20Systems-111827?style=for-the-badge&labelColor=111827" />
 
 </div>
 
 ---
 
-## `$ whoami`
+## 01) Live Engineering Snapshot (Real GitHub Data)
 
-Bhai, ab yeh README properly fresh hai. Is baar maine sirf summary nahi dali — **top 15 active repos ko one-by-one scan** karke same project-style format me add kiya hai (stack, structure, design, architecture depth ke saath).
+> Last refreshed: **08 Aug 2026** (from public repository metadata)
 
----
-
-## `$ cat projects.deep.json`
-
-### 1) 🧠 Toolshub *(AI Platform Flagship)*
-> Multi-model AI operating platform with real-time agent behavior and modular intelligence workflows.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | AI workspace for Claude/Groq/GPT-style model flows + tool orchestration |
-| **Stack** | JavaScript, Firebase workflow scripts, modular frontend assets |
-| **Architecture** | Hybrid cloud-edge style documented architecture, server-event style streaming references, agent routing patterns |
-| **Design / 3D Feel** | Premium dark enterprise UI storytelling with structured architecture diagrams and system-sectioned UX |
-| **Structure** | `index.html`, `assets/`, `css/`, `js/`, `worker/`, `scripts/`, `docs/`, `firebase.*`, `sw.js`, `manifest.json` |
-| **Ops Maturity** | Includes audit logs, progress reports, verification scripts, CI-friendly docs and deployment artifacts |
+| Signal | Value |
+|---|---|
+| Public repositories | **18** |
+| Top starred project | **financeCalculator-Ind-v6.0- (11⭐)** |
+| Active flagship repos | Toolshub, elitehub, Bharat-OS, Zenvy-AI, DigiRise-India |
+| Core repo mix | Static web systems + TypeScript/Next.js apps + AI product workflows |
 
 ---
 
-### 2) 👤 S2zxx0zxx *(This Profile Repo)*
-> Public identity layer and project intelligence surface.
+## 02) 3D System Wireframe View
 
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | GitHub profile narrative + portfolio signal hub |
-| **Stack** | Markdown + static visual assets |
-| **Architecture** | Content architecture with structured sections for projects, stack, execution philosophy |
-| **Design / 3D Feel** | Console-style, badge-heavy personal branding |
-| **Structure** | `README.md`, `assets/` |
+<div align="center">
+  <img src="./assets/network-flow.svg" alt="3D network wireframe style architecture view" width="100%" />
+</div>
 
----
+### Architecture Spine
 
-### 3) ⚡ elitehub
-> Production-oriented Next.js TypeScript app stack with backend-grade dependencies.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Scalable app foundation for productized SaaS-grade workflows |
-| **Stack** | Next.js 14, TypeScript, Prisma, Tailwind, Framer Motion, Clerk, Sentry, AWS S3 SDK |
-| **Architecture** | App + data + auth + observability layering; build pipeline includes Prisma generation |
-| **Design / 3D Feel** | Motion-capable UI layer (Framer Motion), app-first componentized rendering model |
-| **Structure** | `src/`, `prisma/`, `public/`, `tests/`, `sentry.*`, `playwright.config.ts`, `next.config.mjs` |
-| **Engineering Signals** | Husky, lint-staged, E2E testing hooks, typed config surface |
+```mermaid
+flowchart LR
+    A[Interface Layer<br/>Web / Dashboard / Product UI] --> B[Application Layer<br/>Business Logic + Automation]
+    B --> C[Intelligence Layer<br/>AI APIs + Agent Flows]
+    B --> D[Data Layer<br/>Firebase / Supabase / Firestore]
+    C --> E[Delivery Layer<br/>PWA / Static Deploy / Vercel]
+    D --> E
+```
 
 ---
 
-### 4) 🧩 Leetcode-Solutions
-> Competitive programming execution archive with strict problem-index structure.
+## 03) Portfolio Intelligence Grid (Top Repos)
 
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | DSA grind repository auto-tracked from LeetCode solves |
-| **Stack** | C++ primary, Python secondary, SQL for database problems |
-| **Architecture** | Auto-sequential problem directory architecture (`0001-...`, `0002-...`) |
-| **Design / 3D Feel** | Minimal visual design, heavy logic depth |
-| **Structure** | Large indexed problem folders + README leaderboard-style documentation |
-| **Signal** | Contest-driven workflow + optimization-centric coding profile |
-
----
-
-### 5) 🏛️ DigiRise-India
-> Agency-grade growth website with rich UX, 3D interaction cues, and full SEO/PWA surface.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Digital growth agency platform for multi-market positioning |
-| **Stack** | Pure HTML/CSS/JS, zero-framework rendering with PWA layer |
-| **Architecture** | Multi-section business site + blog + case studies + tools + lead generation modules |
-| **Design / 3D Feel** | Dynamic island nav, magnetic UI interactions, cinematic transitions, premium motion-led experience |
-| **Structure** | `assets/`, `css/`, `js/`, `blog/`, `case-studies/`, `industries/`, `tools/`, `sw.js`, `manifest.json` |
-| **Content Engine** | AI crawler artifacts (`llms.txt`), SEO pages, growth funnels |
+| Project | Domain | Stack | GitHub Signals |
+|---|---|---|---|
+| [financeCalculator-Ind-v6.0-](https://github.com/S2zxx0zxx/financeCalculator-Ind-v6.0-) | Finance utility platform | HTML, CSS, JS, PWA | **11⭐ · 9 forks · 21 open issues** |
+| [Toolshub](https://github.com/S2zxx0zxx/Toolshub) | Multi-model AI workspace | JavaScript + workflow scripts | **1⭐ · active update Aug 2026** |
+| [Bharat-OS](https://github.com/S2zxx0zxx/Bharat-OS) | India-first AI assistant OS | Next.js + TypeScript | **1⭐ · modular app architecture** |
+| [elitehub](https://github.com/S2zxx0zxx/elitehub) | SaaS app base | Next.js + TS + Prisma + Tailwind | **typed production stack** |
+| [Zenvy-AI](https://github.com/S2zxx0zxx/Zenvy-AI) | Zero-build AI SaaS OS | Vanilla web + Claude API + Firebase | **1⭐ · monetization-ready flow** |
+| [DigiRise-Admin-beta-](https://github.com/S2zxx0zxx/DigiRise-Admin-beta-) | Partner operations dashboard | JS + Firebase Realtime DB | **1⭐ · KPI-driven admin surface** |
+| [Leetcode-Solutions](https://github.com/S2zxx0zxx/Leetcode-Solutions) | DSA execution archive | C++, Python, SQL | **1⭐ · interview/contest discipline** |
+| [scenicone](https://github.com/S2zxx0zxx/scenicone) | Premium brand website | HTML/CSS/JS | **1⭐ · conversion-first design** |
+| [GameMartStudios](https://github.com/S2zxx0zxx/GameMartStudios) | Gaming commerce funnel | Static web + WhatsApp flow | **6⭐ · no-backend commerce** |
+| [DigiRise-India](https://github.com/S2zxx0zxx/DigiRise-India) | Agency growth platform | HTML/CSS/JS + PWA | **multi-section growth site** |
 
 ---
 
-### 6) 🧪 VsCode-Satzzxzxx
-> React + TS + Vite starter environment.
+## 04) Deep Architecture by Flagship Projects
 
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Development starter scaffold |
-| **Stack** | React, TypeScript, Vite |
-| **Architecture** | Template architecture suitable for rapid prototyping |
-| **Design / 3D Feel** | Base-level template visuals |
-| **Structure** | starter-level config + app source bootstrap |
+### A) Toolshub · AI Platform Core
+- **Presentation:** single workspace, modular interaction surfaces  
+- **Orchestration:** multi-model routing style flows (Claude/GPT/Groq class usage pattern)  
+- **Execution:** prompt → tool/action → response pipeline  
+- **Ops:** docs/scripts oriented toward iterative product hardening
 
----
+### B) elitehub · Typed Product Stack
+- **Frontend:** Next.js 14 app router + component-first UI composition  
+- **Security/Auth:** Clerk-ready auth envelope pattern  
+- **Data:** Prisma-managed schema evolution pattern  
+- **Reliability:** lint/test hooks + observability integrations (Sentry class setup)
 
-### 7) 📊 DigiRise-Admin-beta-
-> Growth Partner OS for commission tracking, partner activity, and operational workflows.
+### C) Bharat-OS · Domain-Driven AI Utility
+- **Modules:** legal, schemes, finance, health, education style domain partitions  
+- **Framework:** TypeScript app-folder architecture  
+- **UX Intent:** Indian daily-use problem solving with multilingual accessibility direction  
+- **System Goal:** practical AI OS layer for citizen workflows
 
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Partner + admin dashboard operating system |
-| **Stack** | Vanilla JS, custom CSS, Firebase Realtime Database |
-| **Architecture** | 3-surface system (`index.html`, `partner.html`, `admin.html`) with rule-based data model |
-| **Design / 3D Feel** | KPI cards, activity feed, ring goals, smart insight dashboard UX |
-| **Structure** | `js/`, `css/`, `database.rules.json`, `manifest.json`, `service-worker.js` |
-| **Business Logic** | Commission slabs, referral flows, partner lifecycle states |
+### D) financeCalculator-Ind-v6.0-
+- **Utility Engine:** multiple calculator pipelines (EMI/SIP/Tax/GST class tools)  
+- **Content Engine:** blog + podcast info distribution structure  
+- **Performance:** zero-dependency static system + PWA surface  
+- **Scale Signal:** strongest public adoption signal in portfolio
 
----
-
-### 8) 🇮🇳 Bharat-OS
-> India-first AI life assistant platform across legal, gov schemes, health, finance, agriculture, education.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Vertical AI modules for Indian users |
-| **Stack** | Next.js 14, TypeScript, Tailwind, Framer Motion, Gemini API, Supabase |
-| **Architecture** | Module-based app architecture via `app/` with domain-driven sections |
-| **Design / 3D Feel** | Productized app UI with motion-enabled modern interfaces |
-| **Structure** | `app/` + README-driven module map |
-| **Intent** | Hindi-accessible AI utility OS for real daily use cases |
+### E) DigiRise-Admin-beta-
+- **Control Plane:** partner + admin dual-surface architecture  
+- **Business Logic:** commission slabs, referrals, progress tracking  
+- **Data Layer:** Firebase rules-backed transactional state  
+- **UI Layer:** KPI cards, insights, goal indicators
 
 ---
 
-### 9) 🧱 BT
-> Lightweight static experiment repository.
+## 05) Engineering Principles
 
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Minimal static artifact |
-| **Stack** | HTML |
-| **Architecture** | Single-page light structure |
-| **Design / 3D Feel** | Low complexity; early-stage utility build |
-| **Structure** | `README.md`, `index.html`, utility binary asset |
+- Build fast with static foundations where possible  
+- Move to typed architecture when product complexity rises  
+- Keep design cinematic but functional (not decorative-only)  
+- Treat README/docs as system-level product assets  
+- Prioritize real utility, shipping velocity, and measurable outcomes
 
 ---
 
-### 10) 🪑 scenicone
-> Premium furniture brand website with commerce-friendly conversion flow.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Brand showcase + product discovery + enquiry funnel |
-| **Stack** | HTML5, CSS3, Vanilla JS, PWA support |
-| **Architecture** | Multi-page informational + catalog + enquiry architecture |
-| **Design / 3D Feel** | Premium visual language, collection-led browsing UX |
-| **Structure** | `about.html`, `products.html`, `enquiry.html`, `contact.html`, `assets/`, `js/`, `css/`, `sw.js` |
-| **Ops Layer** | Performance/security/analytics scripts included |
-
----
-
-### 11) 🎬 DigiRise-Portfolio
-> Creative showcase portfolio with case-study style storytelling.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Multi-project presentation portal |
-| **Stack** | Static HTML portfolio surface |
-| **Architecture** | Multi-page case showcase (`work`, `services`, project pages) |
-| **Design / 3D Feel** | Storytelling-first premium portfolio styling |
-| **Structure** | `index.html`, `work.html`, `services.html`, `fincalc.html`, `liquidlounge.html`, `zenvy.html` |
-
----
-
-### 12) 💰 financeCalculator-Ind-v6.0-
-> India-focused finance calculator and content engine at scale.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Calculator suite + finance blog + podcast-style financial knowledge system |
-| **Stack** | Zero-dependency HTML/CSS/JS core + PWA + analytics/SEO layer |
-| **Architecture** | Utility engine + content engine + metadata and crawler optimization layer |
-| **Design / 3D Feel** | Practical fintech UX with data-first decision framing |
-| **Structure** | `index.html`, `blog/`, `podcast/`, `icons/`, `sw.js`, `sitemap.xml`, `llms*.txt` |
-| **Scale Signal** | Most starred among scanned set; heavy public utility orientation |
-
----
-
-### 13) 🤝 Growpartner-Satzzxzxx
-> Early-stage growth partner micro-project.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Lean growth partner experiment |
-| **Stack** | Static HTML |
-| **Architecture** | Minimal single-page setup |
-| **Design / 3D Feel** | Basic foundation stage |
-| **Structure** | `README.md`, lightweight root files |
-
----
-
-### 14) 🔮 Zenvy-AI
-> Zero-build AI SaaS OS focused on cognitive productivity workflows.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Personal AI operating system product |
-| **Stack** | Vanilla HTML/CSS/JS + Claude API + Firebase Auth + Firestore + Razorpay |
-| **Architecture** | Static frontend shell + AI calls + auth + payment + persistence layer |
-| **Design / 3D Feel** | Premium dark kinetic interface, glassmorphism-style SaaS presentation, structured architecture sections |
-| **Structure** | `index.html`, `assets/`, `zenvy-backend/`, `sw.js`, `manifest.json`, `SECURITY.md` |
-| **Product Signal** | Strong direct-monetization orientation and feature-layered roadmap |
-
----
-
-### 15) 🎮 GameMartStudios
-> Conversion-focused gaming account storefront.
-
-| Layer | Deep Details |
-|:--|:--|
-| **Core** | Premium listing marketplace using WhatsApp-first order flow |
-| **Stack** | HTML/CSS/JS single-file architecture |
-| **Architecture** | Zero-backend static commerce pipeline (browse → click → prefilled WhatsApp order) |
-| **Design / 3D Feel** | Strong gaming visual identity, urgency-led UI, high-contrast premium theme |
-| **Structure** | `README.md`, `index.html++` |
-| **Business Model** | Fast deployment, no infra cost, direct D2C conversational checkout |
-
----
-
-## `$ cat portfolio-patterns.md`
-
-### ✅ Observed Deep Patterns Across Top 15
-
-1. **Dual Engineering Lane**
-   - Lane A: Zero-dependency static speed systems
-   - Lane B: Modern TypeScript/Next.js app architectures
-
-2. **Design Signature Consistency**
-   - Dark premium aesthetics
-   - Motion-first storytelling
-   - Conversion-centric CTA funnels
-   - Product narrative framed like operating systems
-
-3. **Architecture Maturity Growth**
-   - Static pages → PWA + SEO + analytics → AI + auth + data + payment layers
-
-4. **3D / Advanced UI Trend**
-   - Multiple flagship projects explicitly positioning around cinematic, magnetic, layered, or pseudo-3D interface depth.
-
----
-
-## `$ cat core-stack.yml`
-
-- **Frontend:** HTML5, CSS3, JavaScript, React, Next.js
-- **Typed App Layer:** TypeScript, Prisma, Tailwind
-- **AI Layer:** Claude API, Gemini API, multi-agent workflows
-- **Data/Auth:** Firebase, Firestore, Supabase, Clerk
-- **Commerce/Payments:** Razorpay, WhatsApp-led conversion workflows
-- **Deploy:** GitHub Pages, Vercel, Cloudflare-style static acceleration
-
----
-
-## `$ connect --social`
+## 06) Connect
 
 - GitHub: [@S2zxx0zxx](https://github.com/S2zxx0zxx)
 - X: [@satzzxzxx](https://x.com/satzzxzxx)
@@ -273,9 +114,7 @@ Bhai, ab yeh README properly fresh hai. Is baar maine sirf summary nahi dali —
 ---
 
 <div align="center">
-
-```txt
-/* built after full top-15 repo deep scan — no outdated profile data now */
-```
+  
+`Profile README rebuilt with real repo signals, architecture-first storytelling, and 3D wireframe presentation.`
 
 </div>
