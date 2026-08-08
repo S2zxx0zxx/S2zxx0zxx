@@ -1,0 +1,111 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07050f"/>
+      <stop offset="100%" stop-color="#0c0716"/>
+    </linearGradient>
+    <linearGradient id="pcard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.015"/>
+    </linearGradient>
+    <linearGradient id="barFillHigh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="barFillMid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="barFillGrow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="pg"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#pbg)"/>
+  <circle cx="120" cy="80" r="200" fill="#7c3aed" opacity="0.10" filter="url(#pg)"/>
+  <circle cx="1300" cy="850" r="220" fill="#06b6d4" opacity="0.10" filter="url(#pg)"/>
+
+  <text x="700" y="52" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle" fill="#f1f5f9">PORTFOLIO MATURITY DASHBOARD</text>
+  <text x="700" y="78" font-family="Consolas, monospace" font-size="13" text-anchor="middle" fill="#94a3b8">build stage &#183; complexity &#183; production-readiness across every active repo</text>
+
+  <!-- Card template repeated x5 -->
+  <!-- 1. financeCalculator -->
+  <g transform="translate(60,110)">
+    <rect width="1280" height="140" rx="20" fill="url(#pcard)" stroke="#4ade80" stroke-opacity="0.35" stroke-width="1.3"/>
+    <text x="30" y="38" font-family="'Segoe UI', sans-serif" font-size="19" font-weight="800" fill="#e2e8f0">financeCalculator-Ind-v6.0-</text>
+    <text x="30" y="60" font-family="Consolas, monospace" font-size="12" fill="#94a3b8">Finance utility platform &#183; HTML/CSS/JS &#183; PWA &#183; zero-dependency static engine</text>
+    <text x="1250" y="38" font-family="Consolas, monospace" font-size="13" text-anchor="end" fill="#86efac">SHIPPED &#183; ADOPTED</text>
+    <!-- bars -->
+    <text x="30" y="90" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Maturity</text>
+    <rect x="175" y="79" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="79" width="310" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="30" y="112" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Adoption</text>
+    <rect x="175" y="101" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="101" width="290" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="560" y="90" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">11 stars &#183; 9 forks &#183; 21 open issues &#8212; strongest public signal in portfolio</text>
+  </g>
+
+  <!-- 2. Toolshub -->
+  <g transform="translate(60,266)">
+    <rect width="1280" height="140" rx="20" fill="url(#pcard)" stroke="#facc15" stroke-opacity="0.35" stroke-width="1.3"/>
+    <text x="30" y="38" font-family="'Segoe UI', sans-serif" font-size="19" font-weight="800" fill="#e2e8f0">Toolshub (ToolsLab)</text>
+    <text x="30" y="60" font-family="Consolas, monospace" font-size="12" fill="#94a3b8">Multi-model AI workspace &#183; Cloudflare Worker + Firebase &#183; OmniRoute LLM proxy</text>
+    <text x="1250" y="38" font-family="Consolas, monospace" font-size="13" text-anchor="end" fill="#fde047">LAUNCH-STAGE &#183; ACTIVE AUDIT</text>
+    <text x="30" y="90" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Maturity</text>
+    <rect x="175" y="79" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="79" width="225" height="14" rx="7" fill="url(#barFillMid)"/>
+    <text x="30" y="112" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Engineering depth</text>
+    <rect x="175" y="101" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="101" width="320" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="560" y="90" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">383-file codebase, 87/261 JS files live &#183; Razorpay + Firestore security confirmed solid</text>
+    <text x="560" y="108" font-family="Consolas, monospace" font-size="11.5" fill="#fca5a5">known gaps: Agent Mode loop disconnected, Deep Research backend not built</text>
+  </g>
+
+  <!-- 3. Bharat-OS -->
+  <g transform="translate(60,422)">
+    <rect width="1280" height="140" rx="20" fill="url(#pcard)" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1.3"/>
+    <text x="30" y="38" font-family="'Segoe UI', sans-serif" font-size="19" font-weight="800" fill="#e2e8f0">Bharat-OS</text>
+    <text x="30" y="60" font-family="Consolas, monospace" font-size="12" fill="#94a3b8">India-first AI Life OS &#183; Next.js + TypeScript &#183; 11-module multi-agent architecture</text>
+    <text x="1250" y="38" font-family="Consolas, monospace" font-size="13" text-anchor="end" fill="#c4b5fd">PROTOTYPE &#183; MVP-BOUND</text>
+    <text x="30" y="90" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Maturity</text>
+    <rect x="175" y="79" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="79" width="147" height="14" rx="7" fill="url(#barFillGrow)"/>
+    <text x="30" y="112" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Architecture ambition</text>
+    <rect x="175" y="101" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="101" width="335" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="560" y="90" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">Ruflo framework (swarm, agentdb, goals, aidefence, federation) &#183; Claude + Gemini routing</text>
+    <text x="560" y="108" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">next: WhatsApp MVP with real Bihar/UP/Rajasthan users</text>
+  </g>
+
+  <!-- 4. elitehub -->
+  <g transform="translate(60,578)">
+    <rect width="1280" height="140" rx="20" fill="url(#pcard)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.3"/>
+    <text x="30" y="38" font-family="'Segoe UI', sans-serif" font-size="19" font-weight="800" fill="#e2e8f0">elitehub</text>
+    <text x="30" y="60" font-family="Consolas, monospace" font-size="12" fill="#94a3b8">India-first creator monetization &#183; Next.js 14 + Prisma + Clerk v5 + Razorpay</text>
+    <text x="1250" y="38" font-family="Consolas, monospace" font-size="13" text-anchor="end" fill="#7dd3fc">TYPED &#183; PRODUCTION-STACK</text>
+    <text x="30" y="90" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Maturity</text>
+    <rect x="175" y="79" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="79" width="259" height="14" rx="7" fill="url(#barFillMid)"/>
+    <text x="30" y="112" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Code quality</text>
+    <rect x="175" y="101" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="101" width="310" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="560" y="90" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">10 Indian demo creators seeded &#183; multi-tier membership DB &#183; intercepting routes</text>
+    <text x="560" y="108" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">fixed: Clerk v5 auth() await bug, N+1 query explosion in ranking.ts</text>
+  </g>
+
+  <!-- 5. GameMartStudios -->
+  <g transform="translate(60,734)">
+    <rect width="1280" height="140" rx="20" fill="url(#pcard)" stroke="#f97316" stroke-opacity="0.35" stroke-width="1.3"/>
+    <text x="30" y="38" font-family="'Segoe UI', sans-serif" font-size="19" font-weight="800" fill="#e2e8f0">GameMartStudios</text>
+    <text x="30" y="60" font-family="Consolas, monospace" font-size="12" fill="#94a3b8">Gaming commerce funnel &#183; static web + WhatsApp flow &#183; no-backend commerce</text>
+    <text x="1250" y="38" font-family="Consolas, monospace" font-size="13" text-anchor="end" fill="#fdba74">SHIPPED &#183; LEAN</text>
+    <text x="30" y="90" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Maturity</text>
+    <rect x="175" y="79" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="79" width="284" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="30" y="112" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">Simplicity score</text>
+    <rect x="175" y="101" width="345" height="14" rx="7" fill="#ffffff" opacity="0.08"/>
+    <rect x="175" y="101" width="328" height="14" rx="7" fill="url(#barFillHigh)"/>
+    <text x="560" y="90" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">6 stars &#183; proof that lean, no-backend commerce funnels convert in-market</text>
+  </g>
+</svg>

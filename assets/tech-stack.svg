@@ -1,0 +1,73 @@
+<svg width="1400" height="620" viewBox="0 0 1400 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070811"/>
+      <stop offset="100%" stop-color="#0b0616"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="cardC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="cardD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="fg"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="1400" height="620" fill="url(#tbg)"/>
+  <circle cx="150" cy="80" r="180" fill="#7c3aed" opacity="0.12" filter="url(#fg)"/>
+  <circle cx="1300" cy="550" r="200" fill="#06b6d4" opacity="0.12" filter="url(#fg)"/>
+
+  <text x="700" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle" fill="#f1f5f9">TECHNOLOGY ECOSYSTEM</text>
+  <text x="700" y="80" font-family="Consolas, monospace" font-size="13" text-anchor="middle" fill="#94a3b8">the layered stack across every shipped product</text>
+
+  <!-- Layer 1: Frontend -->
+  <rect x="60" y="120" width="1280" height="100" rx="20" fill="url(#cardA)" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1.2"/>
+  <text x="90" y="152" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#c4b5fd">01 &#8226; INTERFACE LAYER</text>
+  <g font-family="Consolas, monospace" font-size="13.5" fill="#e2e8f0">
+    <text x="90" y="182">HTML5 &#8226; CSS3 &#8226; Vanilla JS (SPA architecture)</text>
+    <text x="90" y="203">React &#8226; Next.js 14 App Router &#8226; React Native (Android)</text>
+    <text x="740" y="182">TailwindCSS &#8226; shadcn/ui &#8226; PWA / Offline-first</text>
+    <text x="740" y="203">DOMPurify (secure render) &#8226; Voice input &#8226; Streaming UI</text>
+  </g>
+
+  <!-- Layer 2: Backend/Logic -->
+  <rect x="60" y="234" width="1280" height="100" rx="20" fill="url(#cardB)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2"/>
+  <text x="90" y="266" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#7dd3fc">02 &#8226; APPLICATION &#38; ORCHESTRATION LAYER</text>
+  <g font-family="Consolas, monospace" font-size="13.5" fill="#e2e8f0">
+    <text x="90" y="296">Cloudflare Workers (edge backend) &#8226; Node.js v24</text>
+    <text x="90" y="317">Prisma ORM &#8226; Clerk v5 Auth &#8226; Razorpay HMAC verification</text>
+    <text x="740" y="296">Ruflo multi-agent framework &#8226; Master Router Agent pattern</text>
+    <text x="740" y="317">3-tier model routing (deterministic &#8594; Haiku &#8594; Sonnet/Opus)</text>
+  </g>
+
+  <!-- Layer 3: Intelligence -->
+  <rect x="60" y="348" width="1280" height="100" rx="20" fill="url(#cardC)" stroke="#fb923c" stroke-opacity="0.35" stroke-width="1.2"/>
+  <text x="90" y="380" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#fdba74">03 &#8226; INTELLIGENCE LAYER</text>
+  <g font-family="Consolas, monospace" font-size="13.5" fill="#e2e8f0">
+    <text x="90" y="410">Claude API &#8226; Gemini 2.0 Flash fallback &#8226; OmniRoute self-hosted proxy</text>
+    <text x="90" y="431">Cloudflare Vectorize (RAG, uid-filtered) &#8226; SDXL image gen</text>
+    <text x="740" y="410">ruflo-agentdb (HNSW, 384-dim ONNX) &#8226; ruflo-aidefence (PII/AES-256)</text>
+    <text x="740" y="431">ruflo-goals (GOAP A* planner) &#8226; ruflo-federation (mTLS + ed25519)</text>
+  </g>
+
+  <!-- Layer 4: Data + Delivery -->
+  <rect x="60" y="462" width="1280" height="100" rx="20" fill="url(#cardD)" stroke="#4ade80" stroke-opacity="0.35" stroke-width="1.2"/>
+  <text x="90" y="494" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#86efac">04 &#8226; DATA &#38; DELIVERY LAYER</text>
+  <g font-family="Consolas, monospace" font-size="13.5" fill="#e2e8f0">
+    <text x="90" y="524">Firebase (Auth + Firestore, rules-enforced) &#8226; Supabase</text>
+    <text x="90" y="545">Cloudflare R2 &#8226; WhatsApp Business API (primary UX surface)</text>
+    <text x="740" y="524">Vercel &#8226; GitHub Pages &#8226; Cloudflare nameservers/DNS</text>
+    <text x="740" y="545">C++/Python (DSA layer) &#8226; SQL</text>
+  </g>
+
+  <text x="700" y="600" font-family="Consolas, monospace" font-size="12" text-anchor="middle" fill="#64748b">every layer verified against real shipped repos &#8212; not aspirational</text>
+</svg>

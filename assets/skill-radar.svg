@@ -1,0 +1,63 @@
+<svg width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rbg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0f0a1e"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </radialGradient>
+    <linearGradient id="fillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="softGlow"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <rect width="640" height="640" rx="28" fill="url(#rbg)"/>
+
+  <!-- title -->
+  <text x="320" y="46" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="800" text-anchor="middle" fill="#f1f5f9">SKILL DENSITY MAP</text>
+  <text x="320" y="68" font-family="Consolas, monospace" font-size="12" text-anchor="middle" fill="#7dd3fc" opacity="0.8">SELF-ASSESSED &#8226; 8 CORE AXES &#8226; 0&#8211;100 SCALE</text>
+
+  <!-- grid rings -->
+  <g stroke="#ffffff" stroke-opacity="0.10" fill="none">
+    <polygon points="320,120 470,195 470,370 320,445 170,370 170,195" stroke-width="1"/>
+    <polygon points="320,157 433,214 433,352 320,408 207,352 207,214" stroke-width="1"/>
+    <polygon points="320,194 396,232 396,333 320,371 244,333 244,232" stroke-width="1"/>
+    <polygon points="320,231 358,251 358,315 320,335 282,315 282,251" stroke-width="1"/>
+    <polygon points="320,268 320,268 320,268 320,268 320,268 320,268" stroke-width="1"/>
+  </g>
+  <!-- axis lines -->
+  <g stroke="#ffffff" stroke-opacity="0.14">
+    <line x1="320" y1="283" x2="320" y2="120"/>
+    <line x1="320" y1="283" x2="470" y2="195"/>
+    <line x1="320" y1="283" x2="470" y2="370"/>
+    <line x1="320" y1="283" x2="320" y2="445"/>
+    <line x1="320" y1="283" x2="170" y2="370"/>
+    <line x1="320" y1="283" x2="170" y2="195"/>
+  </g>
+
+  <!-- data polygon: Frontend 92, Backend/API 80, AI/LLM Integration 90, DB/Firebase 85, DevOps/Infra 62, Product/Growth 88 -->
+  <polygon points="320,141 447,209 452,352 320,412 205,347 210,213"
+           fill="url(#fillGrad)" stroke="#c4b5fd" stroke-width="2.5" filter="url(#softGlow)"/>
+  <g fill="#f1f5f9">
+    <circle cx="320" cy="141" r="5"/>
+    <circle cx="447" cy="209" r="5"/>
+    <circle cx="452" cy="352" r="5"/>
+    <circle cx="320" cy="412" r="5"/>
+    <circle cx="205" cy="347" r="5"/>
+    <circle cx="210" cy="213" r="5"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#e2e8f0">
+    <text x="320" y="102" text-anchor="middle">Frontend Eng. <tspan fill="#a78bfa">92</tspan></text>
+    <text x="480" y="185" text-anchor="start">AI/LLM <tspan fill="#a78bfa">90</tspan></text>
+    <text x="500" y="390" text-anchor="start">Firebase / DB <tspan fill="#a78bfa">85</tspan></text>
+    <text x="320" y="480" text-anchor="middle">Product &#38; Growth <tspan fill="#a78bfa">88</tspan></text>
+    <text x="140" y="390" text-anchor="end">Backend / API <tspan fill="#a78bfa">80</tspan></text>
+    <text x="140" y="185" text-anchor="end">DSA / C++ <tspan fill="#a78bfa">86</tspan></text>
+  </g>
+
+  <text x="320" y="600" font-family="Consolas, monospace" font-size="11" text-anchor="middle" fill="#64748b">
+    based on shipped repos, DSA activity &#38; production system depth
+  </text>
+</svg>

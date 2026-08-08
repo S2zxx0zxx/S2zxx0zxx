@@ -1,0 +1,78 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060a"/>
+      <stop offset="45%" stop-color="#0b0f1c"/>
+      <stop offset="100%" stop-color="#0a0612"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="glassFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="blurGlow"><feGaussianBlur stdDeviation="30"/></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="420" fill="url(#bgGrad)"/>
+  <rect width="1400" height="420" fill="url(#grid)"/>
+
+  <circle cx="200" cy="90" r="220" fill="url(#glow1)" filter="url(#blurGlow)">
+    <animate attributeName="cx" values="200;260;200" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1200" cy="330" r="240" fill="url(#glow2)" filter="url(#blurGlow)">
+    <animate attributeName="cy" values="330;280;330" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="60" r="160" fill="url(#glow3)" filter="url(#blurGlow)">
+    <animate attributeName="r" values="160;190;160" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- floating glass shards -->
+  <g opacity="0.9">
+    <rect x="60" y="330" width="130" height="55" rx="16" fill="url(#glassFill)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1200" y="40" width="150" height="55" rx="16" fill="url(#glassFill)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 12; 0 0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1080" y="350" width="110" height="45" rx="14" fill="url(#glassFill)" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- main glass panel -->
+  <rect x="120" y="130" width="1160" height="180" rx="28" fill="url(#glassFill)" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.4"/>
+  <rect x="120" y="130" width="1160" height="180" rx="28" fill="none" stroke="url(#textGrad)" stroke-opacity="0.25" stroke-width="1"/>
+
+  <text x="700" y="205" font-family="'Segoe UI', Arial, sans-serif" font-size="54" font-weight="800" text-anchor="middle" fill="url(#textGrad)">
+    SATYAM KUMAR
+  </text>
+  <text x="700" y="248" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#cbd5e1" letter-spacing="3">
+    FULL-STACK BUILDER &#8226; AI PRODUCT ARCHITECT &#8226; FOUNDER, DIGIRISE INDIA
+  </text>
+  <text x="700" y="282" font-family="'Consolas', monospace" font-size="15" text-anchor="middle" fill="#7dd3fc" opacity="0.85">
+    Kolkata, India &#8226; Building ToolsLab &#183; BharatOS &#183; EliteHub &#183; DigiRise
+  </text>
+
+  <!-- corner accents -->
+  <path d="M120 130 L120 158 M120 130 L148 130" stroke="#a78bfa" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <path d="M1280 310 L1280 282 M1280 310 L1252 310" stroke="#38bdf8" stroke-width="2.5" fill="none" opacity="0.7"/>
+</svg>
