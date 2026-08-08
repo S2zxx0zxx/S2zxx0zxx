@@ -13,6 +13,17 @@
 <img src="https://img.shields.io/badge/focus-AI_%2B_India_first_products-38bdf8?style=for-the-badge&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/based_in-Kolkata%2C_India-f97316?style=for-the-badge&labelColor=0d1117" />
 
+<br/><br/>
+
+<img src="https://img.shields.io/badge/-JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=F7DF1E" />
+<img src="https://img.shields.io/badge/-TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6" />
+<img src="https://img.shields.io/badge/-Next.js-0d1117?style=flat-square&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/-Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28" />
+<img src="https://img.shields.io/badge/-Cloudflare-0d1117?style=flat-square&logo=cloudflare&logoColor=F38020" />
+<img src="https://img.shields.io/badge/-Prisma-0d1117?style=flat-square&logo=prisma&logoColor=white" />
+<img src="https://img.shields.io/badge/-C%2B%2B-0d1117?style=flat-square&logo=cplusplus&logoColor=00599C" />
+<img src="https://img.shields.io/badge/-WhatsApp_API-0d1117?style=flat-square&logo=whatsapp&logoColor=25D366" />
+
 </div>
 
 <br/>
@@ -71,7 +82,7 @@ This README is intentionally deep. If you're a recruiter, scroll to the systems.
 
 <br/>
 
-<img src="./assets/skill-radar.svg" alt="Skill radar chart" width="55%" />
+<img src="./assets/skill-radar.svg" alt="Skill radar chart" width="52%" />
 
 </div>
 
