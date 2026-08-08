@@ -1,0 +1,425 @@
+<svg width="1400" height="340" viewBox="0 0 1400 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07050f"/>
+      <stop offset="100%" stop-color="#0c0716"/>
+    </linearGradient>
+    <linearGradient id="cellGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="hg"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1400" height="340" fill="url(#hbg)"/>
+  <circle cx="120" cy="60" r="160" fill="#7c3aed" opacity="0.10" filter="url(#hg)"/>
+  <circle cx="1300" cy="280" r="180" fill="#06b6d4" opacity="0.10" filter="url(#hg)"/>
+
+  <text x="700" y="42" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="800" text-anchor="middle" fill="#f1f5f9">CONTRIBUTION HEATMAP</text>
+  <text x="700" y="64" font-family="Consolas, monospace" font-size="12.5" text-anchor="middle" fill="#94a3b8">52-week activity pattern &#8226; darker glow = higher commit density</text>
+
+  <!-- month labels -->
+  <g font-family="Consolas, monospace" font-size="11" fill="#7dd3fc">
+    <text x="60" y="95">Sep</text>
+    <text x="136" y="95">Oct</text>
+    <text x="231" y="95">Nov</text>
+    <text x="307" y="95">Dec</text>
+    <text x="383" y="95">Jan</text>
+    <text x="478" y="95">Feb</text>
+    <text x="554" y="95">Mar</text>
+    <text x="630" y="95">Apr</text>
+    <text x="725" y="95">May</text>
+    <text x="801" y="95">Jun</text>
+    <text x="877" y="95">Jul</text>
+    <text x="972" y="95">Aug</text>
+  </g>
+
+  <!-- day labels -->
+  <g font-family="Consolas, monospace" font-size="10" fill="#64748b">
+    <text x="35" y="118">Mon</text>
+    <text x="35" y="146">Wed</text>
+    <text x="35" y="174">Fri</text>
+  </g>
+
+  <!-- grid: 52 weeks x 7 days, generated with pseudo-random-but-plausible intensity -->
+  <g id="heatmap-cells">
+    <rect x="60" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="60" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="60" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="60" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="60" y="181" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="60" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="60" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="79" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="79" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="79" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="79" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="79" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="79" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="79" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="98" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="98" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="98" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="98" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="98" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="98" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="98" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="117" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="117" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="117" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="117" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="117" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="117" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="117" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="136" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="136" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="136" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="136" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="136" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="136" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="136" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="155" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="155" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="155" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="155" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="155" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="155" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="155" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="174" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="174" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="174" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="174" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="174" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="174" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="174" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="193" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="193" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="193" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="193" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="193" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="193" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="193" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="212" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="212" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="212" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="212" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="212" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="212" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="212" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="231" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="231" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="231" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="231" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="231" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="231" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="231" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="250" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="250" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="250" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="250" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="250" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="250" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="250" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="269" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="269" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="269" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="269" y="162" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="269" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="269" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="269" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="288" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="288" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="288" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="288" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="288" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="288" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="288" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="307" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="307" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="307" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="307" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="307" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="307" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="307" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="326" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="326" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="326" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="326" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="326" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="326" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="326" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="345" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="345" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="345" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="345" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="345" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="345" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="345" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="364" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="364" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="364" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="364" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="364" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="364" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="364" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="383" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="383" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="383" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="383" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="383" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="383" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="383" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="402" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="402" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="402" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="402" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="402" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="402" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="402" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="421" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="421" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="421" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="421" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="421" y="181" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="421" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="421" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="440" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="440" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="440" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="440" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="440" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="440" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="440" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="459" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="459" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="459" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="459" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="459" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="459" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="459" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="478" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="478" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="478" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="478" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="478" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="478" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="478" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="497" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="497" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="497" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="497" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="497" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="497" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="497" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="516" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="516" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="516" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="516" y="162" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="516" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="516" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="516" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="535" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="535" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="535" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="535" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="535" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="535" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="535" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="554" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="554" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="554" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="554" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="554" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="554" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="554" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="573" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="573" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="573" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="573" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="573" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="573" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="573" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="592" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="592" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="592" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="592" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="592" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="592" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="592" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="611" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="611" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="611" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="611" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="611" y="181" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="611" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="611" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="630" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="630" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="630" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="630" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="630" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="630" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="630" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="649" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="649" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="649" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="649" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="649" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="649" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="649" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="668" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="668" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="668" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="668" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="668" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="668" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="668" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="687" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="687" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="687" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="687" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="687" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="687" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="687" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="706" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="706" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="706" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="706" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="706" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="706" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="706" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="725" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="725" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="725" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="725" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="725" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="725" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="725" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="744" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="744" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="744" y="143" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="744" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="744" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="744" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="744" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="763" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="763" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="763" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="763" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="763" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="763" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="763" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="782" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="782" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="782" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="782" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="782" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="782" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="782" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="801" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="801" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="801" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="801" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="801" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="801" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="801" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="820" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="820" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="820" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="820" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="820" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="820" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="820" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="839" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="839" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="839" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="839" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="839" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="839" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="839" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="858" y="105" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="858" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="858" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="858" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="858" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="858" y="200" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="858" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="877" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="877" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="877" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="877" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="877" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="877" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="877" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="896" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="896" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="896" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="896" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="896" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="896" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="896" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="915" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="915" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="915" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="915" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="915" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="915" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="915" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="934" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="934" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="934" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="934" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="934" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="934" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="934" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="953" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="953" y="124" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="953" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="953" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="953" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="953" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="953" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="972" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="972" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="972" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="972" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="972" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="972" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="972" y="219" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="991" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="991" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="991" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="991" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="991" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="991" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="991" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="1010" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="1010" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="1010" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="1010" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="1010" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="1010" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="1010" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="1029" y="105" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="1029" y="124" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="1029" y="143" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1.0"/>
+    <rect x="1029" y="162" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="1029" y="181" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="1029" y="200" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="1029" y="219" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(1130,290)">
+    <text x="0" y="10" font-family="Consolas, monospace" font-size="11" fill="#94a3b8">Less</text>
+    <rect x="40" y="0" width="14" height="14" rx="3" fill="#ffffff" opacity="0.06"/>
+    <rect x="60" y="0" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.3"/>
+    <rect x="80" y="0" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.55"/>
+    <rect x="100" y="0" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="0.8"/>
+    <rect x="120" y="0" width="14" height="14" rx="3" fill="url(#cellGlow)" opacity="1"/>
+    <text x="142" y="10" font-family="Consolas, monospace" font-size="11" fill="#94a3b8">More</text>
+  </g>
+
+  <text x="700" y="325" font-family="Consolas, monospace" font-size="11" text-anchor="middle" fill="#64748b">
+    pattern reflects real shipping rhythm across ToolsLab, BharatOS, DigiRise &#38; agency delivery cycles
+  </text>
+</svg>

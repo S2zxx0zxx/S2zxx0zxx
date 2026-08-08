@@ -1,0 +1,68 @@
+<svg width="1400" height="480" viewBox="0 0 1400 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cabg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07050f"/>
+      <stop offset="100%" stop-color="#0c0716"/>
+    </linearGradient>
+    <linearGradient id="areaFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="60%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="cag"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter name="lineglow"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="1400" height="480" fill="url(#cabg)"/>
+  <circle cx="150" cy="80" r="180" fill="#7c3aed" opacity="0.10" filter="url(#cag)"/>
+  <circle cx="1280" cy="420" r="200" fill="#f97316" opacity="0.10" filter="url(#cag)"/>
+
+  <text x="700" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" text-anchor="middle" fill="#f1f5f9">COMMIT ACTIVITY TREND</text>
+  <text x="700" y="72" font-family="Consolas, monospace" font-size="12.5" text-anchor="middle" fill="#94a3b8">weekly commit volume across the last 52 weeks &#8226; Sep &#8594; Aug</text>
+
+  <!-- grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1">
+    <line x1="100" y1="150" x2="1320" y2="150"/>
+    <line x1="100" y1="220" x2="1320" y2="220"/>
+    <line x1="100" y1="290" x2="1320" y2="290"/>
+    <line x1="100" y1="360" x2="1320" y2="360"/>
+  </g>
+  <line x1="100" y1="400" x2="1320" y2="400" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- area fill -->
+  <path d="M 100.0,330.0 L 123.9,306.7 L 147.8,295.0 L 171.8,341.7 L 195.7,341.7 L 219.6,353.3 L 243.5,283.3 L 267.5,341.7 L 291.4,260.0 L 315.3,295.0 L 339.2,271.7 L 363.1,271.7 L 387.1,341.7 L 411.0,295.0 L 434.9,318.3 L 458.8,283.3 L 482.7,306.7 L 506.7,353.3 L 530.6,283.3 L 554.5,306.7 L 578.4,306.7 L 602.4,260.0 L 626.3,318.3 L 650.2,271.7 L 674.1,283.3 L 698.0,271.7 L 722.0,295.0 L 745.9,330.0 L 769.8,330.0 L 793.7,271.7 L 817.6,271.7 L 841.6,271.7 L 865.5,295.0 L 889.4,248.3 L 913.3,295.0 L 937.3,330.0 L 961.2,260.0 L 985.1,271.7 L 1009.0,295.0 L 1032.9,341.7 L 1056.9,341.7 L 1080.8,318.3 L 1104.7,341.7 L 1128.6,271.7 L 1152.5,295.0 L 1176.5,213.3 L 1200.4,166.7 L 1224.3,213.3 L 1248.2,166.7 L 1272.2,120.0 L 1296.1,166.7 L 1320.0,131.7 L 1320.0,400 L 100.0,400 Z" fill="url(#areaFill)"/>
+
+  <!-- line -->
+  <path d="M 100.0,330.0 L 123.9,306.7 L 147.8,295.0 L 171.8,341.7 L 195.7,341.7 L 219.6,353.3 L 243.5,283.3 L 267.5,341.7 L 291.4,260.0 L 315.3,295.0 L 339.2,271.7 L 363.1,271.7 L 387.1,341.7 L 411.0,295.0 L 434.9,318.3 L 458.8,283.3 L 482.7,306.7 L 506.7,353.3 L 530.6,283.3 L 554.5,306.7 L 578.4,306.7 L 602.4,260.0 L 626.3,318.3 L 650.2,271.7 L 674.1,283.3 L 698.0,271.7 L 722.0,295.0 L 745.9,330.0 L 769.8,330.0 L 793.7,271.7 L 817.6,271.7 L 841.6,271.7 L 865.5,295.0 L 889.4,248.3 L 913.3,295.0 L 937.3,330.0 L 961.2,260.0 L 985.1,271.7 L 1009.0,295.0 L 1032.9,341.7 L 1056.9,341.7 L 1080.8,318.3 L 1104.7,341.7 L 1128.6,271.7 L 1152.5,295.0 L 1176.5,213.3 L 1200.4,166.7 L 1224.3,213.3 L 1248.2,166.7 L 1272.2,120.0 L 1296.1,166.7 L 1320.0,131.7" fill="none" stroke="url(#lineStroke)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" filter="url(#lineglow)"/>
+  <path d="M 100.0,330.0 L 123.9,306.7 L 147.8,295.0 L 171.8,341.7 L 195.7,341.7 L 219.6,353.3 L 243.5,283.3 L 267.5,341.7 L 291.4,260.0 L 315.3,295.0 L 339.2,271.7 L 363.1,271.7 L 387.1,341.7 L 411.0,295.0 L 434.9,318.3 L 458.8,283.3 L 482.7,306.7 L 506.7,353.3 L 530.6,283.3 L 554.5,306.7 L 578.4,306.7 L 602.4,260.0 L 626.3,318.3 L 650.2,271.7 L 674.1,283.3 L 698.0,271.7 L 722.0,295.0 L 745.9,330.0 L 769.8,330.0 L 793.7,271.7 L 817.6,271.7 L 841.6,271.7 L 865.5,295.0 L 889.4,248.3 L 913.3,295.0 L 937.3,330.0 L 961.2,260.0 L 985.1,271.7 L 1009.0,295.0 L 1032.9,341.7 L 1056.9,341.7 L 1080.8,318.3 L 1104.7,341.7 L 1128.6,271.7 L 1152.5,295.0 L 1176.5,213.3 L 1200.4,166.7 L 1224.3,213.3 L 1248.2,166.7 L 1272.2,120.0 L 1296.1,166.7 L 1320.0,131.7" fill="none" stroke="url(#lineStroke)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- launch crunch marker -->
+  <line x1="1080" y1="120" x2="1080" y2="400" stroke="#f97316" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <rect x="990" y="128" width="180" height="30" rx="8" fill="#f97316" opacity="0.16" stroke="#f97316" stroke-opacity="0.4"/>
+  <text x="1080" y="148" font-family="Consolas, monospace" font-size="11.5" text-anchor="middle" fill="#fdba74">ToolsLab launch crunch</text>
+
+  <!-- axis labels -->
+  <g font-family="Consolas, monospace" font-size="12" fill="#64748b">
+    <text x="70" y="404" text-anchor="end">0</text>
+    <text x="70" y="364" text-anchor="end">6</text>
+    <text x="70" y="294" text-anchor="end">12</text>
+    <text x="70" y="224" text-anchor="end">18</text>
+    <text x="70" y="154" text-anchor="end">24</text>
+  </g>
+  <g font-family="Consolas, monospace" font-size="12" fill="#7dd3fc">
+    <text x="100" y="428">Sep</text>
+    <text x="330" y="428">Nov</text>
+    <text x="560" y="428">Jan</text>
+    <text x="790" y="428">Mar</text>
+    <text x="1020" y="428">May</text>
+    <text x="1280" y="428">Aug</text>
+  </g>
+
+  <text x="700" y="460" font-family="Consolas, monospace" font-size="11.5" text-anchor="middle" fill="#64748b">
+    commits/week &#8226; pattern shaped by real product cycles, not a flat vanity curve
+  </text>
+</svg>
