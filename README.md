@@ -1,193 +1,111 @@
 <div align="center">
 
-<!-- Header — using shields.io only (never breaks) -->
-<img src="https://img.shields.io/badge/S2zxx0zxx-Developer_×_Builder-0d1117?style=for-the-badge&labelColor=c8821a&logoColor=white" height="38" />
+# Satyam Kumar (S2zxx0zxx)
+### Full-Stack Solo Builder · AI Product Operator · Design-First Engineer
 
-<br/><br/>
-
-```
- ╔══════════════════════════════════════════════════════════╗
- ║                                                          ║
- ║   name       : Satyam Kumar                              ║
- ║   alias      : S2zxx0zxx / Satzzxzxx                     ║
- ║   role       : Full Stack Developer × Solo Builder        ║
- ║   location   : India 🇮🇳                                  ║
- ║   philosophy : "Ship Fast · Scale Smart · Automate All"   ║
- ║                                                          ║
- ╚══════════════════════════════════════════════════════════╝
-```
+**Fresh Profile Rebuild — Aug 2026**
 
 </div>
 
 ---
 
-## `$ whoami`
+## 👋 Quick Intro
 
-I build digital products that generate revenue while I sleep. Developer by passion, entrepreneur by obsession. I turn free-tier infrastructure into income-generating machines.
+Mera old profile README March ke baad outdated ho gaya tha — isliye yeh version complete fresh scan ke baad banaya gaya hai.
 
-**What I do →** Build web tools, content systems, and SaaS products as a solo developer — using AI agents as my team, free-tier stacks as my infrastructure, and automation as my multiplier.
+Is update me maine **latest top 15 active repositories** ko individually review karke unka:
+- stack layer breakdown,
+- design depth (motion/3D/UI system),
+- architecture style,
+- folder structure maturity,
+- deployment model
 
----
-
-## `$ cat projects.json`
-
-### 🏆 FinCalc India — *Flagship Project*
-> India's most powerful free finance calculator suite + blog
-
-| | |
-|:--|:--|
-| **Live** | [satzzxzxx.me](https://satzzxzxx.me) |
-| **What** | 13+ calculators (EMI, SIP, Tax, GST, FD, RD, Retirement) + finance blog |
-| **Stack** | Single-file HTML/CSS/JS · Zero dependencies · ~85KB |
-| **Score** | Lighthouse 98 Performance · 100 SEO |
-| **Analytics** | GA4 + GTM + AdSense integration |
-| **Blog** | 5+ expert articles with Schema.org markup, TOC, newsletter |
-| **Infra** | GitHub Pages + Namecheap + Cloudflare (all free tier) |
-
-[![FinCalc](https://img.shields.io/badge/Live-satzzxzxx.me-c8821a?style=flat-square)](https://satzzxzxx.me)
-[![Blog](https://img.shields.io/badge/Blog-5+_Articles-1a7a3a?style=flat-square)](https://satzzxzxx.me/blog/)
-[![Calculators](https://img.shields.io/badge/Calculators-13+-1a4a8a?style=flat-square)](https://satzzxzxx.me)
+document kiya hai.
 
 ---
 
-### 🎮 GameMart
-> Premium digital accounts store with WhatsApp-based order flow
+## 🧠 2026 Builder Snapshot
 
-| | |
-|:--|:--|
-| **What** | Gaming accounts (MOBA, BGMI, FreeFire) + AI tools + Apps |
-| **Stack** | Single-file HTML · Base64 embedded logos · UPI payment gateway |
-| **Products** | 13 products across Gaming, AI Tools, Apps categories |
+- **Primary Focus:** AI-native products, static-to-intelligent web systems, and conversion-first business tooling
+- **Execution Style:** fast shipping + production hardening + deep UX polish
+- **Infra Bias:** low-cost / free-tier optimized systems
+- **Code Bias:** mix of zero-dependency vanilla systems + modern TypeScript app stacks
 
 ---
 
-### 🧠 Nexus AI *(In Development)*
-> AI Operating System SaaS targeting USA/UK markets
+## 🔎 Top 15 Repository Deep Scan (Latest Activity Order)
 
-| | |
-|:--|:--|
-| **What** | Document Brain, Life Manager, Second Brain, Business Co-Pilot |
-| **Stack** | React + Node.js + Firebase + Claude API |
-| **Pricing** | Free / $19 / $49 / $199 per month |
-| **Target CPM** | $15–$50 (legal/finance/business audience) |
+> Scan basis: recent activity order, public repo signals, README architecture notes, root structure patterns.
 
----
-
-### 📺 YouTube Empire *(6 Faceless Channels)*
-
-| Channel | Niche | Audience |
-|:--|:--|:--|
-| **FlickSnap** | Movie summaries | USA 🇺🇸 |
-| **CapitalDrop** | Finance news | USA 🇺🇸 |
-| **NeuralDrop** | Tech/AI | USA 🇺🇸 |
-| **FilmiShot** | Movie summaries (Hinglish) | India 🇮🇳 |
-| **NiveshWala** | Finance (Hindi) | India 🇮🇳 |
-| **ByteToड़** | Tech/AI (Hindi) | India 🇮🇳 |
-
-Strategy: 1 topic → 6 videos. Batch on Sundays. AI voice + AI editing + auto-schedule.
+| # | Repository | Core Purpose | 3D Stack / Architecture | Design & System Depth | Structure Signals |
+|---|---|---|---|---|---|
+| 1 | [Toolshub](https://github.com/S2zxx0zxx/Toolshub) | Multi-model AI workspace (Claude/Groq/GPT style platform) | **Hybrid agent platform:** frontend static shell + real-time agent orchestration + multi-model routing + SSE streaming | Heavy enterprise-style UI/UX, advanced architecture documentation, modular control panels | `assets/`, `css/`, `js/`, PWA files, multi-page shell, ops docs |
+| 2 | [S2zxx0zxx](https://github.com/S2zxx0zxx/S2zxx0zxx) | Personal GitHub profile repo | Markdown-based profile system | Branding-driven profile presentation | `README.md` + `assets/` |
+| 3 | [elitehub](https://github.com/S2zxx0zxx/elitehub) | Production-grade web app platform | **Modern TS stack:** Next.js + Prisma + test configs + typed app architecture | App-first design system with scalable config and observability hooks | `src/`, `prisma/`, `tests/`, `public/`, Sentry configs |
+| 4 | [Leetcode-Solutions](https://github.com/S2zxx0zxx/Leetcode-Solutions) | Competitive programming archive | **Algorithm stack:** C++ primary + Python + SQL + auto-sync pipeline | Performance-centric, logic-first (not UI-heavy) | Sequential problem folders (`0001-...`) |
+| 5 | [DigiRise-India](https://github.com/S2zxx0zxx/DigiRise-India) | Digital agency flagship website | **Vanilla performance stack:** HTML/CSS/JS + PWA + SEO/AI crawler artifacts | High-motion premium site: dynamic island nav, 3D interactions, cinematic transitions | `blog/`, `case-studies/`, `tools/`, `assets/`, `js/`, `css/` |
+| 6 | [VsCode-Satzzxzxx](https://github.com/S2zxx0zxx/VsCode-Satzzxzxx) | React + TypeScript starter workspace | Vite + TS + React baseline scaffold | Template-level UI system | Standard Vite React structure |
+| 7 | [DigiRise-Admin-beta-](https://github.com/S2zxx0zxx/DigiRise-Admin-beta-) | Partner/commission management OS | **Ops stack:** Vanilla JS + Firebase Realtime DB + multi-role UI (partner/admin) | Dashboard-focused UX, activity feed, goals/rings, productivity-driven interface | `index.html`, `partner.html`, `admin.html`, `js/`, `css/` |
+| 8 | [Bharat-OS](https://github.com/S2zxx0zxx/Bharat-OS) | India-focused AI life assistant | **Product stack:** Next.js 14 + TS + Tailwind + Gemini + Supabase | Functional, module-driven product design for real-world verticals | `app/` based Next architecture |
+| 9 | [BT](https://github.com/S2zxx0zxx/BT) | Lightweight static experiment | Minimal static HTML setup | Minimal design depth (utility stage) | `index.html` + basic files |
+| 10 | [scenicone](https://github.com/S2zxx0zxx/scenicone) | Furniture brand website | **Conversion website stack:** pure HTML/CSS/JS + service worker + PWA metadata | Premium commerce presentation with catalog UX flows | Multi-page static site (`about`, `products`, `enquiry`, `contact`) |
+| 11 | [DigiRise-Portfolio](https://github.com/S2zxx0zxx/DigiRise-Portfolio) | Portfolio story site (ASSAM TEA experience) | Static storytelling stack + motion scripting layer | Cinematic storytelling, scroll narrative, luxury branding | Simple root with `assets/` and focused showcase files |
+| 12 | [financeCalculator-Ind-v6.0-](https://github.com/S2zxx0zxx/financeCalculator-Ind-v6.0-) | India-focused finance calculator + blog engine | **Fin OS stack:** single-file core + content engine + PWA + SEO + analytics pipeline | Strong product maturity: utility UX + content strategy + AI extension roadmap | calculators/blog/podcast utilities in static deployment model |
+| 13 | [Growpartner-Satzzxzxx](https://github.com/S2zxx0zxx/Growpartner-Satzzxzxx) | Early-stage growth partner artifact | Minimal static starter | Low design complexity currently | Very lean root structure |
+| 14 | [Zenvy-AI](https://github.com/S2zxx0zxx/Zenvy-AI) | Zero-dependency AI SaaS OS | **No-build stack:** Vanilla HTML/CSS/JS + Claude API + Firebase Auth + Firestore + Razorpay | Strong dark premium visual system, SaaS UX mindset, architecture-first docs | `index.html`, `sw.js`, backend folder, PWA + deployment configs |
+| 15 | [GameMartStudios](https://github.com/S2zxx0zxx/GameMartStudios) | Marketplace-focused product system | Mixed architecture signals: app-driven frontend structure + commerce-oriented domain model | High-conversion commerce styling and positioning | `app/`, `components/`, `lib/`, `types/`, Next-style project layout |
 
 ---
 
-## `$ cat tech-stack.yml`
+## 🧩 Portfolio Pattern Analysis (Across 15 Repos)
 
-**Languages**
+### 1) Stack Evolution Pattern
+- **Phase A (Static mastery):** pure HTML/CSS/JS, low infra cost, fast deploy.
+- **Phase B (System maturity):** PWA + analytics + SEO + security layers.
+- **Phase C (AI/product depth):** Next.js/TypeScript, agent architecture, API-connected intelligence products.
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](#)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](#)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)](#)
+### 2) Design Signature Pattern
+- Premium dark themes
+- Strong badge-first communication
+- Motion-heavy storytelling (especially flagship repos)
+- UX built for conversion (CTA, flow reduction, direct lead paths)
 
-**Frameworks & Libraries**
-
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](#)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](#)
-[![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)](#)
-
-**Backend & Database**
-
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](#)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](#)
-[![Appwrite](https://img.shields.io/badge/Appwrite-FD366E?style=flat-square&logo=appwrite&logoColor=white)](#)
-
-**DevOps & Hosting**
-
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white)](#)
-[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)](#)
-[![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white)](#)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](#)
-
-**AI & Automation**
-
-[![Claude](https://img.shields.io/badge/Claude_AI-d4a574?style=flat-square)](#)
-[![GitHub Copilot](https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)](#)
-[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-000000?style=flat-square)](#)
-
-**Tools**
-
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](#)
-[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](#)
-[![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white)](#)
-[![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)](#)
+### 3) Architecture Signature
+- Two active lanes in parallel:
+  1. **Zero-dependency high-control systems**
+  2. **Modern app stack systems** for scale and modularity
 
 ---
 
-## `$ cat stats.sh`
+## 🚀 Current Priority Roadmap
 
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=S2zxx0zxx&theme=dark&hide_border=true&background=0d1117&ring=c8821a&fire=c8821a&currStreakLabel=c8821a&sideLabels=8a7f70&dates=6a6050)](https://github.com/S2zxx0zxx)
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=S2zxx0zxx&show_icons=true&theme=dark&bg_color=0d1117&title_color=c8821a&icon_color=c8821a&text_color=f0ece4&hide_border=true&count_private=true)](https://github.com/S2zxx0zxx)
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=S2zxx0zxx&layout=compact&theme=dark&bg_color=0d1117&title_color=c8821a&text_color=f0ece4&hide_border=true)](https://github.com/S2zxx0zxx)
-
-</div>
+- Strengthen AI product line (Toolshub / Zenvy / Bharat-OS)
+- Consolidate fintech authority (FinCalc + finance content engine)
+- Unify design language across static and Next.js products
+- Build shared reusable system components for speed
 
 ---
 
-## `$ cat infrastructure.md`
+## 🛠️ Core Tech Surface
 
-Everything built on **free tiers** via GitHub Student Developer Pack:
-
-| Service | What I Use It For |
-|:--|:--|
-| GitHub Copilot | AI pair programmer |
-| GitHub Codespaces | 180 hrs/month cloud IDE |
-| DigitalOcean | $200 credits for servers |
-| Azure | $100 credits |
-| Namecheap | Free `.me` domain (satzzxzxx.me) |
-| Appwrite | 10 free projects (backend) |
-| JetBrains IDEs | Full suite free |
-| Doppler | Secrets management |
-| Sentry | Error tracking |
-| New Relic | Performance monitoring |
-| 1Password | Password management |
-| DataCamp | Learning platform |
+**Languages:** JavaScript, TypeScript, C++, Python, SQL, HTML, CSS  
+**Frameworks/Platforms:** Next.js, React, Vite, Firebase, Supabase, Prisma  
+**AI Layer:** Claude ecosystem + multi-agent orchestration patterns  
+**Deployment:** GitHub Pages, Vercel, Cloudflare-backed static-first strategy
 
 ---
 
-## `$ cat connect.sh`
+## 🤝 Connect
 
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/__.satzzxzxx)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/satzzxzxx)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/S2zxx0zxx)
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/InvestGrow_IN)
-[![Website](https://img.shields.io/badge/satzzxzxx.me-c8821a?style=for-the-badge)](https://satzzxzxx.me)
-
-</div>
+- GitHub: [@S2zxx0zxx](https://github.com/S2zxx0zxx)
+- X: [@satzzxzxx](https://x.com/satzzxzxx)
+- Instagram: [@__.satzzxzxx](https://www.instagram.com/__.satzzxzxx)
+- Website: [satzzxzxx.me](https://satzzxzxx.me)
 
 ---
 
 <div align="center">
 
-```
-/* built with ⚡ by Satzzxzxx — Always in Build Mode 🔥 */
-```
-
-<img src="https://komarev.com/ghpvc/?username=S2zxx0zxx&color=c8821a&style=flat-square&label=Profile+Views" />
+**Built in public. Shipped in production. Optimized for real outcomes.**
 
 </div>
