@@ -34,7 +34,7 @@
 
 </div>
 
-I don't build to look busy — I build to ship. Every project below is a real, running repo, not a portfolio placeholder. I run **DigiRise India**, a digital marketing agency serving clients across India, UAE, and the UK, and in parallel I build AI-native products under the same roof: **ToolsLab**, an AI chat SaaS with real streaming, real image generation, and tiered billing; and **BharatOS**, an attempt at building an AI "Life Operating System" for India, routed entirely through WhatsApp because that's where the actual users are. I'm also mid-MBA (Finance) at CIMP Patna, which shows up more than you'd expect in how I think about unit economics for these products.
+I don't build to look busy — I build to ship. Every project below is a real, running repo, not a portfolio placeholder. I run **DigiRise India**, a digital marketing agency serving clients across India, UAE, and the UK, and in parallel I build AI-native products under the same roof: **ToolsLab**, an AI chat SaaS with real streaming, real image generation, and tiered billing; and **BharatOS**, an attempt at building an AI "Life Operating System" for India, routed entirely through WhatsApp because that's where the actual users are. which shows up more than you'd expect in how I think about unit economics for these products.
 
 This README is intentionally deep. If you're a recruiter, scroll to the systems. If you're a fellow builder, scroll to the architecture. If you're just curious, start at the top and enjoy the ride.
 
