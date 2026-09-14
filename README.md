@@ -12,6 +12,10 @@
 <img src="https://img.shields.io/badge/STATUS-ACTIVELY_SHIPPING-27B66D?style=for-the-badge&labelColor=171717" alt="Actively shipping" />
 <img src="https://img.shields.io/badge/FOCUS-AI_%C2%B7_FINANCE_%C2%B7_PRODUCTS-5468FF?style=for-the-badge&labelColor=171717" alt="Focus" />
 
+<br/><br/>
+
+<img src="./assets/terminal-boot-live.svg" alt="Live builder terminal" width="100%" />
+
 </div>
 
 <br/>
@@ -20,20 +24,20 @@
 
 I’m **Satyam Kumar**, also known as **Satzzxzxx** — a builder, creator, and digital entrepreneur working across **AI tools, finance products, productivity apps, business websites, and digital growth systems**.
 
-I care more about **useful work, shipped products, and visible progress** than loud claims. My workflow is simple: understand the problem, build the product, audit it hard, then ship a better version.
+I care more about **useful work, shipped products, and visible progress** than loud claims. My working loop is simple: understand the problem, build the product, audit it hard, then ship a better version.
 
-I also build and grow **DigiRise India**, while continuously experimenting with software products of my own.
+I also build and grow **DigiRise India**, while continuously experimenting with products of my own.
 
 <table>
 <tr>
-<td width="25%" align="center"><b>48</b><br/><sub>repositories mapped<br/>public + private</sub></td>
+<td width="25%" align="center"><b>49</b><br/><sub>repositories mapped<br/>public + private</sub></td>
 <td width="25%" align="center"><b>2</b><br/><sub>products currently<br/>building</sub></td>
 <td width="25%" align="center"><b>6</b><br/><sub>shipped products<br/>highlighted</sub></td>
 <td width="25%" align="center"><b>Web · Mobile · AI</b><br/><sub>core product<br/>surface</sub></td>
 </tr>
 </table>
 
-> This profile is intentionally current-first. Old metrics, stale architecture claims, and vanity numbers were removed in favor of what I’m actually building and shipping now.
+> Current-first profile: real product state, real repository signals, and generated activity surfaces instead of stale vanity metrics.
 
 <br/>
 
@@ -49,31 +53,29 @@ I also build and grow **DigiRise India**, while continuously experimenting with 
 
 ### **FinCo-Pilot** — personal finance + AI platform
 
-A privacy-first finance cockpit for accounts, transactions, imports, categorization, budgets, goals, reports, shared expenses, invoices, multi-currency, bank integrations, backup/restore, and optional AI workflows.
+Privacy-first finance cockpit for accounts, transactions, imports, categorization, budgets, goals, reports, shared expenses, invoices, multi-currency, bank integrations, backup/restore, and optional AI workflows.
 
 `React` · `TypeScript` · `Vite` · `FastAPI` · `PostgreSQL` · `Redis` · `Celery` · `Docker` · `AI/MCP/RAG`
 
 **Current phase:** production hardening, audit, polish, and release preparation.  
 **Repository:** [`S2zxx0zxx/FinCo-pilot`](https://github.com/S2zxx0zxx/FinCo-pilot)
 
-<br/>
-
 ### **ToolsLab LLMs** — practical LLM product lab
 
-An AI/LLM product focused on useful model-powered tools, agent workflows, research utilities, and practical automation. The public codebase currently lives under the **Toolshub** repository while the product identity evolves toward ToolsLab LLMs.
+AI/LLM product focused on useful model-powered tools, agent workflows, research utilities, and practical automation. The public codebase currently lives under **Toolshub** while the product identity evolves toward ToolsLab LLMs.
 
 `LLMs` · `Agents` · `AI workflows` · `Web tools` · `Product systems`
 
 **Current phase:** active product development and launch-readiness cleanup.  
 **Repository:** [`S2zxx0zxx/Toolshub`](https://github.com/S2zxx0zxx/Toolshub)
 
-<details>
-<summary><b>Why only two projects are shown as “building”</b></summary>
 <br/>
 
-Because “currently building” should mean exactly that. Older experiments, archived ideas, private work, and maintenance-only repositories stay out of this section even if they contain substantial code. The profile should show the work receiving active product attention now — not everything I have ever touched.
+<div align="center">
+<img src="./assets/product-heartbeat-live.svg" alt="Auto-updating product heartbeat board" width="100%" />
+</div>
 
-</details>
+<sub>The heartbeat board is generated from public repository metadata and latest commit signals. Product phase labels remain curated so automation never invents release state.</sub>
 
 <br/>
 
@@ -128,7 +130,7 @@ AI-focused web product with a dedicated backend, PWA support, deployment configu
 <td width="50%" valign="top">
 
 ### **Liquid Lounge**
-A polished personal/static web experience with PWA capabilities, service-worker support, custom-domain plumbing, and clean deployment architecture.
+Polished personal/static web experience with PWA capabilities, service-worker support, custom-domain plumbing, and clean deployment architecture.
 
 [`Public repository`](https://github.com/S2zxx0zxx/liquid-lounge)
 
@@ -152,8 +154,6 @@ Gaming and digital-store product focused on a direct, product-first shopping exp
 
 ## `04` Featured five
 
-These are the projects I currently consider the strongest representation of my work — ranked by a mix of product value, engineering depth, completeness, and what I want to build next.
-
 | Rank | Product | What it represents | Current state |
 |:--:|---|---|---|
 | **01** | **FinCo-Pilot** | Full-stack personal finance + AI system | 🟢 Building / hardening |
@@ -170,7 +170,21 @@ These are the projects I currently consider the strongest representation of my w
 
 <br/>
 
-## `05` System I use
+## `05` Product universe
+
+<div align="center">
+<img src="./assets/repo-constellation-live.svg" alt="Auto-updating public repository constellation" width="100%" />
+</div>
+
+The constellation groups **public repositories** into product domains and highlights current flagship signals. Private repositories are not enumerated here; the profile-level count stays separate.
+
+<br/>
+
+---
+
+<br/>
+
+## `06` System & shipping loop
 
 <div align="center">
 <img src="./assets/system-map-v2.svg" alt="Technology stack and Research Build Audit Ship process" width="100%" />
@@ -179,14 +193,10 @@ These are the projects I currently consider the strongest representation of my w
 ### Core product stack
 
 <div align="center">
-
 <img src="https://skillicons.dev/icons?i=react,ts,nextjs,python,fastapi,flutter,firebase,supabase,postgres,docker,github,vercel&perline=12" alt="Core technology stack" />
-
 </div>
 
 <br/>
-
-I choose tools based on the product rather than forcing every idea into one stack. The current pattern is:
 
 - **Frontend / product UI:** React, TypeScript, Next.js, Vite, Flutter
 - **Backend / APIs:** Python, FastAPI, serverless functions, API-oriented services
@@ -197,11 +207,17 @@ I choose tools based on the product rather than forcing every idea into one stac
 
 <br/>
 
+<div align="center">
+<img src="./assets/shipping-timeline-live.svg" alt="Research Build Audit Production Shipped timeline" width="100%" />
+</div>
+
+<br/>
+
 ---
 
 <br/>
 
-## `06` Learning in public
+## `07` Learning in public
 
 I use real projects as the classroom. The areas I’m deliberately improving right now are:
 
@@ -219,7 +235,7 @@ I use real projects as the classroom. The areas I’m deliberately improving rig
 
 **Research deeply. Build fast. Audit hard. Ship better.**
 
-That loop is the center of how I work. A project is not “done” because the UI looks finished — it needs to survive testing, architecture review, security checks, edge cases, real deployment, and user feedback.
+A project is not “done” because the UI looks finished — it needs to survive testing, architecture review, security checks, edge cases, real deployment, and user feedback.
 
 <br/>
 
@@ -227,19 +243,17 @@ That loop is the center of how I work. A project is not “done” because the U
 
 <br/>
 
-## `07` More from the lab
-
-Not every repository belongs in the flagship list. Some are experiments, learning builds, utilities, data/code collections, recovery projects, or older product directions. A few notable public ones:
+## `08` More from the lab
 
 <details>
 <summary><b>AI / product experiments</b></summary>
 <br/>
 
-- [`Bharat-OS`](https://github.com/S2zxx0zxx/Bharat-OS) — Next.js AI-oriented product experiment using Gemini/Supabase-era architecture.
-- [`bribes-fyi`](https://github.com/S2zxx0zxx/bribes-fyi) — clean Next.js information/transparency-style web project.
-- [`elitehub`](https://github.com/S2zxx0zxx/elitehub) — broader product/platform experiment.
-- [`OmniRoute-Satzzxzxx`](https://github.com/S2zxx0zxx/OmniRoute-Satzzxzxx) — large routing/tooling codebase kept separate from the flagship product story.
-- [`codebase-memory-mcp-Satzzxzxx`](https://github.com/S2zxx0zxx/codebase-memory-mcp-Satzzxzxx) — codebase-memory / MCP-oriented tooling repository.
+- [`Bharat-OS`](https://github.com/S2zxx0zxx/Bharat-OS)
+- [`bribes-fyi`](https://github.com/S2zxx0zxx/bribes-fyi)
+- [`elitehub`](https://github.com/S2zxx0zxx/elitehub)
+- [`OmniRoute-Satzzxzxx`](https://github.com/S2zxx0zxx/OmniRoute-Satzzxzxx)
+- [`codebase-memory-mcp-Satzzxzxx`](https://github.com/S2zxx0zxx/codebase-memory-mcp-Satzzxzxx)
 
 </details>
 
@@ -273,7 +287,7 @@ Not every repository belongs in the flagship list. Some are experiments, learnin
 
 <br/>
 
-## `08` How I think about building
+## `09` How I think about building
 
 <table>
 <tr>
@@ -304,11 +318,25 @@ Ship a solid version, inspect what breaks, learn from it, then make the next ver
 
 <br/>
 
-## `09` Contribution trail
+## `10` Live shipping signals
+
+<div align="center">
+<img src="./assets/shipping-feed-live.svg" alt="Auto-updating recent shipping feed" width="100%" />
+</div>
+
+<sub>Generated from latest public commits across selected flagship repositories and sorted newest-first. The live system is scheduled every six hours and only commits generated assets when the underlying signal changes.</sub>
+
+<br/>
+
+---
+
+<br/>
+
+## `11` Contribution trail
 
 <div align="center">
 
-<sub>Real contribution data · regenerated automatically every day · one commit at a time.</sub>
+<sub>Two views of the same real activity: the snake consumes the grid; the skyline turns daily contribution intensity into height.</sub>
 
 <br/><br/>
 
@@ -321,11 +349,12 @@ Ship a solid version, inspect what breaks, learn from it, then make the next ver
 <br/>
 
 <img src="https://img.shields.io/badge/MOTION-LIVE-5468FF?style=flat-square&labelColor=171717" alt="Motion live" />
-<img src="https://img.shields.io/badge/AUTO--REFRESH-DAILY-27B66D?style=flat-square&labelColor=171717" alt="Auto refresh daily" />
+<img src="https://img.shields.io/badge/SNAKE-AUTO--REFRESH_DAILY-27B66D?style=flat-square&labelColor=171717" alt="Snake auto refresh daily" />
+<img src="https://img.shields.io/badge/LIVE_SURFACES-SCHEDULED_6H-8B5CF6?style=flat-square&labelColor=171717" alt="Live surfaces scheduled every six hours" />
 
 <br/><br/>
 
-<sub>The snake follows my real contribution graph, eating through the grid as the animation loops. Light and dark variants switch automatically with GitHub theme.</sub>
+<img src="./assets/contribution-city-live.svg" alt="Auto-updating 3D contribution city" width="100%" />
 
 </div>
 
@@ -335,7 +364,7 @@ Ship a solid version, inspect what breaks, learn from it, then make the next ver
 
 <br/>
 
-## `10` Find me
+## `12` Find me
 
 <div align="center">
 
@@ -353,6 +382,6 @@ Builder · Creator · Digital Entrepreneur
 
 <br/>
 
-<sub>Profile redesigned around the same visual language as my live portfolio — warm minimal UI, product-first hierarchy, honest status, and build-in-public thinking.</sub>
+<sub>Warm minimal UI · real signals · honest product state · motion with purpose.</sub>
 
 </div>
