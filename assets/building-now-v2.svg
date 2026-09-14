@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Currently building</title><desc id="desc">FinCo-Pilot and ToolsLab LLMs are under active development.</desc>
+<defs>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#171717" stroke-opacity=".035"/></pattern>
+  <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5368ff"/><stop offset="1" stop-color="#7a67ff"/></linearGradient>
+</defs>
+<rect width="1200" height="560" rx="28" fill="#fbfbf7"/>
+<rect width="1200" height="560" rx="28" fill="url(#grid)"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#171717">
+  <text x="54" y="76" font-size="16" font-family="SFMono-Regular,Consolas,monospace" letter-spacing="2" fill="#6f6f68">CURRENTLY BUILDING</text>
+  <text x="54" y="126" font-size="42" font-weight="800" letter-spacing="-1.5">Two products. Both moving.</text>
+  <g transform="translate(930 79)"><circle cx="0" cy="0" r="7" fill="#27b66d"><animate attributeName="opacity" values="1;.45;1" dur="1.7s" repeatCount="indefinite"/></circle><text x="18" y="6" font-family="SFMono-Regular,Consolas,monospace" font-size="14" fill="#6f6f68">UPDATED LIVE</text></g>
+</g>
+
+<g transform="translate(54 164)">
+  <rect width="1092" height="158" rx="24" fill="#fff" stroke="#d8d8d1"/>
+  <rect x="26" y="26" width="72" height="72" rx="20" fill="#171717"/>
+  <text x="62" y="72" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="26" font-weight="800" fill="#fff">1</text>
+  <text x="128" y="56" font-family="Inter,Segoe UI,sans-serif" font-size="29" font-weight="800" fill="#171717">FinCo-Pilot</text>
+  <g transform="translate(850 30)"><rect width="164" height="32" rx="16" fill="#eaf8ef"/><circle cx="18" cy="16" r="5" fill="#27b66d"><animate attributeName="r" values="4;6;4" dur="1.7s" repeatCount="indefinite"/></circle><text x="34" y="21" font-family="SFMono-Regular,Consolas,monospace" font-size="12" font-weight="700" fill="#2f8051">BUILDING</text></g>
+  <text x="128" y="88" font-family="SFMono-Regular,Consolas,monospace" font-size="15" fill="#74746e">Personal finance + AI platform · production hardening</text>
+  <text x="128" y="119" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#9a9a92">React · FastAPI · PostgreSQL · Redis · Docker · AI/MCP</text>
+  <rect x="766" y="105" width="250" height="10" rx="5" fill="#ecece7"/>
+  <rect x="766" y="105" width="92" height="10" rx="5" fill="url(#bar)"><animate attributeName="x" values="766;924;766" dur="3.4s" repeatCount="indefinite"/></rect>
+</g>
+
+<g transform="translate(54 344)">
+  <rect width="1092" height="158" rx="24" fill="#fff" stroke="#d8d8d1"/>
+  <rect x="26" y="26" width="72" height="72" rx="20" fill="#171717"/>
+  <text x="62" y="72" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="26" font-weight="800" fill="#fff">2</text>
+  <text x="128" y="56" font-family="Inter,Segoe UI,sans-serif" font-size="29" font-weight="800" fill="#171717">ToolsLab LLMs</text>
+  <g transform="translate(850 30)"><rect width="164" height="32" rx="16" fill="#eaf8ef"/><circle cx="18" cy="16" r="5" fill="#27b66d"><animate attributeName="opacity" values="1;.45;1" dur="1.9s" repeatCount="indefinite"/></circle><text x="34" y="21" font-family="SFMono-Regular,Consolas,monospace" font-size="12" font-weight="700" fill="#2f8051">BUILDING</text></g>
+  <text x="128" y="88" font-family="SFMono-Regular,Consolas,monospace" font-size="15" fill="#74746e">LLM tool lab · agent workflows · model-powered utilities</text>
+  <text x="128" y="119" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#9a9a92">LLMs · Agents · Web tools · AI workflows</text>
+  <rect x="766" y="105" width="250" height="10" rx="5" fill="#ecece7"/>
+  <rect x="766" y="105" width="92" height="10" rx="5" fill="url(#bar)"><animate attributeName="x" values="766;924;766" dur="4.1s" repeatCount="indefinite"/></rect>
+</g>
+</svg>
