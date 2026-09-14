@@ -1,0 +1,28 @@
+{
+  "user": "S2zxx0zxx",
+  "mapped_total": 48,
+  "heartbeat_products": [
+    {"label": "FinCo-Pilot", "repo": "FinCo-pilot", "status": "HARDENING"},
+    {"label": "ToolsLab LLMs", "repo": "Toolshub", "status": "BUILDING"},
+    {"label": "DigiRise India", "repo": "DigiRise-India", "status": "SHIPPED"},
+    {"label": "FinCalc", "repo": "financeCalculator-Ind-v6.0-", "status": "SHIPPED"},
+    {"label": "Zenvy AI", "repo": "Zenvy-AI", "status": "SHIPPED"},
+    {"label": "Liquid Lounge", "repo": "liquid-lounge", "status": "SHIPPED"}
+  ],
+  "timeline_products": [
+    {"label": "ToolsLab", "repo": "Toolshub", "stage": "BUILD", "active": true},
+    {"label": "FinCo", "repo": "FinCo-pilot", "stage": "AUDIT", "active": true},
+    {"label": "FitTrackAI", "repo": null, "stage": "SHIPPED", "active": false, "note": "private product"},
+    {"label": "DigiRise", "repo": "DigiRise-India", "stage": "SHIPPED", "active": false},
+    {"label": "FinCalc", "repo": "financeCalculator-Ind-v6.0-", "stage": "SHIPPED", "active": false},
+    {"label": "Zenvy", "repo": "Zenvy-AI", "stage": "SHIPPED", "active": false}
+  ],
+  "feed_repos": [
+    {"label": "FinCo-Pilot", "repo": "FinCo-pilot"},
+    {"label": "ToolsLab", "repo": "Toolshub"},
+    {"label": "DigiRise", "repo": "DigiRise-India"},
+    {"label": "FinCalc", "repo": "financeCalculator-Ind-v6.0-"},
+    {"label": "Zenvy", "repo": "Zenvy-AI"},
+    {"label": "Liquid Lounge", "repo": "liquid-lounge"}
+  ]
+}
