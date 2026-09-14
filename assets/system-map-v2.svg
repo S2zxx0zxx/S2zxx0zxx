@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Technology and process map</title><desc id="desc">Core technologies and the Research Build Audit Ship workflow.</desc>
+<defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#171717" stroke-opacity=".03"/></pattern></defs>
+<rect width="1200" height="520" rx="28" fill="#fbfbf7"/><rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+<text x="54" y="70" font-family="SFMono-Regular,Consolas,monospace" font-size="15" letter-spacing="2" fill="#707069">SYSTEM I USE</text>
+<text x="54" y="118" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="-1.5" fill="#171717">Build across the whole product surface.</text>
+<g font-family="SFMono-Regular,Consolas,monospace" font-size="14" font-weight="700" fill="#353531">
+  <g transform="translate(54 156)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">React</text></g>
+  <g transform="translate(238 156)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">TypeScript</text></g>
+  <g transform="translate(422 156)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">Next.js</text></g>
+  <g transform="translate(606 156)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">Python</text></g>
+  <g transform="translate(790 156)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">FastAPI</text></g>
+  <g transform="translate(974 156)"><rect width="172" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="86" y="32" text-anchor="middle">Flutter</text></g>
+  <g transform="translate(54 222)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">Firebase</text></g>
+  <g transform="translate(238 222)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">Supabase</text></g>
+  <g transform="translate(422 222)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">PostgreSQL</text></g>
+  <g transform="translate(606 222)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">Docker</text></g>
+  <g transform="translate(790 222)"><rect width="168" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="84" y="32" text-anchor="middle">GitHub</text></g>
+  <g transform="translate(974 222)"><rect width="172" height="52" rx="16" fill="#fff" stroke="#d9d9d2"/><text x="86" y="32" text-anchor="middle">Vercel</text></g>
+</g>
+<line x1="54" y1="314" x2="1146" y2="314" stroke="#deded8"/>
+<text x="54" y="354" font-family="SFMono-Regular,Consolas,monospace" font-size="14" letter-spacing="2" fill="#707069">MY PROCESS</text>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <g transform="translate(54 382)"><rect width="232" height="86" rx="20" fill="#fff" stroke="#d9d9d2"/><text x="22" y="30" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#8b8b84">01</text><text x="22" y="59" font-size="22" font-weight="800" fill="#171717">Research</text></g>
+  <g transform="translate(330 382)"><rect width="232" height="86" rx="20" fill="#fff" stroke="#d9d9d2"/><text x="22" y="30" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#8b8b84">02</text><text x="22" y="59" font-size="22" font-weight="800" fill="#171717">Build</text></g>
+  <g transform="translate(606 382)"><rect width="232" height="86" rx="20" fill="#fff" stroke="#d9d9d2"/><text x="22" y="30" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#8b8b84">03</text><text x="22" y="59" font-size="22" font-weight="800" fill="#171717">Audit</text></g>
+  <g transform="translate(882 382)"><rect width="264" height="86" rx="20" fill="#171717"/><text x="22" y="30" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#aaa">04</text><text x="22" y="59" font-size="22" font-weight="800" fill="#fff">Ship better.</text><circle cx="226" cy="43" r="7" fill="#27b66d"><animate attributeName="opacity" values="1;.45;1" dur="1.8s" repeatCount="indefinite"/></circle></g>
+</g>
+</svg>
