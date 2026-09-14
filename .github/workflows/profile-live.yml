@@ -1,0 +1,80 @@
+name: Profile Live System
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate_profile_live.py"
+      - "profile/profile_config.json"
+      - ".github/workflows/profile-live.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-live-system
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate live profile surfaces
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_profile_live.py
+
+      - name: Validate generated SVGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=(
+            assets/terminal-boot-live.svg
+            assets/product-heartbeat-live.svg
+            assets/repo-constellation-live.svg
+            assets/shipping-timeline-live.svg
+            assets/shipping-feed-live.svg
+            assets/contribution-city-live.svg
+          )
+          for file in "${files[@]}"; do
+            test -s "$file"
+            grep -q '<svg' "$file"
+            grep -q '</svg>' "$file"
+          done
+
+      - name: Commit only when live data changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            assets/terminal-boot-live.svg \
+            assets/product-heartbeat-live.svg \
+            assets/repo-constellation-live.svg \
+            assets/shipping-timeline-live.svg \
+            assets/shipping-feed-live.svg \
+            assets/contribution-city-live.svg
+          if git diff --cached --quiet; then
+            echo "No live profile data changes."
+            exit 0
+          fi
+          git commit -m "chore(profile): refresh live surfaces [skip ci]"
+          git push origin HEAD:main
