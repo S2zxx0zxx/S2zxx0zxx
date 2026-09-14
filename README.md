@@ -304,7 +304,38 @@ Ship a solid version, inspect what breaks, learn from it, then make the next ver
 
 <br/>
 
-## `09` Find me
+## `09` Contribution trail
+
+<div align="center">
+
+<sub>Real contribution data · regenerated automatically every day · one commit at a time.</sub>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/S2zxx0zxx/S2zxx0zxx/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/S2zxx0zxx/S2zxx0zxx/output/github-contribution-grid-snake.svg" />
+  <img alt="Animated contribution snake eating the GitHub contribution grid" src="https://raw.githubusercontent.com/S2zxx0zxx/S2zxx0zxx/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
+
+<br/>
+
+<img src="https://img.shields.io/badge/MOTION-LIVE-5468FF?style=flat-square&labelColor=171717" alt="Motion live" />
+<img src="https://img.shields.io/badge/AUTO--REFRESH-DAILY-27B66D?style=flat-square&labelColor=171717" alt="Auto refresh daily" />
+
+<br/><br/>
+
+<sub>The snake follows my real contribution graph, eating through the grid as the animation loops. Light and dark variants switch automatically with GitHub theme.</sub>
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+## `10` Find me
 
 <div align="center">
 
