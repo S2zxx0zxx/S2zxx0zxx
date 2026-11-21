@@ -61,11 +61,14 @@ def safe_api(path: str, default: Any) -> Any:
 def fetch_public_repos() -> list[dict[str, Any]]:
     repos: list[dict[str, Any]] = []
     for page in range(1, 4):
-        batch = safe_api(
-            f"/users/{urllib.parse.quote(USER)}/repos?per_page=100&page={page}&type=owner&sort=updated",
-            [],
+        batch = request_json(
+            f"https://api.github.com/users/{urllib.parse.quote(USER)}/repos?per_page=100&page={page}&type=owner&sort=updated"
         )
-        if not isinstance(batch, list) or not batch:
+        if not isinstance(batch, list):
+            raise RuntimeError("GitHub repository response was not a list; preserving existing profile")
+        if not batch:
+            if page == 1:
+                raise RuntimeError("Zero public repositories returned; refusing to overwrite profile assets")
             break
         repos.extend(batch)
         if len(batch) < 100:
@@ -197,7 +200,7 @@ def contribution_level(day: dict[str, Any], max_count: int) -> int:
 def generate_terminal(public_count: int) -> str:
     lines = [
         ("00","BOOT","profile kernel","ONLINE","#27B66D"),
-        ("01","MAP","repo universe",f"{public_count} PUBLIC / {CONFIG['mapped_total']} MAPPED","#5468FF"),
+        ("01","MAP","repo universe",f"{public_count} PUBLIC / {public_count + CONFIG['private_count_verified']} TRACKED","#5468FF"),
         ("02","SHIP","FinCo-Pilot","HARDENING","#F59E0B"),
         ("03","BUILD","ToolsLab LLMs","ACTIVE","#27B66D"),
         ("04","SYNC","GitHub signals","AUTO-REFRESH ARMED","#5468FF"),
@@ -216,7 +219,7 @@ def generate_heartbeat(snapshots: dict[str,dict[str,Any]]) -> str:
     cards=[]; card_w=410; gap=20
     for i,p in enumerate(products):
         s=snapshots.get(p["repo"],{}); col=i%2; row=i//2; x=30+col*(card_w+gap); y=102+row*142
-        status=p["status"]; color="#F59E0B" if status=="HARDENING" else "#27B66D"; pulse="pulse" if status in {"BUILDING","HARDENING"} else ""
+        status=p["status"]; color={"HARDENING":"#F59E0B","RESEARCH":"#8B5CF6","BUILDING":"#27B66D","SHIPPED":"#27B66D"}.get(status,"#777771"); pulse="pulse" if status in {"BUILDING","HARDENING"} else ""
         cards.append(f'''<g transform="translate({x} {y})"><rect width="{card_w}" height="124" rx="18" class="panel"/><circle class="{pulse}" cx="24" cy="27" r="6" fill="{color}"/><text x="42" y="32" font-size="11" fill="{color}">{xml(status)}</text><text x="24" y="62" font-size="20" font-weight="700" class="sans ink">{xml(p['label'])}</text><text x="24" y="86" font-size="11" class="muted">{xml(trim(s.get('commit_message','') or 'No public commit signal',43))}</text><text x="24" y="108" font-size="10" class="muted">{xml(trim(s.get('branch','—'),16))} · {xml(trim(s.get('language','Mixed'),12))}</text><text x="{card_w-20}" y="108" text-anchor="end" font-size="10" class="muted">{xml(short_date(s.get('commit_date','')))}</text></g>''')
     rows=math.ceil(len(products)/2); h=128+rows*142+20
     body=f'''<rect width="900" height="{h}" rx="24" fill="var(--bg)"/><text x="30" y="42" font-size="12" fill="#27B66D" letter-spacing="2">PRODUCT HEARTBEAT</text><text x="30" y="76" font-size="27" font-weight="800" class="sans ink">Real repository signals, not vanity counters.</text><text x="870" y="48" text-anchor="end" font-size="10" class="muted">AUTO-SYNC · PUBLIC GITHUB DATA</text>{''.join(cards)}'''
@@ -250,7 +253,7 @@ def generate_constellation(repos: list[dict[str,Any]]) -> str:
             else:
                 size=3.2+min(2.8,math.log10(max(1,repo.get('size') or 1))*.5); nodes.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{size:.1f}" fill="{c}" opacity=".72"/>')
     style='''.orbit{transform-origin:450px 292px;animation:orbit 42s linear infinite}@keyframes orbit{to{transform:rotate(360deg)}}'''
-    body=f'''<rect width="900" height="590" rx="24" fill="var(--bg)"/><text x="30" y="42" font-size="12" fill="#5468FF" letter-spacing="2">REPO CONSTELLATION</text><text x="30" y="76" font-size="27" font-weight="800" class="sans ink">A public product universe, grouped by what each repo explores.</text><text x="870" y="48" text-anchor="end" font-size="10" class="muted">{len(repos)} PUBLIC NODES · {CONFIG['mapped_total']} REPOS MAPPED</text><g opacity=".55"><ellipse class="orbit" cx="450" cy="292" rx="385" ry="238" fill="none" stroke="var(--hair)" stroke-dasharray="2 13"/><ellipse cx="450" cy="292" rx="320" ry="190" fill="none" stroke="var(--hair)" stroke-dasharray="1 15"/></g>{''.join(clusters)}{''.join(lines)}{''.join(nodes)}<g transform="translate(450 292)"><circle r="43" fill="url(#accent)" opacity=".12"/><circle r="28" fill="var(--panel)" stroke="var(--accent)" stroke-width="2"/><circle class="pulse" r="6" fill="var(--accent)"/><text y="-44" text-anchor="middle" font-size="10" fill="var(--accent)" letter-spacing="1.4">CORE</text><text y="52" text-anchor="middle" font-size="13" font-weight="700" class="sans ink">SATZZXZXX</text></g><text x="450" y="565" text-anchor="middle" font-size="10" class="muted">Large glowing nodes = current flagship signals · small nodes = public repositories</text>'''
+    body=f'''<rect width="900" height="590" rx="24" fill="var(--bg)"/><text x="30" y="42" font-size="12" fill="#5468FF" letter-spacing="2">REPO CONSTELLATION</text><text x="30" y="76" font-size="27" font-weight="800" class="sans ink">A public product universe, grouped by what each repo explores.</text><text x="870" y="48" text-anchor="end" font-size="10" class="muted">{len(repos)} PUBLIC NODES · {len(repos) + CONFIG['private_count_verified']} TRACKED*</text><g opacity=".55"><ellipse class="orbit" cx="450" cy="292" rx="385" ry="238" fill="none" stroke="var(--hair)" stroke-dasharray="2 13"/><ellipse cx="450" cy="292" rx="320" ry="190" fill="none" stroke="var(--hair)" stroke-dasharray="1 15"/></g>{''.join(clusters)}{''.join(lines)}{''.join(nodes)}<g transform="translate(450 292)"><circle r="43" fill="url(#accent)" opacity=".12"/><circle r="28" fill="var(--panel)" stroke="var(--accent)" stroke-width="2"/><circle class="pulse" r="6" fill="var(--accent)"/><text y="-44" text-anchor="middle" font-size="10" fill="var(--accent)" letter-spacing="1.4">CORE</text><text y="52" text-anchor="middle" font-size="13" font-weight="700" class="sans ink">SATZZXZXX</text></g><text x="450" y="565" text-anchor="middle" font-size="10" class="muted">Large glowing nodes = current flagship signals · small nodes = public repositories</text>'''
     return svg_shell(900,590,body,"Repository constellation",extra_style=style)
 
 
@@ -301,8 +304,103 @@ def generate_city(days:list[dict[str,Any]],total:int)->str:
     return svg_shell(900,365,body,"Contribution city",extra_style=style)
 
 
+
+
+CATALOG_START = "<!-- PROFILE_REPO_CATALOG_START -->"
+CATALOG_END = "<!-- PROFILE_REPO_CATALOG_END -->"
+COUNT_START = "<!-- PROFILE_TRACKED_COUNT_START -->"
+COUNT_END = "<!-- PROFILE_TRACKED_COUNT_END -->"
+
+
+def catalog_category(repo: dict[str, Any]) -> str:
+    """Presentation labels only: never infer product readiness from repo names."""
+    name = str(repo.get("name") or "").lower()
+    if name == "arkyvon" or name.startswith("global-chess") or name.startswith("global-carrom") or name.startswith("global-brain") or "gamemart" in name:
+        return "GAME / ENGINE"
+    if "clipper" in name or "music-photo" in name:
+        return "CREATOR TOOLS"
+    if "openxdrive" in name or "arcovia" in name:
+        return "ENGINEERING"
+    if "satzzxzxx-labs" in name:
+        return "STUDIO"
+    return classify_repo(repo)
+
+
+def render_repo_catalog(repos: list[dict[str, Any]]) -> str:
+    repos = [
+        r for r in repos
+        if not r.get("private") and str(r.get("visibility") or "public") == "public"
+    ]
+    if not repos:
+        raise ValueError("Refusing to render an empty public repository directory")
+    order = ["GAME / ENGINE", "FINANCE", "AI", "CREATOR TOOLS", "ENGINEERING", "STUDIO", "SYSTEMS", "BUSINESS", "WEB", "LEARN"]
+    rank = {name: i for i, name in enumerate(order)}
+    items = sorted(
+        repos,
+        key=lambda r: (rank.get(catalog_category(r), len(rank)), str(r.get("name") or "").casefold()),
+    )
+    rows: list[str] = []
+    for item in items:
+        name = str(item.get("name") or "")
+        if not name:
+            continue
+        path = urllib.parse.quote(name, safe="")
+        url = f"https://github.com/{urllib.parse.quote(USER, safe='')}/{path}"
+        category = catalog_category(item)
+        pushed = short_date(str(item.get("pushed_at") or item.get("updated_at") or ""))
+        size = item.get("size")
+        maturity = "Repository scaffold" if name in {"ARKYVON", "Global-Carrom-Online-PVP-", "Global-Brain-Iq-Train-Puzzle"} and size == 0 else "Public repository"
+        note = trim(str(item.get("description") or maturity), 84)
+        rows.append(
+            f'<tr><td><a href="{xml(url)}"><b>{xml(name)}</b></a></td>'
+            f'<td>{xml(category)}</td><td>{xml(pushed)}</td>'
+            f'<td>{xml(note)}</td></tr>'
+        )
+    if not rows:
+        raise ValueError("No valid repository rows to render")
+    return (
+        '<details>\n'
+        f'<summary><b>Explore all {len(rows)} public repositories</b> · auto-synced repository index</summary>\n\n'
+        '<sub>Public metadata only · grouped by area · dates indicate repository activity, not product releases. '
+        'Private repository names are not disclosed.</sub>\n\n'
+        '<table>\n'
+        '<tr><th align="left">Repository</th><th align="left">Area</th>'
+        '<th align="left">Last push</th><th align="left">About</th></tr>\n'
+        + "\n".join(rows)
+        + '\n</table>\n\n</details>'
+    )
+
+
+def replace_owned_block(document: str, start: str, end: str, content: str) -> str:
+    """Modify only a clearly delimited machine-owned span."""
+    if document.count(start) != 1 or document.count(end) != 1:
+        raise ValueError(f"Missing or duplicate generated markers: {start} / {end}")
+    i = document.index(start) + len(start)
+    j = document.index(end)
+    if i >= j:
+        raise ValueError("Generated markers are misordered")
+    return document[:i] + "\n" + content + "\n" + document[j:]
+
+
+def update_readme_catalog(repos: list[dict[str, Any]], readme_path: Path | None = None) -> None:
+    readme_path = readme_path or ROOT / "README.md"
+    existing = readme_path.read_text(encoding="utf-8")
+    tracked = len(repos) + int(CONFIG["private_count_verified"])
+    updated = replace_owned_block(
+        existing, COUNT_START, COUNT_END, f"<b>{tracked}</b>"
+    )
+    updated = replace_owned_block(
+        updated, CATALOG_START, CATALOG_END, render_repo_catalog(repos)
+    )
+    if updated == existing:
+        print("[same] README.md public repository directory")
+    else:
+        readme_path.write_text(updated, encoding="utf-8")
+        print("[write] README.md public repository directory")
+
+
 def main()->None:
-    repos=fetch_public_repos(); needed=set()
+    repos=fetch_public_repos(); update_readme_catalog(repos); needed=set()
     for p in CONFIG['heartbeat_products']: needed.add(p['repo'])
     for p in CONFIG['timeline_products']:
         if p.get('repo'): needed.add(p['repo'])
@@ -313,8 +411,11 @@ def main()->None:
     write_asset('repo-constellation-live.svg',generate_constellation(repos))
     write_asset('shipping-timeline-live.svg',generate_timeline(snapshots))
     write_asset('shipping-feed-live.svg',generate_feed(snapshots))
-    write_asset('contribution-city-live.svg',generate_city(days,total))
-    print(json.dumps({'user':USER,'public_repos':len(repos),'mapped_total':CONFIG['mapped_total'],'contributions':total,'snapshots':{k:{'date':v['commit_date'],'sha':v['commit_sha']} for k,v in snapshots.items()}},indent=2))
+    if days:
+        write_asset('contribution-city-live.svg',generate_city(days,total))
+    else:
+        print("[warn] No contribution data; retaining previous city asset", file=sys.stderr)
+    print(json.dumps({'user':USER,'public_repos':len(repos),'tracked_total':len(repos)+CONFIG['private_count_verified'],'contributions':total,'snapshots':{k:{'date':v['commit_date'],'sha':v['commit_sha']} for k,v in snapshots.items()}},indent=2))
 
 
 if __name__=='__main__':
