@@ -327,6 +327,10 @@ def catalog_category(repo: dict[str, Any]) -> str:
 
 
 def render_repo_catalog(repos: list[dict[str, Any]]) -> str:
+    repos = [
+        r for r in repos
+        if not r.get("private") and str(r.get("visibility") or "public") == "public"
+    ]
     if not repos:
         raise ValueError("Refusing to render an empty public repository directory")
     order = ["GAME / ENGINE", "FINANCE", "AI", "CREATOR TOOLS", "ENGINEERING", "STUDIO", "SYSTEMS", "BUSINESS", "WEB", "LEARN"]
