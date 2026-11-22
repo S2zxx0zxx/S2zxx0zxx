@@ -112,11 +112,50 @@ class GeneratedMarkerTests(unittest.TestCase):
             result = profile.fetch_public_repos()
         self.assertEqual(len(result), 101)
 
-    def test_configs_keep_research_separate_from_release(self):
+    def test_curated_stages_separate_build_testing_and_shipped(self):
         heartbeat = {item["repo"]: item["status"] for item in profile.CONFIG["heartbeat_products"]}
-        self.assertEqual(heartbeat["ARKYVON"], "RESEARCH")
+        self.assertEqual(heartbeat["ARKYVON"], "BUILDING")
         self.assertEqual(heartbeat["Global-Chess-Online-PVP-"], "BUILDING")
+        self.assertEqual(heartbeat["OpenXdrive"], "TESTING")
+        self.assertEqual(heartbeat["Unlimited-Auto-Cut-Clipper-Tool"], "TESTING")
+        self.assertEqual(heartbeat["FinCo-pilot"], "SHIPPED")
+        self.assertEqual(heartbeat["Toolshub"], "SHIPPED")
         self.assertEqual(profile.CONFIG["private_count_verified"], 11)
+
+
+
+class CurrentFocusRenderingTests(unittest.TestCase):
+    def test_terminal_does_not_claim_old_flagships_are_current_builds(self):
+        svg = profile.generate_terminal(47)
+        self.assertIn("ARKYVON Engine", svg)
+        self.assertIn("Global Chess", svg)
+        self.assertNotIn("HARDENING", svg)
+        self.assertNotIn("ToolsLab LLMs", svg)
+
+    def test_heartbeat_rendering_has_testing_and_shipped_states(self):
+        svg = profile.generate_heartbeat({})
+        self.assertIn("TESTING", svg)
+        self.assertIn("SHIPPED", svg)
+        self.assertIn("BUILDING", svg)
+        self.assertNotIn(">RESEARCH</text>", svg)
+
+    def test_timeline_all_stages_fit_without_overlay(self):
+        svg = profile.generate_timeline({})
+        self.assertIn('viewBox="0 0 900 542"', svg)
+        self.assertIn("ARKYVON", svg)
+        self.assertIn("Chess", svg)
+        self.assertIn("ToolsLab", svg)
+        self.assertIn("FinCo", svg)
+        self.assertIn("LiveClip", svg)
+        self.assertIn("OpenXdrive", svg)
+
+    def test_editorial_publication_urls_are_public_and_named(self):
+        publications = profile.CONFIG["editorial_publications"]
+        self.assertTrue(any(item["name"] == "The Paisa Journal" and
+                            item["url"] == "https://thepaisajournal.blogspot.com/"
+                            for item in publications))
+        self.assertTrue(any(item["name"] == "FinCalc India Blog" for item in publications))
+
 
 
 if __name__ == "__main__":
