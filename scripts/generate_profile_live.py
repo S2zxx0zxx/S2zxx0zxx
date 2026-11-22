@@ -227,19 +227,41 @@ def generate_heartbeat(snapshots: dict[str,dict[str,Any]]) -> str:
 
 
 def classify_repo(repo: dict[str,Any]) -> str:
-    hay=((repo.get('name') or '')+' '+(repo.get('description') or '')).lower()
-    rules=[('FINANCE',['finco','finance','stock','markettrade','fare','bribes']),('AI',['ai','mcp','llm','agent','zenvy','bharat-os','toolshub','buildme']),('BUSINESS',['digirise','growpartner','gamemart','portfolio','store','brands']),('WEB',['lounge','scenic','travel','github.io','elitehub','savesocial']),('LEARN',['leetcode','scrap','spam','docx','music','airbnb','git-track','vscode','image']),('SYSTEMS',['omniroute','codebase','bepb','bt','route'])]
+    """Classify only public metadata; names take precedence over broad descriptions."""
+    name=(repo.get('name') or '').lower()
+    desc=(repo.get('description') or '').lower()
+    if (name=='arkyvon' or name.startswith('global-chess') or
+            name.startswith('global-carrom') or name.startswith('global-brain') or
+            'gamemart' in name):
+        return 'GAME'
+    if 'clipper' in name or 'music-photo' in name or 'satzzxzxx-labs' in name:
+        return 'CREATOR'
+    if 'openxdrive' in name or 'arcovia' in name or 'omniroute' in name or 'codebase-memory' in name:
+        return 'SYSTEMS'
+    hay=name+' '+desc
+    rules=[
+        ('FINANCE',['finco','finance','stock','markettrade','fare','bribes']),
+        ('AI',['ai','mcp','llm','agent','zenvy','bharat-os','toolshub','buildme']),
+        ('BUSINESS',['digirise','growpartner','portfolio','store','brands']),
+        ('WEB',['lounge','scenic','travel','github.io','elitehub','savesocial']),
+        ('LEARN',['leetcode','scrap','spam','docx','airbnb','git-track','vscode','image']),
+        ('SYSTEMS',['bepb','bt','route']),
+    ]
     for cat,kws in rules:
         if any(k in hay for k in kws): return cat
     return 'WEB'
 
 
 def generate_constellation(repos: list[dict[str,Any]]) -> str:
-    centers={'FINANCE':(188,168),'AI':(440,122),'WEB':(692,168),'BUSINESS':(710,402),'LEARN':(445,448),'SYSTEMS':(190,402)}
-    colors={'FINANCE':'#5468FF','AI':'#8B5CF6','WEB':'#2F81F7','BUSINESS':'#27B66D','LEARN':'#E3B341','SYSTEMS':'#DB6D28'}
+    centers={'GAME':(120,165),'FINANCE':(337,165),'AI':(555,165),'WEB':(773,165),
+             'BUSINESS':(120,408),'CREATOR':(337,408),'LEARN':(555,408),'SYSTEMS':(773,408)}
+    colors={'GAME':'#9069FF','FINANCE':'#5468FF','AI':'#8B5CF6','WEB':'#2F81F7',
+            'BUSINESS':'#27B66D','CREATOR':'#C58CFF','LEARN':'#E3B341','SYSTEMS':'#DB6D28'}
     grouped={k:[] for k in centers}
     for r in repos: grouped[classify_repo(r)].append(r)
-    flagships={'FinCo-pilot':'FINCO','Toolshub':'TOOLS','DigiRise-India':'DIGIRISE','financeCalculator-Ind-v6.0-':'FINCALC','Zenvy-AI':'ZENVY','Bharat-OS':'BHARAT'}
+    flagships={'ARKYVON':'ENGINE','Global-Chess-Online-PVP-':'CHESS','Unlimited-Auto-Cut-Clipper-Tool':'CLIP',
+               'OpenXdrive':'DRIVE','FinCo-pilot':'FINCO','Toolshub':'TOOLS','DigiRise-India':'DIGIRISE',
+               'financeCalculator-Ind-v6.0-':'FINCALC','Zenvy-AI':'ZENVY','Bharat-OS':'BHARAT'}
     clusters=[]; lines=[]; nodes=[]
     for cat,(cx,cy) in centers.items():
         c=colors[cat]; items=sorted(grouped[cat],key=lambda x:(x.get('name') or '').lower()); n=max(1,len(items))
