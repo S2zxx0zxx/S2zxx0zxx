@@ -39,6 +39,16 @@ I also build and grow **DigiRise India**, while continuously experimenting with 
 </tr>
 </table>
 
+### Live GitHub activity
+
+<div align="center">
+<a href="https://gitarena.dev/u/S2zxx0zxx"><img src="https://gitarena.dev/api/badge/S2zxx0zxx?timeframe=total&theme=dark&color=orange" alt="GitArena all-time GitHub activity statistics" width="390" /></a>
+ 
+<a href="https://gitarena.dev/u/S2zxx0zxx"><img src="https://gitarena.dev/api/badge/S2zxx0zxx/pill?timeframe=total&theme=light&color=purple" alt="GitArena activity and rank pill" /></a>
+</div>
+
+<sub>Live, third-party GitHub activity indicators. These reflect activity, not an independent assessment of engineering skill.</sub>
+
 > Current-first profile: real product state, real repository signals, and generated activity surfaces instead of stale vanity metrics.
 
 <br/>
@@ -549,6 +559,12 @@ Ship a solid version, inspect what breaks, learn from it, then make the next ver
 <br/><br/>
 
 <img src="./assets/contribution-city-live.svg" alt="Auto-updating 3D contribution city" width="100%" />
+
+<br/><br/>
+
+<a href="https://gitarena.dev/u/S2zxx0zxx"><img src="https://gitarena.dev/api/badge/S2zxx0zxx/graph?theme=light&color=purple" alt="GitArena contribution activity graph" width="100%" /></a>
+
+<sub>GitArena contribution graph · independently rendered from available GitHub activity.</sub>
 
 </div>
 
