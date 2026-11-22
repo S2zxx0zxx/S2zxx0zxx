@@ -201,8 +201,8 @@ def generate_terminal(public_count: int) -> str:
     lines = [
         ("00","BOOT","profile kernel","ONLINE","#27B66D"),
         ("01","MAP","repo universe",f"{public_count} PUBLIC / {public_count + CONFIG['private_count_verified']} TRACKED","#5468FF"),
-        ("02","SHIP","FinCo-Pilot","HARDENING","#F59E0B"),
-        ("03","BUILD","ToolsLab LLMs","ACTIVE","#27B66D"),
+        ("02","BUILD","ARKYVON Engine","ACTIVE","#27B66D"),
+        ("03","BUILD","Global Chess","ACTIVE","#27B66D"),
         ("04","SYNC","GitHub signals","AUTO-REFRESH ARMED","#5468FF"),
     ]
     rows=[]
@@ -219,7 +219,7 @@ def generate_heartbeat(snapshots: dict[str,dict[str,Any]]) -> str:
     cards=[]; card_w=410; gap=20
     for i,p in enumerate(products):
         s=snapshots.get(p["repo"],{}); col=i%2; row=i//2; x=30+col*(card_w+gap); y=102+row*142
-        status=p["status"]; color={"HARDENING":"#F59E0B","RESEARCH":"#8B5CF6","BUILDING":"#27B66D","SHIPPED":"#27B66D"}.get(status,"#777771"); pulse="pulse" if status in {"BUILDING","HARDENING"} else ""
+        status=p["status"]; color={"HARDENING":"#F59E0B","RESEARCH":"#8B5CF6","BUILDING":"#27B66D","TESTING":"#C084FC","SHIPPED":"#27B66D","VERIFIED":"#27B66D"}.get(status,"#777771"); pulse="pulse" if status in {"BUILDING","TESTING","HARDENING"} else ""
         cards.append(f'''<g transform="translate({x} {y})"><rect width="{card_w}" height="124" rx="18" class="panel"/><circle class="{pulse}" cx="24" cy="27" r="6" fill="{color}"/><text x="42" y="32" font-size="11" fill="{color}">{xml(status)}</text><text x="24" y="62" font-size="20" font-weight="700" class="sans ink">{xml(p['label'])}</text><text x="24" y="86" font-size="11" class="muted">{xml(trim(s.get('commit_message','') or 'No public commit signal',43))}</text><text x="24" y="108" font-size="10" class="muted">{xml(trim(s.get('branch','—'),16))} · {xml(trim(s.get('language','Mixed'),12))}</text><text x="{card_w-20}" y="108" text-anchor="end" font-size="10" class="muted">{xml(short_date(s.get('commit_date','')))}</text></g>''')
     rows=math.ceil(len(products)/2); h=128+rows*142+20
     body=f'''<rect width="900" height="{h}" rx="24" fill="var(--bg)"/><text x="30" y="42" font-size="12" fill="#27B66D" letter-spacing="2">PRODUCT HEARTBEAT</text><text x="30" y="76" font-size="27" font-weight="800" class="sans ink">Real repository signals, not vanity counters.</text><text x="870" y="48" text-anchor="end" font-size="10" class="muted">AUTO-SYNC · PUBLIC GITHUB DATA</text>{''.join(cards)}'''
@@ -263,8 +263,9 @@ def generate_timeline(snapshots: dict[str,dict[str,Any]]) -> str:
         idx=stages.index(p['stage']); slot=slots[idx]; slots[idx]+=1; x=sx[idx]; y=150+slot*54; s=snapshots.get(p.get('repo') or '',{}); date=short_date(s.get('commit_date','')) if p.get('repo') else p.get('note','curated'); active=p.get('active',False); color='#5468FF' if active else ('#27B66D' if p['stage']=='SHIPPED' else '#8B5CF6'); pulse='pulse' if active else ''
         markers.append(f'<g transform="translate({x} {y})"><circle class="{pulse}" r="9" fill="{color}" opacity=".18"/><circle r="4.8" fill="{color}"/><text y="22" text-anchor="middle" font-size="10" font-weight="700" class="sans ink">{xml(p["label"])}</text><text y="37" text-anchor="middle" font-size="8.5" class="muted">{xml(date)}</text></g>')
     stage_nodes=''.join(f'<circle cx="{sx[i]}" cy="112" r="9" fill="var(--panel)" stroke="var(--accent)" stroke-width="2"/><text x="{sx[i]}" y="90" text-anchor="middle" font-size="10" fill="var(--accent)" letter-spacing="1">{stage}</text>' for i,stage in enumerate(stages))
-    body=f'''<rect width="900" height="370" rx="24" fill="var(--bg)"/><text x="30" y="42" font-size="12" fill="#8B5CF6" letter-spacing="2">SHIPPING TIMELINE</text><text x="30" y="76" font-size="27" font-weight="800" class="sans ink">Research → Build → Audit → Production → Shipped</text><line x1="90" y1="112" x2="790" y2="112" stroke="var(--hair)" stroke-width="5" stroke-linecap="round"/><line class="flow" x1="90" y1="112" x2="790" y2="112" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>{stage_nodes}{''.join(markers)}<text x="30" y="344" font-size="10" class="muted">Phase is curated product state · dates refresh from public repository commit signals.</text>'''
-    return svg_shell(900,370,body,"Shipping timeline")
+    timeline_height = max(370, 190 + (max(slots.values(), default=1) - 1) * 54 + 82)
+    body=f'''<rect width="900" height="{timeline_height}" rx="24" fill="var(--bg)"/><text x="30" y="42" font-size="12" fill="#8B5CF6" letter-spacing="2">SHIPPING TIMELINE</text><text x="30" y="76" font-size="27" font-weight="800" class="sans ink">Research → Build → Audit → Production → Shipped</text><line x1="90" y1="112" x2="790" y2="112" stroke="var(--hair)" stroke-width="5" stroke-linecap="round"/><line class="flow" x1="90" y1="112" x2="790" y2="112" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>{stage_nodes}{''.join(markers)}<text x="30" y="{timeline_height-24}" font-size="10" class="muted">Phases are curated · dates reflect public commits, not independently verified releases.</text>'''
+    return svg_shell(900,timeline_height,body,"Shipping timeline")
 
 
 def generate_feed(snapshots: dict[str,dict[str,Any]]) -> str:
