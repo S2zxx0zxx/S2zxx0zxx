@@ -4,13 +4,13 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=800&color=6F6F68&center=true&vCenter=true&width=900&lines=I+build+useful+digital+products+and+ship+what+I+learn.;Finance+%C2%B7+AI+%C2%B7+Web+%C2%B7+Mobile+%C2%B7+Product+Systems;Research+deeply.+Build+fast.+Audit+hard.+Ship+better." alt="Animated intro" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=800&color=6F6F68&center=true&vCenter=true&width=900&lines=I+build+useful+digital+products+and+ship+what+I+learn.;Game+Engine+%C2%B7+Game+Development+%C2%B7+Shipped+Apps+%C2%B7+Publishing;Research+deeply.+Build+fast.+Audit+hard.+Ship+better." alt="Animated intro" />
 
 <br/>
 
 <a href="https://s2zxx0zxx.github.io/Satzzxzxx/"><img src="https://img.shields.io/badge/PORTFOLIO-LIVE-171717?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 <img src="https://img.shields.io/badge/STATUS-ACTIVELY_SHIPPING-27B66D?style=for-the-badge&labelColor=171717" alt="Actively shipping" />
-<img src="https://img.shields.io/badge/FOCUS-AI_%C2%B7_FINANCE_%C2%B7_PRODUCTS-5468FF?style=for-the-badge&labelColor=171717" alt="Focus" />
+<img src="https://img.shields.io/badge/FOCUS-ENGINE_%C2%B7_GAMES_%C2%B7_PRODUCTS-5468FF?style=for-the-badge&labelColor=171717" alt="Focus" />
 
 <br/><br/>
 
@@ -33,9 +33,9 @@ I also build and grow **DigiRise India**, while continuously experimenting with 
 <td width="25%" align="center"><!-- PROFILE_TRACKED_COUNT_START -->
 <b>58</b>
 <!-- PROFILE_TRACKED_COUNT_END --><br/><sub>tracked repositories<br/>public live + private audit</sub></td>
-<td width="25%" align="center"><b>2</b><br/><sub>primary products<br/>in the hero showcase</sub></td>
-<td width="25%" align="center"><b>6</b><br/><sub>shipped products<br/>highlighted</sub></td>
-<td width="25%" align="center"><b>Web · Mobile · AI</b><br/><sub>core product<br/>surface</sub></td>
+<td width="25%" align="center"><b>2</b><br/><sub>primary game development<br/>tracks in progress</sub></td>
+<td width="25%" align="center"><b>8</b><br/><sub>shipped products<br/>highlighted</sub></td>
+<td width="25%" align="center"><b>Engine · Games · Apps</b><br/><sub>current product<br/>focus</sub></td>
 </tr>
 </table>
 
@@ -50,26 +50,36 @@ I also build and grow **DigiRise India**, while continuously experimenting with 
 ## `02` Currently building
 
 <div align="center">
-<img src="./assets/building-now-v2.svg" alt="Currently building FinCo-Pilot and ToolsLab LLMs" width="100%" />
+<img src="./assets/three-path-workflow-v3.svg" alt="Animated routes for ARKYVON engine and games, shipped web/PWA products, and the Paisa Journal finance publication" width="100%" />
 </div>
 
-### **FinCo-Pilot** — personal finance + AI platform
+### Three routes: **Game engine → Games**, **Web / PWA apps**, **Blogs / Articles**
 
-Privacy-first finance cockpit for accounts, transactions, imports, categorization, budgets, goals, reports, shared expenses, invoices, multi-currency, bank integrations, backup/restore, and optional AI workflows.
+The active development center is now **ARKYVON and game development**. Finance and AI products previously in this spotlight have moved to the shipped showcase below, while the publication track links to original finance writing.
 
-`React` · `TypeScript` · `Vite` · `FastAPI` · `PostgreSQL` · `Redis` · `Celery` · `Docker` · `AI/MCP/RAG`
+<div align="center">
+<img src="./assets/building-now-v2.svg" alt="Currently building ARKYVON game engine and Global Chess" width="100%" />
+</div>
 
-**Current phase:** production hardening, audit, polish, and release preparation.  
-**Repository:** [`S2zxx0zxx/FinCo-pilot`](https://github.com/S2zxx0zxx/FinCo-pilot)
+### **ARKYVON** — reusable game-engine architecture
 
-### **ToolsLab LLMs** — practical LLM product lab
+Building the foundation for reusable game-runtime systems, physics and editor integrations, cross-platform pipelines, and professional tooling. **BUILDING** is a curated development stage; the current public repository is an early scaffold, not proof of a released engine.
 
-AI/LLM product focused on useful model-powered tools, agent workflows, research utilities, and practical automation. The public codebase currently lives under **Toolshub** while the product identity evolves toward ToolsLab LLMs.
+`Game architecture` · `Rendering` · `Physics` · `Runtime tooling` · `Game systems`
 
-`LLMs` · `Agents` · `AI workflows` · `Web tools` · `Product systems`
+**Current phase:** BUILDING · Game-engine foundations.  
+**Repository:** [`ARKYVON`](https://github.com/S2zxx0zxx/ARKYVON)
 
-**Current phase:** active product development and launch-readiness cleanup.  
-**Repository:** [`S2zxx0zxx/Toolshub`](https://github.com/S2zxx0zxx/Toolshub)
+### **Global Chess** — game development, 2D / 3D
+
+Offline-first chess foundations with legal-move handling, 2D/3D experience, browser smoke tests and PWA delivery work. Main game implementation is presently in draft PR #1, not independently production-accepted.
+
+`TypeScript` · `Babylon / Havok` · `PWA` · `Game UI` · `Testing`
+
+**Current phase:** BUILDING · Playable foundation.  
+**Active development:** [Global Chess PR #1](https://github.com/S2zxx0zxx/Global-Chess-Online-PVP-/pull/1)
+
+**Also queued:** [Global Carrom](https://github.com/S2zxx0zxx/Global-Carrom-Online-PVP-) and [Global Brain / IQ Puzzle](https://github.com/S2zxx0zxx/Global-Brain-Iq-Train-Puzzle) (early repository scaffolds).
 
 <br/>
 
@@ -83,16 +93,16 @@ AI/LLM product focused on useful model-powered tools, agent workflows, research 
 
 ### Engineering frontier · games, engine & creator infrastructure
 
-<sub>The original two-product showcase stays intact. This is an additive, evidence-based view of the newer engineering work.</sub>
+<sub>The former FinCoPilot / ToolsLab spotlight has moved into shipped products. Game development is the current workstream, with separate building/testing phase labels.</sub>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 <h4>ARKYVON · Game Engine</h4>
-<img src="https://img.shields.io/badge/PHASE-RESEARCH-8B5CF6?style=flat-square" alt="Research" />
+<img src="https://img.shields.io/badge/PHASE-BUILDING-27B66D?style=flat-square" alt="Building" />
 
-<p>New game-engine identity and architecture R&amp;D. The public repository currently contains a starter README, not a functional engine release.</p>
+<p>Game-engine architecture build in progress. The public repository remains a starter scaffold rather than a released game-engine build.</p>
 
 <a href="https://github.com/S2zxx0zxx/ARKYVON"><img src="https://img.shields.io/badge/Explore-Engine_Repository-171717?style=for-the-badge&logo=github&logoColor=white" alt="Explore ARKYVON repository" /></a>
 
@@ -100,7 +110,7 @@ AI/LLM product focused on useful model-powered tools, agent workflows, research 
 <td width="50%" valign="top">
 
 <h4>Global Chess · 2D / 3D</h4>
-<img src="https://img.shields.io/badge/PHASE-FOUNDATION_IN_PR-5468FF?style=flat-square" alt="Foundation in draft PR" />
+<img src="https://img.shields.io/badge/PHASE-BUILDING-27B66D?style=flat-square" alt="Building, draft PR" />
 
 <p>Offline-first chess foundation, interactive 2D/3D work and device-focused QA. Core implementation is in a draft pull request; production acceptance is still pending.</p>
 
@@ -112,9 +122,9 @@ AI/LLM product focused on useful model-powered tools, agent workflows, research 
 <td width="50%" valign="top">
 
 <h4>LiveClip Zero Studio</h4>
-<img src="https://img.shields.io/badge/PHASE-LOCAL_TOOL_DEVELOPMENT-5468FF?style=flat-square" alt="Local tool development" />
+<img src="https://img.shields.io/badge/PHASE-TESTING-8B5CF6?style=flat-square" alt="Testing" />
 
-<p>Local-first livestream capture and evidence-ranked video highlight tooling with desktop and private localhost browser workflows. Semantic highlight accuracy remains unverified.</p>
+<p>Local-first livestream capture and ranked highlight tooling with desktop and private localhost workflows, now in TESTING. Semantic accuracy has not been independently verified.</p>
 
 <a href="https://github.com/S2zxx0zxx/Unlimited-Auto-Cut-Clipper-Tool"><img src="https://img.shields.io/badge/Explore-Video_Tooling-171717?style=for-the-badge&logo=github&logoColor=white" alt="Explore LiveClip Zero Studio" /></a>
 
@@ -122,9 +132,9 @@ AI/LLM product focused on useful model-powered tools, agent workflows, research 
 <td width="50%" valign="top">
 
 <h4>OpenXdrive · Storage Gateway</h4>
-<img src="https://img.shields.io/badge/PHASE-ACTIVE_DEVELOPMENT-5468FF?style=flat-square" alt="Active development" />
+<img src="https://img.shields.io/badge/PHASE-TESTING-8B5CF6?style=flat-square" alt="Testing" />
 
-<p>Multi-account Google Drive and S3-compatible storage dashboard, upload routing and API workflows. Repository functionality is documented; production deployment is not claimed.</p>
+<p>Multi-account Google Drive and S3-compatible storage dashboard, upload routing and API workflows in TESTING. Production readiness is not claimed.</p>
 
 <a href="https://github.com/S2zxx0zxx/OpenXdrive"><img src="https://img.shields.io/badge/Explore-Storage_Gateway-171717?style=for-the-badge&logo=github&logoColor=white" alt="Explore OpenXdrive" /></a>
 
@@ -143,7 +153,7 @@ AI/LLM product focused on useful model-powered tools, agent workflows, research 
 
 </details>
 
-<sub>Project stages are curated, not inferred from stars, commit volume, or a README claim. Ongoing engine research is not represented as a released engine.</sub>
+<sub>Project stages are curated, not inferred from stars, commit volume, or a README claim. BUILDING or TESTING does not assert independent acceptance or public production release.</sub>
 
 <br/>
 
@@ -155,10 +165,49 @@ AI/LLM product focused on useful model-powered tools, agent workflows, research 
 ## `03` Shipped products
 
 <div align="center">
-<img src="./assets/shipped-products-v2.svg" alt="Six completed and shipped products" width="100%" />
+<img src="./assets/shipped-products-v2.svg" alt="Eight shipped product showcases including FinCoPilot and ToolsLab LLMs" width="100%" />
 </div>
 
+### **FinCo-Pilot** — shipped finance and AI platform
+
+Privacy-first finance workspace for accounts, transactions, imports, categorization, budgets, goals, reports, shared expenses, invoices, multi-currency, backups and optional AI workflows. **Shipped** describes the product showcase; features and live readiness remain dependent on deployment, settings and provider access.
+
+`React` · `TypeScript` · `Vite` · `FastAPI` · `PostgreSQL` · `Redis` · `Celery` · `Docker` · `AI/MCP/RAG`
+
+**Product:** [fincopilot.app](https://fincopilot.app/) · **Public docs:** [FinCoPilot.App](https://github.com/S2zxx0zxx/Fincopilot.App)  
+**Product classification:** SHIPPED · Continual quality and infrastructure updates.
+
+### **ToolsLab LLMs** — shipped LLM tool platform
+
+Practical model-powered tools, agent workflows, research utilities and web automation. The public product codebase is **Toolshub**, with the ToolsLab identity used in this portfolio. Feature availability depends on live deployment and configuration.
+
+`LLMs` · `Agents` · `AI workflows` · `Web tools` · `PWA`
+
+**Repository:** [`Toolshub`](https://github.com/S2zxx0zxx/Toolshub)  
+**Product classification:** SHIPPED · Continued maintenance.
+
+<br/>
+
 <table>
+<tr>
+<td width="50%" valign="top">
+
+### **FinCo-Pilot**
+Finance workspace with Web + PWA surface. Shipping classification does not imply every optional integration is active.
+
+[`Product website`](https://fincopilot.app/)
+
+</td>
+<td width="50%" valign="top">
+
+### **ToolsLab LLMs**
+AI and LLM product utilities, built around a public PWA-capable tools codebase.
+
+[`Public repository`](https://github.com/S2zxx0zxx/Toolshub)
+
+</td>
+</tr>
+
 <tr>
 <td width="50%" valign="top">
 
@@ -199,7 +248,7 @@ AI-focused web product with a dedicated backend, PWA support, deployment configu
 <td width="50%" valign="top">
 
 ### **Liquid Lounge**
-Polished personal/static web experience with PWA capabilities, service-worker support, custom-domain plumbing, and clean deployment architecture.
+Restaurant and lounge website with PWA capabilities, service-worker support, a custom domain and static deployment architecture.
 
 [`Public repository`](https://github.com/S2zxx0zxx/liquid-lounge)
 
@@ -221,17 +270,19 @@ Gaming and digital-store product focused on a direct, product-first shopping exp
 
 <br/>
 
-## `04` Featured five
+## `04` Featured seven
 
-| Rank | Product | What it represents | Current state |
+| Rank | Product | What it represents | Portfolio state |
 |:--:|---|---|---|
-| **01** | **FinCo-Pilot** | Full-stack personal finance + AI system | 🟢 Building / hardening |
-| **02** | **FitTrackAI** | AI fitness & nutrition product | ✅ Build + tests documented |
-| **03** | **ToolsLab LLMs / Toolshub** | Multi-tool AI / LLM product system | 🟢 Building |
-| **04** | **DigiRise India** | Real business / agency web platform | ✅ Shipped |
-| **05** | **FinCalc** | Finance tools + content platform | ✅ Shipped |
+| **01** | **ARKYVON** | Game-engine architecture & reusable systems | 🟢 BUILDING · early scaffold |
+| **02** | **Global Chess** | Offline-first 2D/3D chess game | 🟢 BUILDING · active draft PR |
+| **03** | **FinCo-Pilot** | Finance and AI platform | ✅ SHIPPED · ongoing improvements |
+| **04** | **FitTrackAI** | AI fitness & nutrition product | ✅ Build + tests documented |
+| **05** | **ToolsLab LLMs / Toolshub** | AI / LLM tools platform | ✅ SHIPPED · maintained |
+| **06** | **DigiRise India** | Business / agency web + PWA platform | ✅ SHIPPED |
+| **07** | **FinCalc** | Finance calculator and content platform | ✅ VERIFIED showcase |
 
-<sub>FitTrackAI is private, so this profile describes it without exposing private source.</sub>
+<sub>FitTrackAI is private, so private source isn't exposed. A shipped showcase badge is not independent release certification.</sub>
 
 <br/>
 
@@ -329,12 +380,13 @@ The constellation groups **public repositories** into product domains and highli
 
 <br/>
 
-- **Frontend / product UI:** React, TypeScript, Next.js, Vite, Flutter
+- **Frontend / product UI:** React, TypeScript, Next.js, Vite, Flutter, Babylon-based game UI
 - **Backend / APIs:** Python, FastAPI, serverless functions, API-oriented services
 - **Data / auth:** PostgreSQL, Firebase, Supabase
 - **Infra / delivery:** Docker, GitHub Actions, Vercel, GitHub Pages
+- **Game systems:** Game architecture, TypeScript gameplay, 2D/3D rendering and physics adapters
 - **AI:** LLM integration, agent workflows, MCP/RAG experiments, model-powered utilities
-- **Product growth:** SEO, content systems, analytics thinking, business positioning
+- **Product growth:** SEO, original articles, content systems, analytics thinking, business positioning
 
 <br/>
 
@@ -358,7 +410,7 @@ I use real projects as the classroom. The areas I’m deliberately improving rig
 <td width="20%" align="center"><b>Backend</b><br/><sub>scalable product architecture</sub></td>
 <td width="20%" align="center"><b>Security</b><br/><sub>hardening & launch safety</sub></td>
 <td width="20%" align="center"><b>Product Design</b><br/><sub>UI, motion, hierarchy</sub></td>
-<td width="20%" align="center"><b>SEO & Growth</b><br/><sub>discovery & distribution</sub></td>
+<td width="20%" align="center"><b>Game Systems</b><br/><sub>engine, gameplay and physics</sub></td>
 </tr>
 </table>
 
@@ -411,6 +463,17 @@ A project is not “done” because the UI looks finished — it needs to surviv
 - [`Image-Scraping-Advanced-2.0.1`](https://github.com/S2zxx0zxx/Image-Scraping-Advanced-2.0.1)
 
 </details>
+
+### Editorial / independent learning resources
+
+**<a href="https://thepaisajournal.blogspot.com/">The Paisa Journal</a>** — Hindi, Hinglish and English everyday-money articles on bills, budgeting and savings. The journal and FinCoPilot share the same founder-led ecosystem; links between them are disclosed rather than presented as unrelated endorsements.
+
+- [Read The Paisa Journal](https://thepaisajournal.blogspot.com/)
+- [Finance publication explainer and index](https://fincopilot.app/welcome/journal/)
+- [FinCalc India finance articles](https://satzzxzxx.me/blog/)
+- [Satzzxzxx Labs](https://github.com/S2zxx0zxx/Satzzxzxx-Labs) — research and editorial studio
+
+<br/>
 
 <br/>
 
@@ -500,12 +563,13 @@ Ship a solid version, inspect what breaks, learn from it, then make the next ver
 <div align="center">
 
 **Satyam Kumar · Satzzxzxx**  
-Builder · Creator · Digital Entrepreneur
+Builder · Game Engine Developer · Creator · Digital Entrepreneur
 
 <br/>
 
 <a href="https://s2zxx0zxx.github.io/Satzzxzxx/"><img src="https://img.shields.io/badge/View_my_portfolio-171717?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
 <a href="https://github.com/S2zxx0zxx"><img src="https://img.shields.io/badge/GitHub-S2zxx0zxx-171717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://thepaisajournal.blogspot.com/"><img src="https://img.shields.io/badge/Read-The_Paisa_Journal-8B5CF6?style=for-the-badge&logo=blogger&logoColor=white" alt="The Paisa Journal" /></a>
 
 <br/><br/>
 
