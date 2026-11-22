@@ -5,12 +5,12 @@
     {
       "label": "FinCo-Pilot",
       "repo": "FinCo-pilot",
-      "status": "HARDENING"
+      "status": "SHIPPED"
     },
     {
       "label": "ToolsLab LLMs",
       "repo": "Toolshub",
-      "status": "BUILDING"
+      "status": "SHIPPED"
     },
     {
       "label": "DigiRise India",
@@ -40,31 +40,31 @@
     {
       "label": "LiveClip Zero",
       "repo": "Unlimited-Auto-Cut-Clipper-Tool",
-      "status": "BUILDING"
+      "status": "TESTING"
     },
     {
       "label": "OpenXdrive",
       "repo": "OpenXdrive",
-      "status": "BUILDING"
+      "status": "TESTING"
     },
     {
       "label": "ARKYVON Engine",
       "repo": "ARKYVON",
-      "status": "RESEARCH"
+      "status": "BUILDING"
     }
   ],
   "timeline_products": [
     {
       "label": "ToolsLab",
       "repo": "Toolshub",
-      "stage": "BUILD",
-      "active": true
+      "stage": "SHIPPED",
+      "active": false
     },
     {
       "label": "FinCo",
       "repo": "FinCo-pilot",
-      "stage": "AUDIT",
-      "active": true
+      "stage": "SHIPPED",
+      "active": false
     },
     {
       "label": "FitTrackAI",
@@ -94,7 +94,7 @@
     {
       "label": "ARKYVON",
       "repo": "ARKYVON",
-      "stage": "RESEARCH",
+      "stage": "BUILD",
       "active": true
     },
     {
@@ -106,7 +106,7 @@
     {
       "label": "OpenXdrive",
       "repo": "OpenXdrive",
-      "stage": "BUILD",
+      "stage": "AUDIT",
       "active": true
     },
     {
@@ -180,5 +180,24 @@
   ],
   "private_count_verified": 11,
   "private_count_verified_at": "2026-11-22",
-  "inventory_policy": "Public repositories refresh automatically; private count is a dated manual audit and is not publicly enumerated."
+  "inventory_policy": "Public repositories refresh automatically; private count is a dated manual audit and is not publicly enumerated.",
+  "editorial_publications": [
+    {
+      "name": "The Paisa Journal",
+      "url": "https://thepaisajournal.blogspot.com/",
+      "status": "PUBLISHING",
+      "related_product": "FinCoPilot"
+    },
+    {
+      "name": "FinCalc India Blog",
+      "url": "https://satzzxzxx.me/blog/",
+      "status": "PUBLISHED"
+    }
+  ],
+  "profile_focus": [
+    "Game Engine Development",
+    "Game Development",
+    "Web and PWA Products",
+    "Finance Publishing"
+  ]
 }
