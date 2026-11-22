@@ -1,17 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
-<title id="title">Completed products</title><desc id="desc">FinCalc, DigiRise India, Taskora AI, Zenvy AI, Liquid Lounge, and GameMart Store.</desc>
-<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#171717" stroke-opacity=".03"/></pattern></defs>
-<rect width="1200" height="690" rx="28" fill="#fbfbf7"/><rect width="1200" height="690" rx="28" fill="url(#grid)"/>
-<text x="54" y="70" font-family="SFMono-Regular,Consolas,monospace" font-size="15" letter-spacing="2" fill="#707069">SOFTWARE STATS</text>
-<text x="54" y="120" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="-1.5" fill="#171717">Completed products</text>
-<g transform="translate(946 86)"><circle cx="0" cy="0" r="7" fill="#27b66d"/><text x="18" y="5" font-family="SFMono-Regular,Consolas,monospace" font-size="14" fill="#2f8051">SHIPPED</text></g>
-
-<g font-family="Inter,Segoe UI,Arial,sans-serif">
-  <g transform="translate(54 160)"><rect width="528" height="144" rx="22" fill="#fff" stroke="#d9d9d2"/><rect x="22" y="22" width="58" height="58" rx="17" fill="#171717"/><text x="51" y="59" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">1</text><text x="104" y="48" font-size="24" font-weight="800" fill="#171717">FinCalc</text><text x="104" y="78" font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#787871">Indian finance calculator platform</text><line x1="22" y1="100" x2="506" y2="100" stroke="#e4e4de"/><circle cx="32" cy="120" r="5" fill="#27b66d"/><text x="46" y="125" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#62625c">WEB · LIVE</text></g>
-  <g transform="translate(618 160)"><rect width="528" height="144" rx="22" fill="#fff" stroke="#d9d9d2"/><rect x="22" y="22" width="58" height="58" rx="17" fill="#171717"/><text x="51" y="59" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">2</text><text x="104" y="48" font-size="24" font-weight="800" fill="#171717">DigiRise India</text><text x="104" y="78" font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#787871">Agency &amp; business platform</text><line x1="22" y1="100" x2="506" y2="100" stroke="#e4e4de"/><circle cx="32" cy="120" r="5" fill="#27b66d"/><text x="46" y="125" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#62625c">WEB · LIVE</text></g>
-  <g transform="translate(54 326)"><rect width="528" height="144" rx="22" fill="#fff" stroke="#d9d9d2"/><rect x="22" y="22" width="58" height="58" rx="17" fill="#171717"/><text x="51" y="59" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">3</text><text x="104" y="48" font-size="24" font-weight="800" fill="#171717">Taskora AI</text><text x="104" y="78" font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#787871">Productivity + expense + AI app</text><line x1="22" y1="100" x2="506" y2="100" stroke="#e4e4de"/><circle cx="32" cy="120" r="5" fill="#27b66d"/><text x="46" y="125" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#62625c">FLUTTER · BUILD VERIFIED</text></g>
-  <g transform="translate(618 326)"><rect width="528" height="144" rx="22" fill="#fff" stroke="#d9d9d2"/><rect x="22" y="22" width="58" height="58" rx="17" fill="#171717"/><text x="51" y="59" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">4</text><text x="104" y="48" font-size="24" font-weight="800" fill="#171717">Zenvy AI</text><text x="104" y="78" font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#787871">AI web product + backend</text><line x1="22" y1="100" x2="506" y2="100" stroke="#e4e4de"/><circle cx="32" cy="120" r="5" fill="#27b66d"/><text x="46" y="125" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#62625c">WEB · SHIPPED</text></g>
-  <g transform="translate(54 492)"><rect width="528" height="144" rx="22" fill="#fff" stroke="#d9d9d2"/><rect x="22" y="22" width="58" height="58" rx="17" fill="#171717"/><text x="51" y="59" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">5</text><text x="104" y="48" font-size="24" font-weight="800" fill="#171717">Liquid Lounge</text><text x="104" y="78" font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#787871">Personal website / PWA</text><line x1="22" y1="100" x2="506" y2="100" stroke="#e4e4de"/><circle cx="32" cy="120" r="5" fill="#27b66d"/><text x="46" y="125" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#62625c">WEB / PWA · LIVE</text></g>
-  <g transform="translate(618 492)"><rect width="528" height="144" rx="22" fill="#fff" stroke="#d9d9d2"/><rect x="22" y="22" width="58" height="58" rx="17" fill="#171717"/><text x="51" y="59" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">6</text><text x="104" y="48" font-size="24" font-weight="800" fill="#171717">GameMart Store</text><text x="104" y="78" font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#787871">Gaming / digital store platform</text><line x1="22" y1="100" x2="506" y2="100" stroke="#e4e4de"/><circle cx="32" cy="120" r="5" fill="#27b66d"/><text x="46" y="125" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#62625c">WEB STORE · SHIPPED</text></g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830" role="img" aria-labelledby="title desc">
+<title id="title">Shipped product showcase</title>
+<desc id="desc">Eight curated shipped product cards including FinCoPilot and ToolsLab LLMs. Verified is a founder-curated status label, not independent third-party certification.</desc>
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#171717" stroke-opacity=".035"/></pattern></defs>
+<rect width="1200" height="830" rx="28" fill="#fbfbf7"/>
+<rect width="1200" height="830" rx="28" fill="url(#grid)"/>
+<text x="40" y="64" fill="#797972" font-family="Consolas,monospace" letter-spacing="2" font-size="15">SHIPPED SOFTWARE SHOWCASE</text>
+<text x="40" y="114" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="40" font-weight="800">Eight products. One evolving portfolio.</text>
+<circle cx="1126" cy="83" r="7" fill="#27b66d"/>
+<text x="1054" y="88" text-anchor="end" fill="#2f8158" font-family="Consolas,monospace" font-size="14">SHIPPED</text>
+<g transform="translate(40 150)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">1</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">FinCo-Pilot</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">Finance workspace + AI</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB + PWA · SHIPPED</text>
+ </g><g transform="translate(606 150)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">2</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">ToolsLab LLMs</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">AI tools / agent workflows</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB + PWA · SHIPPED</text>
+ </g><g transform="translate(40 310)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">3</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">FinCalc</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">Indian finance calculators</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB + PWA · VERIFIED</text>
+ </g><g transform="translate(606 310)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">4</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">DigiRise India</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">Agency + business website</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB + PWA · VERIFIED</text>
+ </g><g transform="translate(40 470)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">5</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">Taskora AI</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">Productivity / finance Flutter app</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">FLUTTER · BUILD VERIFIED</text>
+ </g><g transform="translate(606 470)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">6</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">Zenvy AI</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">AI web product + backend</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB + PWA · SHIPPED</text>
+ </g><g transform="translate(40 630)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">7</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">Liquid Lounge</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">Restaurant website + PWA</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB + PWA · VERIFIED</text>
+ </g><g transform="translate(606 630)">
+ <rect width="548" height="140" rx="19" fill="#fff" stroke="#ddddda"/>
+ <rect x="18" y="16" width="60" height="60" rx="16" fill="#171717"/>
+ <text x="48" y="55" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="18" font-weight="700">8</text>
+ <text x="99" y="41" fill="#171717" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="800">GameMart Store</text>
+ <text x="99" y="70" fill="#777770" font-family="Consolas,monospace" font-size="12.5">Gaming / digital-store platform</text>
+ <line x1="19" y1="92" x2="523" y2="92" stroke="#e8e8e1"/>
+ <circle cx="27" cy="117" r="6" fill="#27b66d"/>
+ <text x="44" y="122" fill="#666660" font-family="Consolas,monospace" font-size="13">WEB STORE · SHIPPED</text>
+ </g>
+<text x="600" y="818" fill="#85857e" text-anchor="middle" font-family="Consolas,monospace" font-size="11">Project labels are editorial classifications; live deployment readiness is assessed separately.</text>
 </svg>

@@ -1,38 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-<title id="title">Currently building</title><desc id="desc">FinCo-Pilot and ToolsLab LLMs are under active development.</desc>
-<defs>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#171717" stroke-opacity=".035"/></pattern>
-  <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5368ff"/><stop offset="1" stop-color="#7a67ff"/></linearGradient>
-</defs>
-<rect width="1200" height="560" rx="28" fill="#fbfbf7"/>
-<rect width="1200" height="560" rx="28" fill="url(#grid)"/>
-<g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#171717">
-  <text x="54" y="76" font-size="16" font-family="SFMono-Regular,Consolas,monospace" letter-spacing="2" fill="#6f6f68">CURRENTLY BUILDING</text>
-  <text x="54" y="126" font-size="42" font-weight="800" letter-spacing="-1.5">Two products. Both moving.</text>
-  <g transform="translate(930 79)"><circle cx="0" cy="0" r="7" fill="#27b66d"><animate attributeName="opacity" values="1;.45;1" dur="1.7s" repeatCount="indefinite"/></circle><text x="18" y="6" font-family="SFMono-Regular,Consolas,monospace" font-size="14" fill="#6f6f68">UPDATED LIVE</text></g>
-</g>
-
-<g transform="translate(54 164)">
-  <rect width="1092" height="158" rx="24" fill="#fff" stroke="#d8d8d1"/>
-  <rect x="26" y="26" width="72" height="72" rx="20" fill="#171717"/>
-  <text x="62" y="72" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="26" font-weight="800" fill="#fff">1</text>
-  <text x="128" y="56" font-family="Inter,Segoe UI,sans-serif" font-size="29" font-weight="800" fill="#171717">FinCo-Pilot</text>
-  <g transform="translate(850 30)"><rect width="164" height="32" rx="16" fill="#eaf8ef"/><circle cx="18" cy="16" r="5" fill="#27b66d"><animate attributeName="r" values="4;6;4" dur="1.7s" repeatCount="indefinite"/></circle><text x="34" y="21" font-family="SFMono-Regular,Consolas,monospace" font-size="12" font-weight="700" fill="#2f8051">BUILDING</text></g>
-  <text x="128" y="88" font-family="SFMono-Regular,Consolas,monospace" font-size="15" fill="#74746e">Personal finance + AI platform · production hardening</text>
-  <text x="128" y="119" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#9a9a92">React · FastAPI · PostgreSQL · Redis · Docker · AI/MCP</text>
-  <rect x="766" y="105" width="250" height="10" rx="5" fill="#ecece7"/>
-  <rect x="766" y="105" width="92" height="10" rx="5" fill="url(#bar)"><animate attributeName="x" values="766;924;766" dur="3.4s" repeatCount="indefinite"/></rect>
-</g>
-
-<g transform="translate(54 344)">
-  <rect width="1092" height="158" rx="24" fill="#fff" stroke="#d8d8d1"/>
-  <rect x="26" y="26" width="72" height="72" rx="20" fill="#171717"/>
-  <text x="62" y="72" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="26" font-weight="800" fill="#fff">2</text>
-  <text x="128" y="56" font-family="Inter,Segoe UI,sans-serif" font-size="29" font-weight="800" fill="#171717">ToolsLab LLMs</text>
-  <g transform="translate(850 30)"><rect width="164" height="32" rx="16" fill="#eaf8ef"/><circle cx="18" cy="16" r="5" fill="#27b66d"><animate attributeName="opacity" values="1;.45;1" dur="1.9s" repeatCount="indefinite"/></circle><text x="34" y="21" font-family="SFMono-Regular,Consolas,monospace" font-size="12" font-weight="700" fill="#2f8051">BUILDING</text></g>
-  <text x="128" y="88" font-family="SFMono-Regular,Consolas,monospace" font-size="15" fill="#74746e">LLM tool lab · agent workflows · model-powered utilities</text>
-  <text x="128" y="119" font-family="SFMono-Regular,Consolas,monospace" font-size="12" fill="#9a9a92">LLMs · Agents · Web tools · AI workflows</text>
-  <rect x="766" y="105" width="250" height="10" rx="5" fill="#ecece7"/>
-  <rect x="766" y="105" width="92" height="10" rx="5" fill="url(#bar)"><animate attributeName="x" values="766;924;766" dur="4.1s" repeatCount="indefinite"/></rect>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="485" viewBox="0 0 1200 485" role="img" aria-labelledby="title desc">
+<title id="title">Currently building: ARKYVON Game Engine and Global Chess</title>
+<desc id="desc">Two current development tracks. FinCoPilot and ToolsLab are now in shipped products. Animated accents indicate activity, not percent completion.</desc>
+<defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#171717" stroke-opacity=".04"/></pattern></defs>
+<rect width="1200" height="485" rx="25" fill="#fbfbf7"/>
+<rect width="1200" height="485" rx="25" fill="url(#grid)"/>
+<text x="40" y="60" font-family="Consolas,monospace" font-size="15" letter-spacing="2" fill="#7c7c75">CURRENTLY BUILDING · GAME SYSTEMS</text>
+<text x="40" y="113" font-family="Inter,Segoe UI,sans-serif" font-size="37" font-weight="800" fill="#171717">Engine foundations. Playable worlds.</text>
+<g transform="translate(40 148)">
+  <rect width="1120" height="142" rx="19" fill="#fff" stroke="#dadad4"/>
+  <rect x="23" y="20" width="76" height="76" rx="19" fill="#171717"/>
+  <text x="61" y="68" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="28" fill="#fff">✳</text>
+  <text x="122" y="48" font-family="Inter,Segoe UI,sans-serif" font-size="28" font-weight="800" fill="#171717">ARKYVON Game Engine</text>
+  <text x="122" y="79" font-family="Consolas,monospace" font-size="15" fill="#71716d">Architecture build · reusable runtime · early public scaffold</text>
+  <text x="122" y="108" font-family="Consolas,monospace" font-size="13" fill="#999991">Game systems  ·  Runtime  ·  Tooling</text>
+  <rect x="945" y="18" width="145" height="34" rx="17" fill="#e8f8ef"/>
+  <circle cx="964" cy="35" r="6" fill="#27b66d"><animate attributeName="opacity" values=".45;1;.45" dur="1.9s" repeatCount="indefinite"/></circle>
+  <text x="984" y="40" font-family="Consolas,monospace" font-size="12" font-weight="700" fill="#208250">BUILDING</text>
+  <rect x="947" y="101" width="141" height="7" rx="3.5" fill="#efedea"/>
+  <rect x="947" y="101" width="47" height="7" rx="3.5" fill="#8864e8"><animate attributeName="x" values="947;1035;947" dur="3.6s" repeatCount="indefinite"/></rect>
+ </g><g transform="translate(40 311)">
+  <rect width="1120" height="142" rx="19" fill="#fff" stroke="#dadad4"/>
+  <rect x="23" y="20" width="76" height="76" rx="19" fill="#171717"/>
+  <text x="61" y="68" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="28" fill="#fff">♞</text>
+  <text x="122" y="48" font-family="Inter,Segoe UI,sans-serif" font-size="28" font-weight="800" fill="#171717">Global Chess</text>
+  <text x="122" y="79" font-family="Consolas,monospace" font-size="15" fill="#71716d">Offline-first chess  ·  2D / 3D  ·  playable foundation in draft PR</text>
+  <text x="122" y="108" font-family="Consolas,monospace" font-size="13" fill="#999991">TypeScript  ·  Gameplay  ·  PWA  ·  Testing</text>
+  <rect x="945" y="18" width="145" height="34" rx="17" fill="#e8f8ef"/>
+  <circle cx="964" cy="35" r="6" fill="#27b66d"><animate attributeName="opacity" values=".45;1;.45" dur="2.1999999999999997s" repeatCount="indefinite"/></circle>
+  <text x="984" y="40" font-family="Consolas,monospace" font-size="12" font-weight="700" fill="#208250">BUILDING</text>
+  <rect x="947" y="101" width="141" height="7" rx="3.5" fill="#efedea"/>
+  <rect x="947" y="101" width="47" height="7" rx="3.5" fill="#8864e8"><animate attributeName="x" values="947;1035;947" dur="4s" repeatCount="indefinite"/></rect>
+ </g>
+<text x="600" y="477" text-anchor="middle" font-family="Consolas,monospace" font-size="11" fill="#7c7c76">Curated phase badges · not release certification or completion percentage</text>
 </svg>

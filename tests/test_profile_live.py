@@ -2,6 +2,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+import xml.etree.ElementTree as ET
 from unittest.mock import patch
 
 from scripts import generate_profile_live as profile
@@ -112,11 +113,82 @@ class GeneratedMarkerTests(unittest.TestCase):
             result = profile.fetch_public_repos()
         self.assertEqual(len(result), 101)
 
-    def test_configs_keep_research_separate_from_release(self):
+    def test_curated_stages_separate_build_testing_and_shipped(self):
         heartbeat = {item["repo"]: item["status"] for item in profile.CONFIG["heartbeat_products"]}
-        self.assertEqual(heartbeat["ARKYVON"], "RESEARCH")
+        self.assertEqual(heartbeat["ARKYVON"], "BUILDING")
         self.assertEqual(heartbeat["Global-Chess-Online-PVP-"], "BUILDING")
+        self.assertEqual(heartbeat["OpenXdrive"], "TESTING")
+        self.assertEqual(heartbeat["Unlimited-Auto-Cut-Clipper-Tool"], "TESTING")
+        self.assertEqual(heartbeat["FinCo-pilot"], "SHIPPED")
+        self.assertEqual(heartbeat["Toolshub"], "SHIPPED")
         self.assertEqual(profile.CONFIG["private_count_verified"], 11)
+
+
+
+class CurrentFocusRenderingTests(unittest.TestCase):
+    def test_terminal_does_not_claim_old_flagships_are_current_builds(self):
+        svg = profile.generate_terminal(47)
+        self.assertIn("ARKYVON Engine", svg)
+        self.assertIn("Global Chess", svg)
+        self.assertNotIn("HARDENING", svg)
+        self.assertNotIn("ToolsLab LLMs", svg)
+
+    def test_heartbeat_rendering_has_testing_and_shipped_states(self):
+        svg = profile.generate_heartbeat({})
+        self.assertIn("TESTING", svg)
+        self.assertIn("SHIPPED", svg)
+        self.assertIn("BUILDING", svg)
+        self.assertNotIn(">RESEARCH</text>", svg)
+
+    def test_timeline_all_stages_fit_without_overlay(self):
+        svg = profile.generate_timeline({})
+        self.assertIn('viewBox="0 0 900 542"', svg)
+        self.assertIn("ARKYVON", svg)
+        self.assertIn("Chess", svg)
+        self.assertIn("ToolsLab", svg)
+        self.assertIn("FinCo", svg)
+        self.assertIn("LiveClip", svg)
+        self.assertIn("OpenXdrive", svg)
+
+    def test_editorial_publication_urls_are_public_and_named(self):
+        publications = profile.CONFIG["editorial_publications"]
+        self.assertTrue(any(item["name"] == "The Paisa Journal" and
+                            item["url"] == "https://thepaisajournal.blogspot.com/"
+                            for item in publications))
+        self.assertTrue(any(item["name"] == "FinCalc India Blog" for item in publications))
+
+
+
+
+class ProfileAssetIntegrationTests(unittest.TestCase):
+    def test_game_and_creator_clusters_use_specific_classification(self):
+        for name in ("ARKYVON", "Global-Chess-Online-PVP-", "Global-Carrom-Online-PVP-",
+                     "Global-Brain-Iq-Train-Puzzle"):
+            self.assertEqual(profile.classify_repo(public_repo(name)), "GAME")
+        for name in ("Unlimited-Auto-Cut-Clipper-Tool", "Satzzxzxx-Labs"):
+            self.assertEqual(profile.classify_repo(public_repo(name)), "CREATOR")
+        self.assertEqual(profile.classify_repo(public_repo("OpenXdrive")), "SYSTEMS")
+
+    def test_new_static_svg_assets_are_well_formed(self):
+        for name in ("three-path-workflow-v3.svg", "building-now-v2.svg",
+                     "shipped-products-v2.svg", "repo-constellation-live.svg",
+                     "shipping-timeline-live.svg", "terminal-boot-live.svg",
+                     "product-heartbeat-live.svg", "profile-hero-v2.svg"):
+            with self.subTest(name=name):
+                xml_text = (profile.ROOT / "assets" / name).read_text(encoding="utf-8")
+                root = ET.fromstring(xml_text)
+                self.assertTrue(root.tag.endswith("svg"))
+                self.assertGreater(len(xml_text), 150)
+
+    def test_original_readme_sections_and_catalog_markers_survive(self):
+        text_content = (profile.ROOT / "README.md").read_text(encoding="utf-8")
+        for i in range(1, 13):
+            self.assertIn("## `" + f"{i:02d}" + "`", text_content)
+        self.assertIn("PROFILE_REPO_CATALOG_START", text_content)
+        self.assertIn("PROFILE_TRACKED_COUNT_START", text_content)
+        self.assertIn("three-path-workflow-v3.svg", text_content)
+        self.assertIn("The Paisa Journal", text_content)
+
 
 
 if __name__ == "__main__":
