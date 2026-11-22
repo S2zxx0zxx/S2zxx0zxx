@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-<title id="title">Satyam Kumar — Satzzxzxx</title><desc id="desc">Builder, creator and digital entrepreneur shipping AI, finance, web and mobile products.</desc>
+<title id="title">Satyam Kumar — Satzzxzxx</title><desc id="desc">Builder, creator and digital entrepreneur building game engines and games, showcasing shipped apps and finance publishing.</desc>
 <defs>
   <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#171717" stroke-opacity=".045"/></pattern>
   <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5468ff"/><stop offset=".5" stop-color="#8f6dff"/><stop offset="1" stop-color="#27b66d"/></linearGradient>
@@ -15,7 +15,7 @@
   <text x="600" y="142" text-anchor="middle" font-size="18" font-weight="700" letter-spacing="3" fill="#5f5f59">BUILDING IN PUBLIC</text>
   <text x="600" y="210" text-anchor="middle" font-size="50" font-weight="800" letter-spacing="-2">SATYAM KUMAR</text>
   <text x="600" y="248" text-anchor="middle" font-size="19" font-weight="600" fill="#6c6c66">aka Satzzxzxx · Builder · Creator · Digital Entrepreneur</text>
-  <text x="600" y="300" text-anchor="middle" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="15" fill="#7d7d76">AI · finance · web · mobile · product systems</text>
+  <text x="600" y="300" text-anchor="middle" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="15" fill="#7d7d76">game engine · game development · shipped apps · publishing</text>
 </g>
 <g transform="translate(456 327)">
   <rect width="288" height="36" rx="18" fill="#f4fbf6" stroke="#cfe8d8"/>
