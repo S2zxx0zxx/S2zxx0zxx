@@ -2,6 +2,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+import xml.etree.ElementTree as ET
 from unittest.mock import patch
 
 from scripts import generate_profile_live as profile
@@ -155,6 +156,38 @@ class CurrentFocusRenderingTests(unittest.TestCase):
                             item["url"] == "https://thepaisajournal.blogspot.com/"
                             for item in publications))
         self.assertTrue(any(item["name"] == "FinCalc India Blog" for item in publications))
+
+
+
+
+class ProfileAssetIntegrationTests(unittest.TestCase):
+    def test_game_and_creator_clusters_use_specific_classification(self):
+        for name in ("ARKYVON", "Global-Chess-Online-PVP-", "Global-Carrom-Online-PVP-",
+                     "Global-Brain-Iq-Train-Puzzle"):
+            self.assertEqual(profile.classify_repo(public_repo(name)), "GAME")
+        for name in ("Unlimited-Auto-Cut-Clipper-Tool", "Satzzxzxx-Labs"):
+            self.assertEqual(profile.classify_repo(public_repo(name)), "CREATOR")
+        self.assertEqual(profile.classify_repo(public_repo("OpenXdrive")), "SYSTEMS")
+
+    def test_new_static_svg_assets_are_well_formed(self):
+        for name in ("three-path-workflow-v3.svg", "building-now-v2.svg",
+                     "shipped-products-v2.svg", "repo-constellation-live.svg",
+                     "shipping-timeline-live.svg", "terminal-boot-live.svg",
+                     "product-heartbeat-live.svg", "profile-hero-v2.svg"):
+            with self.subTest(name=name):
+                xml_text = (profile.ROOT / "assets" / name).read_text(encoding="utf-8")
+                root = ET.fromstring(xml_text)
+                self.assertTrue(root.tag.endswith("svg"))
+                self.assertGreater(len(xml_text), 150)
+
+    def test_original_readme_sections_and_catalog_markers_survive(self):
+        text_content = (profile.ROOT / "README.md").read_text(encoding="utf-8")
+        for i in range(1, 13):
+            self.assertIn("## `" + f"{i:02d}" + "`", text_content)
+        self.assertIn("PROFILE_REPO_CATALOG_START", text_content)
+        self.assertIn("PROFILE_TRACKED_COUNT_START", text_content)
+        self.assertIn("three-path-workflow-v3.svg", text_content)
+        self.assertIn("The Paisa Journal", text_content)
 
 
 
