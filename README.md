@@ -45,9 +45,13 @@ I also build and grow **DigiRise India**, while continuously experimenting with 
 <a href="https://gitarena.dev/u/S2zxx0zxx"><img src="https://gitarena.dev/api/badge/S2zxx0zxx?timeframe=total&theme=dark&color=orange" alt="GitArena all-time GitHub activity statistics" width="390" /></a>
  
 <a href="https://gitarena.dev/u/S2zxx0zxx"><img src="https://gitarena.dev/api/badge/S2zxx0zxx/pill?timeframe=total&theme=light&color=purple" alt="GitArena activity and rank pill" /></a>
+
+<br/><br/>
+
+<a href="https://gitranks.com/profile/S2zxx0zxx/country"><img src="https://gitranks.com/badge/user/S2zxx0zxx/rank.svg?scope=country&amp;extra=none&amp;scheme=custom&amp;left=%23ffff00&amp;right=%2300ff00&amp;label=Satzzxzxx&amp;logo=0" alt="Satzzxzxx India developer ranking on GitRanks" /></a>
 </div>
 
-<sub>Live, third-party GitHub activity indicators. These reflect activity, not an independent assessment of engineering skill.</sub>
+<sub>Live GitArena activity and GitRanks country ranking. Third-party signals may update over time and are not independent measures of engineering skill.</sub>
 
 > Current-first profile: real product state, real repository signals, and generated activity surfaces instead of stale vanity metrics.
 
