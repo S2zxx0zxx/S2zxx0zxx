@@ -49,9 +49,13 @@ I also build and grow **DigiRise India**, while continuously experimenting with 
 <br/><br/>
 
 <a href="https://gitranks.com/profile/S2zxx0zxx/country"><img src="https://gitranks.com/badge/user/S2zxx0zxx/rank.svg?scope=country&amp;extra=none&amp;scheme=custom&amp;left=%23ffff00&amp;right=%2300ff00&amp;label=Satzzxzxx&amp;logo=0" alt="Satzzxzxx India developer ranking on GitRanks" /></a>
+
+<br/><br/>
+
+<a href="https://gitranks.com/profile/S2zxx0zxx"><img src="https://gitranks.com/badge/user/S2zxx0zxx/profile-card.svg?scheme=classic" alt="S2zxx0zxx GitRanks developer profile card" width="650" /></a>
 </div>
 
-<sub>Live GitArena activity and GitRanks country ranking. Third-party signals may update over time and are not independent measures of engineering skill.</sub>
+<sub>Live GitArena activity, GitRanks country ranking and developer profile card. Third-party signals may update over time and are not independent measures of engineering skill.</sub>
 
 > Current-first profile: real product state, real repository signals, and generated activity surfaces instead of stale vanity metrics.
 
